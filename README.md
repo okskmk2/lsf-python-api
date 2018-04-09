@@ -8,9 +8,9 @@ If you plan or would like to contribute to the library, you must follow the DCO 
 
 * IBM Spectrum LSF Python Wrappers
 * Supporting LSF Release: 10.1
-* Wrapper Version: 1.0.4
+* Wrapper Version: 1.0.5
 * Publication date: 16 October 2013
-* Last modified: 6 January 2017
+* Last modified: 9 april 2018
 
 ## Contents
 
@@ -44,6 +44,10 @@ and type:
 `$ sudo python setup.py install`
 
 ## Release Notes
+
+### Release 1.0.5
+- Fixed semi-column in example queue_info.py
+- Fixed lsf.i for queueinfo api
 
 ### Release 1.0.4
 
