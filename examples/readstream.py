@@ -2,6 +2,7 @@
 from pythonlsf import lsf
 import sys
 
+
 def display(eventrec):
     """
     display event record
@@ -31,6 +32,7 @@ def display(eventrec):
 
     else:
         print("event type is %d" %(eventrec.type))
+
 
 def read_eventrec(path):
     """

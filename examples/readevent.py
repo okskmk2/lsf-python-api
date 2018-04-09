@@ -23,6 +23,7 @@ def display(eventrec):
     else:
         print("event type is %d" %(eventrec.type))
 
+
 def read_eventrec(path):
     """
     read lsb.events

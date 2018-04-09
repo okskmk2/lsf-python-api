@@ -280,6 +280,9 @@ PyObject * get_host_load(char *resreq, int index) {
     return result;
 }
 
+
+// lsb python api
+
 PyObject * get_queue_info_by_name(char** name, int num) {
     struct queueInfoEnt* queueinfo;
     int    numqueues = num;
@@ -298,6 +301,24 @@ PyObject * get_queue_info_by_name(char** name, int num) {
     return result;
 }
 
+PyObject * get_host_info_by_name(char** name, int num) {
+    struct hostInfoEnt* hostinfo;
+    int    numhosts = num;
+    int    options = 0;
+
+    hostinfo = lsb_hostinfo(name, &numhosts, NULL, NULL, options);
+
+    PyObject *result = PyList_New(numhosts);
+    int i;
+    for (i = 0; i < numhosts; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostinfo[i]),
+                                         SWIGTYPE_p_hostInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
 PyObject * get_hostgroup_info_by_name(char** name, int num) {
     struct groupInfoEnt* hostgroupinfo;
     int    numgroups = num;
@@ -309,6 +330,41 @@ PyObject * get_hostgroup_info_by_name(char** name, int num) {
     int i;
     for (i = 0; i < numgroups; i++) {
         PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostgroupinfo[i]),
+                                         SWIGTYPE_p_groupInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
+PyObject * get_user_info_by_name(char** name, int num) {
+    struct userInfoEnt* userinfo;
+    int    numUsers = num;
+
+    userinfo = lsb_userinfo(name, &numUsers);
+
+    PyObject *result = PyList_New(numUsers);
+    int i;
+    for (i = 0; i < numUsers; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&userinfo[i]),
+                                         SWIGTYPE_p_userInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
+PyObject * get_usergroup_info_by_name(char** name, int num) {
+    struct groupInfoEnt* usergroupinfo;
+    int    numgroups = num;
+    int    options = 0;
+
+    usergroupinfo = lsb_usergrpinfo(name, &numgroups, options);
+
+    PyObject *result = PyList_New(numgroups);
+    int i;
+    for (i = 0; i < numgroups; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&usergroupinfo[i]),
                                          SWIGTYPE_p_groupInfoEnt, 0 |  0 );
         PyList_SetItem(result,i,o);
     }
