@@ -285,7 +285,7 @@ PyObject * get_queue_info_by_name(char** name, int num) {
     int    numqueues = num;
     int    options = 0;
 
-    queueinfo = lsb_queueinfo(name, &numqueues, NULL, 0, options);
+    queueinfo = lsb_queueinfo(name, &numqueues, NULL, NULL, options);
 
     PyObject *result = PyList_New(numqueues);
     int i;
