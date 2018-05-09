@@ -1,0 +1,1502 @@
+tmethods__["ru_exutime"] = _lsf.lsfRusage_ru_exutime_get
+    if _newclass:ru_exutime = _swig_property(_lsf.lsfRusage_ru_exutime_get, _lsf.lsfRusage_ru_exutime_set)
+    def __init__(self): 
+        this = _lsf.new_lsfRusage()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lsfRusage
+    __del__ = lambda self : None
+lsfRusage_swigregister = _lsf.lsfRusage_swigregister
+lsfRusage_swigregister(lsfRusage)
+
+class lsfAcctRec(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lsfAcctRec, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lsfAcctRec, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["pid"] = _lsf.lsfAcctRec_pid_set
+    __swig_getmethods__["pid"] = _lsf.lsfAcctRec_pid_get
+    if _newclass:pid = _swig_property(_lsf.lsfAcctRec_pid_get, _lsf.lsfAcctRec_pid_set)
+    __swig_setmethods__["username"] = _lsf.lsfAcctRec_username_set
+    __swig_getmethods__["username"] = _lsf.lsfAcctRec_username_get
+    if _newclass:username = _swig_property(_lsf.lsfAcctRec_username_get, _lsf.lsfAcctRec_username_set)
+    __swig_setmethods__["exitStatus"] = _lsf.lsfAcctRec_exitStatus_set
+    __swig_getmethods__["exitStatus"] = _lsf.lsfAcctRec_exitStatus_get
+    if _newclass:exitStatus = _swig_property(_lsf.lsfAcctRec_exitStatus_get, _lsf.lsfAcctRec_exitStatus_set)
+    __swig_setmethods__["dispTime"] = _lsf.lsfAcctRec_dispTime_set
+    __swig_getmethods__["dispTime"] = _lsf.lsfAcctRec_dispTime_get
+    if _newclass:dispTime = _swig_property(_lsf.lsfAcctRec_dispTime_get, _lsf.lsfAcctRec_dispTime_set)
+    __swig_setmethods__["termTime"] = _lsf.lsfAcctRec_termTime_set
+    __swig_getmethods__["termTime"] = _lsf.lsfAcctRec_termTime_get
+    if _newclass:termTime = _swig_property(_lsf.lsfAcctRec_termTime_get, _lsf.lsfAcctRec_termTime_set)
+    __swig_setmethods__["fromHost"] = _lsf.lsfAcctRec_fromHost_set
+    __swig_getmethods__["fromHost"] = _lsf.lsfAcctRec_fromHost_get
+    if _newclass:fromHost = _swig_property(_lsf.lsfAcctRec_fromHost_get, _lsf.lsfAcctRec_fromHost_set)
+    __swig_setmethods__["execHost"] = _lsf.lsfAcctRec_execHost_set
+    __swig_getmethods__["execHost"] = _lsf.lsfAcctRec_execHost_get
+    if _newclass:execHost = _swig_property(_lsf.lsfAcctRec_execHost_get, _lsf.lsfAcctRec_execHost_set)
+    __swig_setmethods__["cwd"] = _lsf.lsfAcctRec_cwd_set
+    __swig_getmethods__["cwd"] = _lsf.lsfAcctRec_cwd_get
+    if _newclass:cwd = _swig_property(_lsf.lsfAcctRec_cwd_get, _lsf.lsfAcctRec_cwd_set)
+    __swig_setmethods__["cmdln"] = _lsf.lsfAcctRec_cmdln_set
+    __swig_getmethods__["cmdln"] = _lsf.lsfAcctRec_cmdln_get
+    if _newclass:cmdln = _swig_property(_lsf.lsfAcctRec_cmdln_get, _lsf.lsfAcctRec_cmdln_set)
+    __swig_setmethods__["lsfRu"] = _lsf.lsfAcctRec_lsfRu_set
+    __swig_getmethods__["lsfRu"] = _lsf.lsfAcctRec_lsfRu_get
+    if _newclass:lsfRu = _swig_property(_lsf.lsfAcctRec_lsfRu_get, _lsf.lsfAcctRec_lsfRu_set)
+    def __init__(self): 
+        this = _lsf.new_lsfAcctRec()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lsfAcctRec
+    __del__ = lambda self : None
+lsfAcctRec_swigregister = _lsf.lsfAcctRec_swigregister
+lsfAcctRec_swigregister(lsfAcctRec)
+
+class confNode(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, confNode, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, confNode, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["leftPtr"] = _lsf.confNode_leftPtr_set
+    __swig_getmethods__["leftPtr"] = _lsf.confNode_leftPtr_get
+    if _newclass:leftPtr = _swig_property(_lsf.confNode_leftPtr_get, _lsf.confNode_leftPtr_set)
+    __swig_setmethods__["rightPtr"] = _lsf.confNode_rightPtr_set
+    __swig_getmethods__["rightPtr"] = _lsf.confNode_rightPtr_get
+    if _newclass:rightPtr = _swig_property(_lsf.confNode_rightPtr_get, _lsf.confNode_rightPtr_set)
+    __swig_setmethods__["fwPtr"] = _lsf.confNode_fwPtr_set
+    __swig_getmethods__["fwPtr"] = _lsf.confNode_fwPtr_get
+    if _newclass:fwPtr = _swig_property(_lsf.confNode_fwPtr_get, _lsf.confNode_fwPtr_set)
+    __swig_setmethods__["cond"] = _lsf.confNode_cond_set
+    __swig_getmethods__["cond"] = _lsf.confNode_cond_get
+    if _newclass:cond = _swig_property(_lsf.confNode_cond_get, _lsf.confNode_cond_set)
+    __swig_setmethods__["beginLineNum"] = _lsf.confNode_beginLineNum_set
+    __swig_getmethods__["beginLineNum"] = _lsf.confNode_beginLineNum_get
+    if _newclass:beginLineNum = _swig_property(_lsf.confNode_beginLineNum_get, _lsf.confNode_beginLineNum_set)
+    __swig_setmethods__["numLines"] = _lsf.confNode_numLines_set
+    __swig_getmethods__["numLines"] = _lsf.confNode_numLines_get
+    if _newclass:numLines = _swig_property(_lsf.confNode_numLines_get, _lsf.confNode_numLines_set)
+    __swig_setmethods__["lines"] = _lsf.confNode_lines_set
+    __swig_getmethods__["lines"] = _lsf.confNode_lines_get
+    if _newclass:lines = _swig_property(_lsf.confNode_lines_get, _lsf.confNode_lines_set)
+    __swig_setmethods__["tag"] = _lsf.confNode_tag_set
+    __swig_getmethods__["tag"] = _lsf.confNode_tag_get
+    if _newclass:tag = _swig_property(_lsf.confNode_tag_get, _lsf.confNode_tag_set)
+    __swig_setmethods__["fname"] = _lsf.confNode_fname_set
+    __swig_getmethods__["fname"] = _lsf.confNode_fname_get
+    if _newclass:fname = _swig_property(_lsf.confNode_fname_get, _lsf.confNode_fname_set)
+    def __init__(self): 
+        this = _lsf.new_confNode()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_confNode
+    __del__ = lambda self : None
+confNode_swigregister = _lsf.confNode_swigregister
+confNode_swigregister(confNode)
+
+class pStack(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, pStack, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, pStack, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["top"] = _lsf.pStack_top_set
+    __swig_getmethods__["top"] = _lsf.pStack_top_get
+    if _newclass:top = _swig_property(_lsf.pStack_top_get, _lsf.pStack_top_set)
+    __swig_setmethods__["size"] = _lsf.pStack_size_set
+    __swig_getmethods__["size"] = _lsf.pStack_size_get
+    if _newclass:size = _swig_property(_lsf.pStack_size_get, _lsf.pStack_size_set)
+    __swig_setmethods__["nodes"] = _lsf.pStack_nodes_set
+    __swig_getmethods__["nodes"] = _lsf.pStack_nodes_get
+    if _newclass:nodes = _swig_property(_lsf.pStack_nodes_get, _lsf.pStack_nodes_set)
+    def __init__(self): 
+        this = _lsf.new_pStack()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_pStack
+    __del__ = lambda self : None
+pStack_swigregister = _lsf.pStack_swigregister
+pStack_swigregister(pStack)
+
+class confHandle(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, confHandle, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, confHandle, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["rootNode"] = _lsf.confHandle_rootNode_set
+    __swig_getmethods__["rootNode"] = _lsf.confHandle_rootNode_get
+    if _newclass:rootNode = _swig_property(_lsf.confHandle_rootNode_get, _lsf.confHandle_rootNode_set)
+    __swig_setmethods__["fname"] = _lsf.confHandle_fname_set
+    __swig_getmethods__["fname"] = _lsf.confHandle_fname_get
+    if _newclass:fname = _swig_property(_lsf.confHandle_fname_get, _lsf.confHandle_fname_set)
+    __swig_setmethods__["curNode"] = _lsf.confHandle_curNode_set
+    __swig_getmethods__["curNode"] = _lsf.confHandle_curNode_get
+    if _newclass:curNode = _swig_property(_lsf.confHandle_curNode_get, _lsf.confHandle_curNode_set)
+    __swig_setmethods__["lineCount"] = _lsf.confHandle_lineCount_set
+    __swig_getmethods__["lineCount"] = _lsf.confHandle_lineCount_get
+    if _newclass:lineCount = _swig_property(_lsf.confHandle_lineCount_get, _lsf.confHandle_lineCount_set)
+    __swig_setmethods__["ptrStack"] = _lsf.confHandle_ptrStack_set
+    __swig_getmethods__["ptrStack"] = _lsf.confHandle_ptrStack_get
+    if _newclass:ptrStack = _swig_property(_lsf.confHandle_ptrStack_get, _lsf.confHandle_ptrStack_set)
+    def __init__(self): 
+        this = _lsf.new_confHandle()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_confHandle
+    __del__ = lambda self : None
+confHandle_swigregister = _lsf.confHandle_swigregister
+confHandle_swigregister(confHandle)
+
+class lsConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lsConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lsConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["confhandle"] = _lsf.lsConf_confhandle_set
+    __swig_getmethods__["confhandle"] = _lsf.lsConf_confhandle_get
+    if _newclass:confhandle = _swig_property(_lsf.lsConf_confhandle_get, _lsf.lsConf_confhandle_set)
+    __swig_setmethods__["numConds"] = _lsf.lsConf_numConds_set
+    __swig_getmethods__["numConds"] = _lsf.lsConf_numConds_get
+    if _newclass:numConds = _swig_property(_lsf.lsConf_numConds_get, _lsf.lsConf_numConds_set)
+    __swig_setmethods__["conds"] = _lsf.lsConf_conds_set
+    __swig_getmethods__["conds"] = _lsf.lsConf_conds_get
+    if _newclass:conds = _swig_property(_lsf.lsConf_conds_get, _lsf.lsConf_conds_set)
+    __swig_setmethods__["values"] = _lsf.lsConf_values_set
+    __swig_getmethods__["values"] = _lsf.lsConf_values_get
+    if _newclass:values = _swig_property(_lsf.lsConf_values_get, _lsf.lsConf_values_set)
+    def __init__(self): 
+        this = _lsf.new_lsConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lsConf
+    __del__ = lambda self : None
+lsConf_swigregister = _lsf.lsConf_swigregister
+lsConf_swigregister(lsConf)
+
+class sharedConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, sharedConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, sharedConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["lsinfo"] = _lsf.sharedConf_lsinfo_set
+    __swig_getmethods__["lsinfo"] = _lsf.sharedConf_lsinfo_get
+    if _newclass:lsinfo = _swig_property(_lsf.sharedConf_lsinfo_get, _lsf.sharedConf_lsinfo_set)
+    __swig_setmethods__["numCls"] = _lsf.sharedConf_numCls_set
+    __swig_getmethods__["numCls"] = _lsf.sharedConf_numCls_get
+    if _newclass:numCls = _swig_property(_lsf.sharedConf_numCls_get, _lsf.sharedConf_numCls_set)
+    __swig_setmethods__["clusterNames"] = _lsf.sharedConf_clusterNames_set
+    __swig_getmethods__["clusterNames"] = _lsf.sharedConf_clusterNames_get
+    if _newclass:clusterNames = _swig_property(_lsf.sharedConf_clusterNames_get, _lsf.sharedConf_clusterNames_set)
+    __swig_setmethods__["servers"] = _lsf.sharedConf_servers_set
+    __swig_getmethods__["servers"] = _lsf.sharedConf_servers_get
+    if _newclass:servers = _swig_property(_lsf.sharedConf_servers_get, _lsf.sharedConf_servers_set)
+    def __init__(self): 
+        this = _lsf.new_sharedConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_sharedConf
+    __del__ = lambda self : None
+sharedConf_swigregister = _lsf.sharedConf_swigregister
+sharedConf_swigregister(sharedConf)
+
+class LS_SHARED_RESOURCE_INST_T(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LS_SHARED_RESOURCE_INST_T, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LS_SHARED_RESOURCE_INST_T, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["value"] = _lsf.LS_SHARED_RESOURCE_INST_T_value_set
+    __swig_getmethods__["value"] = _lsf.LS_SHARED_RESOURCE_INST_T_value_get
+    if _newclass:value = _swig_property(_lsf.LS_SHARED_RESOURCE_INST_T_value_get, _lsf.LS_SHARED_RESOURCE_INST_T_value_set)
+    __swig_setmethods__["nHosts"] = _lsf.LS_SHARED_RESOURCE_INST_T_nHosts_set
+    __swig_getmethods__["nHosts"] = _lsf.LS_SHARED_RESOURCE_INST_T_nHosts_get
+    if _newclass:nHosts = _swig_property(_lsf.LS_SHARED_RESOURCE_INST_T_nHosts_get, _lsf.LS_SHARED_RESOURCE_INST_T_nHosts_set)
+    __swig_setmethods__["hostList"] = _lsf.LS_SHARED_RESOURCE_INST_T_hostList_set
+    __swig_getmethods__["hostList"] = _lsf.LS_SHARED_RESOURCE_INST_T_hostList_get
+    if _newclass:hostList = _swig_property(_lsf.LS_SHARED_RESOURCE_INST_T_hostList_get, _lsf.LS_SHARED_RESOURCE_INST_T_hostList_set)
+    def __init__(self): 
+        this = _lsf.new_LS_SHARED_RESOURCE_INST_T()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LS_SHARED_RESOURCE_INST_T
+    __del__ = lambda self : None
+LS_SHARED_RESOURCE_INST_T_swigregister = _lsf.LS_SHARED_RESOURCE_INST_T_swigregister
+LS_SHARED_RESOURCE_INST_T_swigregister(LS_SHARED_RESOURCE_INST_T)
+
+class LS_SHARED_RESOURCE_INFO_T(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LS_SHARED_RESOURCE_INFO_T, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LS_SHARED_RESOURCE_INFO_T, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["resourceName"] = _lsf.LS_SHARED_RESOURCE_INFO_T_resourceName_set
+    __swig_getmethods__["resourceName"] = _lsf.LS_SHARED_RESOURCE_INFO_T_resourceName_get
+    if _newclass:resourceName = _swig_property(_lsf.LS_SHARED_RESOURCE_INFO_T_resourceName_get, _lsf.LS_SHARED_RESOURCE_INFO_T_resourceName_set)
+    __swig_setmethods__["nInstances"] = _lsf.LS_SHARED_RESOURCE_INFO_T_nInstances_set
+    __swig_getmethods__["nInstances"] = _lsf.LS_SHARED_RESOURCE_INFO_T_nInstances_get
+    if _newclass:nInstances = _swig_property(_lsf.LS_SHARED_RESOURCE_INFO_T_nInstances_get, _lsf.LS_SHARED_RESOURCE_INFO_T_nInstances_set)
+    __swig_setmethods__["instances"] = _lsf.LS_SHARED_RESOURCE_INFO_T_instances_set
+    __swig_getmethods__["instances"] = _lsf.LS_SHARED_RESOURCE_INFO_T_instances_get
+    if _newclass:instances = _swig_property(_lsf.LS_SHARED_RESOURCE_INFO_T_instances_get, _lsf.LS_SHARED_RESOURCE_INFO_T_instances_set)
+    def __init__(self): 
+        this = _lsf.new_LS_SHARED_RESOURCE_INFO_T()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LS_SHARED_RESOURCE_INFO_T
+    __del__ = lambda self : None
+LS_SHARED_RESOURCE_INFO_T_swigregister = _lsf.LS_SHARED_RESOURCE_INFO_T_swigregister
+LS_SHARED_RESOURCE_INFO_T_swigregister(LS_SHARED_RESOURCE_INFO_T)
+
+class clusterConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, clusterConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, clusterConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["clinfo"] = _lsf.clusterConf_clinfo_set
+    __swig_getmethods__["clinfo"] = _lsf.clusterConf_clinfo_get
+    if _newclass:clinfo = _swig_property(_lsf.clusterConf_clinfo_get, _lsf.clusterConf_clinfo_set)
+    __swig_setmethods__["numHosts"] = _lsf.clusterConf_numHosts_set
+    __swig_getmethods__["numHosts"] = _lsf.clusterConf_numHosts_get
+    if _newclass:numHosts = _swig_property(_lsf.clusterConf_numHosts_get, _lsf.clusterConf_numHosts_set)
+    __swig_setmethods__["hosts"] = _lsf.clusterConf_hosts_set
+    __swig_getmethods__["hosts"] = _lsf.clusterConf_hosts_get
+    if _newclass:hosts = _swig_property(_lsf.clusterConf_hosts_get, _lsf.clusterConf_hosts_set)
+    __swig_setmethods__["defaultFeatures"] = _lsf.clusterConf_defaultFeatures_set
+    __swig_getmethods__["defaultFeatures"] = _lsf.clusterConf_defaultFeatures_get
+    if _newclass:defaultFeatures = _swig_property(_lsf.clusterConf_defaultFeatures_get, _lsf.clusterConf_defaultFeatures_set)
+    __swig_setmethods__["numShareRes"] = _lsf.clusterConf_numShareRes_set
+    __swig_getmethods__["numShareRes"] = _lsf.clusterConf_numShareRes_get
+    if _newclass:numShareRes = _swig_property(_lsf.clusterConf_numShareRes_get, _lsf.clusterConf_numShareRes_set)
+    __swig_setmethods__["shareRes"] = _lsf.clusterConf_shareRes_set
+    __swig_getmethods__["shareRes"] = _lsf.clusterConf_shareRes_get
+    if _newclass:shareRes = _swig_property(_lsf.clusterConf_shareRes_get, _lsf.clusterConf_shareRes_set)
+    def __init__(self): 
+        this = _lsf.new_clusterConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_clusterConf
+    __del__ = lambda self : None
+clusterConf_swigregister = _lsf.clusterConf_swigregister
+clusterConf_swigregister(clusterConf)
+
+class pidInfo(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, pidInfo, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, pidInfo, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["pid"] = _lsf.pidInfo_pid_set
+    __swig_getmethods__["pid"] = _lsf.pidInfo_pid_get
+    if _newclass:pid = _swig_property(_lsf.pidInfo_pid_get, _lsf.pidInfo_pid_set)
+    __swig_setmethods__["ppid"] = _lsf.pidInfo_ppid_set
+    __swig_getmethods__["ppid"] = _lsf.pidInfo_ppid_get
+    if _newclass:ppid = _swig_property(_lsf.pidInfo_ppid_get, _lsf.pidInfo_ppid_set)
+    __swig_setmethods__["pgid"] = _lsf.pidInfo_pgid_set
+    __swig_getmethods__["pgid"] = _lsf.pidInfo_pgid_get
+    if _newclass:pgid = _swig_property(_lsf.pidInfo_pgid_get, _lsf.pidInfo_pgid_set)
+    __swig_setmethods__["jobid"] = _lsf.pidInfo_jobid_set
+    __swig_getmethods__["jobid"] = _lsf.pidInfo_jobid_get
+    if _newclass:jobid = _swig_property(_lsf.pidInfo_jobid_get, _lsf.pidInfo_jobid_set)
+    def __init__(self): 
+        this = _lsf.new_pidInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_pidInfo
+    __del__ = lambda self : None
+pidInfo_swigregister = _lsf.pidInfo_swigregister
+pidInfo_swigregister(pidInfo)
+
+HOST_UNHALTED_CORE_CYCLES = _lsf.HOST_UNHALTED_CORE_CYCLES
+HOST_INSTRUCTIONS_RETIRED = _lsf.HOST_INSTRUCTIONS_RETIRED
+HOST_UNC_LLC_MISS_READ = _lsf.HOST_UNC_LLC_MISS_READ
+HOST_UNC_QMC_WRITES_FULL_ANY = _lsf.HOST_UNC_QMC_WRITES_FULL_ANY
+HOST_GFLOPS = _lsf.HOST_GFLOPS
+MAX_HARDWARE_COUNTERS = _lsf.MAX_HARDWARE_COUNTERS
+MAX_CORE_HARDWARE_COUNTERS_IDX = _lsf.MAX_CORE_HARDWARE_COUNTERS_IDX
+MAX_HARDWARE_COUNTERS_912 = _lsf.MAX_HARDWARE_COUNTERS_912
+class keyValue(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, keyValue, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, keyValue, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["key"] = _lsf.keyValue_key_set
+    __swig_getmethods__["key"] = _lsf.keyValue_key_get
+    if _newclass:key = _swig_property(_lsf.keyValue_key_get, _lsf.keyValue_key_set)
+    __swig_setmethods__["value"] = _lsf.keyValue_value_set
+    __swig_getmethods__["value"] = _lsf.keyValue_value_get
+    if _newclass:value = _swig_property(_lsf.keyValue_value_get, _lsf.keyValue_value_set)
+    def __init__(self): 
+        this = _lsf.new_keyValue()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_keyValue
+    __del__ = lambda self : None
+keyValue_swigregister = _lsf.keyValue_swigregister
+keyValue_swigregister(keyValue)
+
+class KVPair(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, KVPair, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, KVPair, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numKVP"] = _lsf.KVPair_numKVP_set
+    __swig_getmethods__["numKVP"] = _lsf.KVPair_numKVP_get
+    if _newclass:numKVP = _swig_property(_lsf.KVPair_numKVP_get, _lsf.KVPair_numKVP_set)
+    __swig_setmethods__["array"] = _lsf.KVPair_array_set
+    __swig_getmethods__["array"] = _lsf.KVPair_array_get
+    if _newclass:array = _swig_property(_lsf.KVPair_array_get, _lsf.KVPair_array_set)
+    def __init__(self): 
+        this = _lsf.new_KVPair()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_KVPair
+    __del__ = lambda self : None
+KVPair_swigregister = _lsf.KVPair_swigregister
+KVPair_swigregister(KVPair)
+
+class jRusage_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jRusage_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jRusage_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["mem"] = _lsf.jRusage_t_mem_set
+    __swig_getmethods__["mem"] = _lsf.jRusage_t_mem_get
+    if _newclass:mem = _swig_property(_lsf.jRusage_t_mem_get, _lsf.jRusage_t_mem_set)
+    __swig_setmethods__["swap"] = _lsf.jRusage_t_swap_set
+    __swig_getmethods__["swap"] = _lsf.jRusage_t_swap_get
+    if _newclass:swap = _swig_property(_lsf.jRusage_t_swap_get, _lsf.jRusage_t_swap_set)
+    __swig_setmethods__["utime"] = _lsf.jRusage_t_utime_set
+    __swig_getmethods__["utime"] = _lsf.jRusage_t_utime_get
+    if _newclass:utime = _swig_property(_lsf.jRusage_t_utime_get, _lsf.jRusage_t_utime_set)
+    __swig_setmethods__["stime"] = _lsf.jRusage_t_stime_set
+    __swig_getmethods__["stime"] = _lsf.jRusage_t_stime_get
+    if _newclass:stime = _swig_property(_lsf.jRusage_t_stime_get, _lsf.jRusage_t_stime_set)
+    __swig_setmethods__["npids"] = _lsf.jRusage_t_npids_set
+    __swig_getmethods__["npids"] = _lsf.jRusage_t_npids_get
+    if _newclass:npids = _swig_property(_lsf.jRusage_t_npids_get, _lsf.jRusage_t_npids_set)
+    __swig_setmethods__["pidInfo"] = _lsf.jRusage_t_pidInfo_set
+    __swig_getmethods__["pidInfo"] = _lsf.jRusage_t_pidInfo_get
+    if _newclass:pidInfo = _swig_property(_lsf.jRusage_t_pidInfo_get, _lsf.jRusage_t_pidInfo_set)
+    __swig_setmethods__["npgids"] = _lsf.jRusage_t_npgids_set
+    __swig_getmethods__["npgids"] = _lsf.jRusage_t_npgids_get
+    if _newclass:npgids = _swig_property(_lsf.jRusage_t_npgids_get, _lsf.jRusage_t_npgids_set)
+    __swig_setmethods__["pgid"] = _lsf.jRusage_t_pgid_set
+    __swig_getmethods__["pgid"] = _lsf.jRusage_t_pgid_get
+    if _newclass:pgid = _swig_property(_lsf.jRusage_t_pgid_get, _lsf.jRusage_t_pgid_set)
+    __swig_setmethods__["nthreads"] = _lsf.jRusage_t_nthreads_set
+    __swig_getmethods__["nthreads"] = _lsf.jRusage_t_nthreads_get
+    if _newclass:nthreads = _swig_property(_lsf.jRusage_t_nthreads_get, _lsf.jRusage_t_nthreads_set)
+    __swig_setmethods__["unused_power"] = _lsf.jRusage_t_unused_power_set
+    __swig_getmethods__["unused_power"] = _lsf.jRusage_t_unused_power_get
+    if _newclass:unused_power = _swig_property(_lsf.jRusage_t_unused_power_get, _lsf.jRusage_t_unused_power_set)
+    __swig_setmethods__["power"] = _lsf.jRusage_t_power_set
+    __swig_getmethods__["power"] = _lsf.jRusage_t_power_get
+    if _newclass:power = _swig_property(_lsf.jRusage_t_power_get, _lsf.jRusage_t_power_set)
+    __swig_setmethods__["hwCounters"] = _lsf.jRusage_t_hwCounters_set
+    __swig_getmethods__["hwCounters"] = _lsf.jRusage_t_hwCounters_get
+    if _newclass:hwCounters = _swig_property(_lsf.jRusage_t_hwCounters_get, _lsf.jRusage_t_hwCounters_set)
+    __swig_setmethods__["nHwCounters"] = _lsf.jRusage_t_nHwCounters_set
+    __swig_getmethods__["nHwCounters"] = _lsf.jRusage_t_nHwCounters_get
+    if _newclass:nHwCounters = _swig_property(_lsf.jRusage_t_nHwCounters_get, _lsf.jRusage_t_nHwCounters_set)
+    __swig_setmethods__["cpuUT"] = _lsf.jRusage_t_cpuUT_set
+    __swig_getmethods__["cpuUT"] = _lsf.jRusage_t_cpuUT_get
+    if _newclass:cpuUT = _swig_property(_lsf.jRusage_t_cpuUT_get, _lsf.jRusage_t_cpuUT_set)
+    __swig_setmethods__["io"] = _lsf.jRusage_t_io_set
+    __swig_getmethods__["io"] = _lsf.jRusage_t_io_get
+    if _newclass:io = _swig_property(_lsf.jRusage_t_io_get, _lsf.jRusage_t_io_set)
+    __swig_setmethods__["ioRate"] = _lsf.jRusage_t_ioRate_set
+    __swig_getmethods__["ioRate"] = _lsf.jRusage_t_ioRate_get
+    if _newclass:ioRate = _swig_property(_lsf.jRusage_t_ioRate_get, _lsf.jRusage_t_ioRate_set)
+    __swig_setmethods__["diskIO"] = _lsf.jRusage_t_diskIO_set
+    __swig_getmethods__["diskIO"] = _lsf.jRusage_t_diskIO_get
+    if _newclass:diskIO = _swig_property(_lsf.jRusage_t_diskIO_get, _lsf.jRusage_t_diskIO_set)
+    __swig_setmethods__["diskIORate"] = _lsf.jRusage_t_diskIORate_set
+    __swig_getmethods__["diskIORate"] = _lsf.jRusage_t_diskIORate_get
+    if _newclass:diskIORate = _swig_property(_lsf.jRusage_t_diskIORate_get, _lsf.jRusage_t_diskIORate_set)
+    __swig_setmethods__["deltaIO"] = _lsf.jRusage_t_deltaIO_set
+    __swig_getmethods__["deltaIO"] = _lsf.jRusage_t_deltaIO_get
+    if _newclass:deltaIO = _swig_property(_lsf.jRusage_t_deltaIO_get, _lsf.jRusage_t_deltaIO_set)
+    __swig_setmethods__["deltaDiskIO"] = _lsf.jRusage_t_deltaDiskIO_set
+    __swig_getmethods__["deltaDiskIO"] = _lsf.jRusage_t_deltaDiskIO_get
+    if _newclass:deltaDiskIO = _swig_property(_lsf.jRusage_t_deltaDiskIO_get, _lsf.jRusage_t_deltaDiskIO_set)
+    __swig_setmethods__["KVP"] = _lsf.jRusage_t_KVP_set
+    __swig_getmethods__["KVP"] = _lsf.jRusage_t_KVP_get
+    if _newclass:KVP = _swig_property(_lsf.jRusage_t_KVP_get, _lsf.jRusage_t_KVP_set)
+    def __init__(self): 
+        this = _lsf.new_jRusage_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jRusage_t
+    __del__ = lambda self : None
+jRusage_t_swigregister = _lsf.jRusage_t_swigregister
+jRusage_t_swigregister(jRusage_t)
+
+NUM_SUBS = _lsf.NUM_SUBS
+LEN_SUBS = _lsf.LEN_SUBS
+NUM_CLASS_TYPE = _lsf.NUM_CLASS_TYPE
+class licUsage(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, licUsage, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, licUsage, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["licDisplayMask"] = _lsf.licUsage_licDisplayMask_set
+    __swig_getmethods__["licDisplayMask"] = _lsf.licUsage_licDisplayMask_get
+    if _newclass:licDisplayMask = _swig_property(_lsf.licUsage_licDisplayMask_get, _lsf.licUsage_licDisplayMask_set)
+    __swig_setmethods__["usingDemoLicense"] = _lsf.licUsage_usingDemoLicense_set
+    __swig_getmethods__["usingDemoLicense"] = _lsf.licUsage_usingDemoLicense_get
+    if _newclass:usingDemoLicense = _swig_property(_lsf.licUsage_usingDemoLicense_get, _lsf.licUsage_usingDemoLicense_set)
+    __swig_setmethods__["total"] = _lsf.licUsage_total_set
+    __swig_getmethods__["total"] = _lsf.licUsage_total_get
+    if _newclass:total = _swig_property(_lsf.licUsage_total_get, _lsf.licUsage_total_set)
+    __swig_setmethods__["inUse"] = _lsf.licUsage_inUse_set
+    __swig_getmethods__["inUse"] = _lsf.licUsage_inUse_get
+    if _newclass:inUse = _swig_property(_lsf.licUsage_inUse_get, _lsf.licUsage_inUse_set)
+    def __init__(self): 
+        this = _lsf.new_licUsage()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_licUsage
+    __del__ = lambda self : None
+licUsage_swigregister = _lsf.licUsage_swigregister
+licUsage_swigregister(licUsage)
+
+class hostClassInfo(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, hostClassInfo, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, hostClassInfo, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numHosts"] = _lsf.hostClassInfo_numHosts_set
+    __swig_getmethods__["numHosts"] = _lsf.hostClassInfo_numHosts_get
+    if _newclass:numHosts = _swig_property(_lsf.hostClassInfo_numHosts_get, _lsf.hostClassInfo_numHosts_set)
+    __swig_setmethods__["numCpus"] = _lsf.hostClassInfo_numCpus_set
+    __swig_getmethods__["numCpus"] = _lsf.hostClassInfo_numCpus_get
+    if _newclass:numCpus = _swig_property(_lsf.hostClassInfo_numCpus_get, _lsf.hostClassInfo_numCpus_set)
+    __swig_setmethods__["numCores"] = _lsf.hostClassInfo_numCores_set
+    __swig_getmethods__["numCores"] = _lsf.hostClassInfo_numCores_get
+    if _newclass:numCores = _swig_property(_lsf.hostClassInfo_numCores_get, _lsf.hostClassInfo_numCores_set)
+    def __init__(self): 
+        this = _lsf.new_hostClassInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_hostClassInfo
+    __del__ = lambda self : None
+hostClassInfo_swigregister = _lsf.hostClassInfo_swigregister
+hostClassInfo_swigregister(hostClassInfo)
+
+class lim_licensekey_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lim_licensekey_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lim_licensekey_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["nkey"] = _lsf.lim_licensekey_t_nkey_set
+    __swig_getmethods__["nkey"] = _lsf.lim_licensekey_t_nkey_get
+    if _newclass:nkey = _swig_property(_lsf.lim_licensekey_t_nkey_get, _lsf.lim_licensekey_t_nkey_set)
+    __swig_setmethods__["keyname"] = _lsf.lim_licensekey_t_keyname_set
+    __swig_getmethods__["keyname"] = _lsf.lim_licensekey_t_keyname_get
+    if _newclass:keyname = _swig_property(_lsf.lim_licensekey_t_keyname_get, _lsf.lim_licensekey_t_keyname_set)
+    def __init__(self): 
+        this = _lsf.new_lim_licensekey_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lim_licensekey_t
+    __del__ = lambda self : None
+lim_licensekey_t_swigregister = _lsf.lim_licensekey_t_swigregister
+lim_licensekey_t_swigregister(lim_licensekey_t)
+
+class lim_licensekey_info_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lim_licensekey_info_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lim_licensekey_info_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["name"] = _lsf.lim_licensekey_info_t_name_set
+    __swig_getmethods__["name"] = _lsf.lim_licensekey_info_t_name_get
+    if _newclass:name = _swig_property(_lsf.lim_licensekey_info_t_name_get, _lsf.lim_licensekey_info_t_name_set)
+    __swig_setmethods__["keyName"] = _lsf.lim_licensekey_info_t_keyName_set
+    __swig_getmethods__["keyName"] = _lsf.lim_licensekey_info_t_keyName_get
+    if _newclass:keyName = _swig_property(_lsf.lim_licensekey_info_t_keyName_get, _lsf.lim_licensekey_info_t_keyName_set)
+    __swig_setmethods__["licensed"] = _lsf.lim_licensekey_info_t_licensed_set
+    __swig_getmethods__["licensed"] = _lsf.lim_licensekey_info_t_licensed_get
+    if _newclass:licensed = _swig_property(_lsf.lim_licensekey_info_t_licensed_get, _lsf.lim_licensekey_info_t_licensed_set)
+    __swig_setmethods__["numLicense"] = _lsf.lim_licensekey_info_t_numLicense_set
+    __swig_getmethods__["numLicense"] = _lsf.lim_licensekey_info_t_numLicense_get
+    if _newclass:numLicense = _swig_property(_lsf.lim_licensekey_info_t_numLicense_get, _lsf.lim_licensekey_info_t_numLicense_set)
+    __swig_setmethods__["notice"] = _lsf.lim_licensekey_info_t_notice_set
+    __swig_getmethods__["notice"] = _lsf.lim_licensekey_info_t_notice_get
+    if _newclass:notice = _swig_property(_lsf.lim_licensekey_info_t_notice_get, _lsf.lim_licensekey_info_t_notice_set)
+    def __init__(self): 
+        this = _lsf.new_lim_licensekey_info_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lim_licensekey_info_t
+    __del__ = lambda self : None
+lim_licensekey_info_t_swigregister = _lsf.lim_licensekey_info_t_swigregister
+lim_licensekey_info_t_swigregister(lim_licensekey_info_t)
+
+class lim_licensekey_reply_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lim_licensekey_reply_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lim_licensekey_reply_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["maxcore"] = _lsf.lim_licensekey_reply_t_maxcore_set
+    __swig_getmethods__["maxcore"] = _lsf.lim_licensekey_reply_t_maxcore_get
+    if _newclass:maxcore = _swig_property(_lsf.lim_licensekey_reply_t_maxcore_get, _lsf.lim_licensekey_reply_t_maxcore_set)
+    __swig_setmethods__["nkey"] = _lsf.lim_licensekey_reply_t_nkey_set
+    __swig_getmethods__["nkey"] = _lsf.lim_licensekey_reply_t_nkey_get
+    if _newclass:nkey = _swig_property(_lsf.lim_licensekey_reply_t_nkey_get, _lsf.lim_licensekey_reply_t_nkey_set)
+    __swig_setmethods__["keyinfo"] = _lsf.lim_licensekey_reply_t_keyinfo_set
+    __swig_getmethods__["keyinfo"] = _lsf.lim_licensekey_reply_t_keyinfo_get
+    if _newclass:keyinfo = _swig_property(_lsf.lim_licensekey_reply_t_keyinfo_get, _lsf.lim_licensekey_reply_t_keyinfo_set)
+    def __init__(self): 
+        this = _lsf.new_lim_licensekey_reply_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lim_licensekey_reply_t
+    __del__ = lambda self : None
+lim_licensekey_reply_t_swigregister = _lsf.lim_licensekey_reply_t_swigregister
+lim_licensekey_reply_t_swigregister(lim_licensekey_reply_t)
+
+class lsfLicUsage(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, lsfLicUsage, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, lsfLicUsage, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["licUsage"] = _lsf.lsfLicUsage_licUsage_set
+    __swig_getmethods__["licUsage"] = _lsf.lsfLicUsage_licUsage_get
+    if _newclass:licUsage = _swig_property(_lsf.lsfLicUsage_licUsage_get, _lsf.lsfLicUsage_licUsage_set)
+    __swig_setmethods__["hostInfo"] = _lsf.lsfLicUsage_hostInfo_set
+    __swig_getmethods__["hostInfo"] = _lsf.lsfLicUsage_hostInfo_get
+    if _newclass:hostInfo = _swig_property(_lsf.lsfLicUsage_hostInfo_get, _lsf.lsfLicUsage_hostInfo_set)
+    __swig_setmethods__["substitution"] = _lsf.lsfLicUsage_substitution_set
+    __swig_getmethods__["substitution"] = _lsf.lsfLicUsage_substitution_get
+    if _newclass:substitution = _swig_property(_lsf.lsfLicUsage_substitution_get, _lsf.lsfLicUsage_substitution_set)
+    __swig_setmethods__["cluster"] = _lsf.lsfLicUsage_cluster_set
+    __swig_getmethods__["cluster"] = _lsf.lsfLicUsage_cluster_get
+    if _newclass:cluster = _swig_property(_lsf.lsfLicUsage_cluster_get, _lsf.lsfLicUsage_cluster_set)
+    def __init__(self): 
+        this = _lsf.new_lsfLicUsage()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_lsfLicUsage
+    __del__ = lambda self : None
+lsfLicUsage_swigregister = _lsf.lsfLicUsage_swigregister
+lsfLicUsage_swigregister(lsfLicUsage)
+
+class limHostAnnReq(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, limHostAnnReq, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, limHostAnnReq, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["nhosts"] = _lsf.limHostAnnReq_nhosts_set
+    __swig_getmethods__["nhosts"] = _lsf.limHostAnnReq_nhosts_get
+    if _newclass:nhosts = _swig_property(_lsf.limHostAnnReq_nhosts_get, _lsf.limHostAnnReq_nhosts_set)
+    __swig_setmethods__["hostnames"] = _lsf.limHostAnnReq_hostnames_set
+    __swig_getmethods__["hostnames"] = _lsf.limHostAnnReq_hostnames_get
+    if _newclass:hostnames = _swig_property(_lsf.limHostAnnReq_hostnames_get, _lsf.limHostAnnReq_hostnames_set)
+    __swig_setmethods__["count"] = _lsf.limHostAnnReq_count_set
+    __swig_getmethods__["count"] = _lsf.limHostAnnReq_count_get
+    if _newclass:count = _swig_property(_lsf.limHostAnnReq_count_get, _lsf.limHostAnnReq_count_set)
+    def __init__(self): 
+        this = _lsf.new_limHostAnnReq()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_limHostAnnReq
+    __del__ = lambda self : None
+limHostAnnReq_swigregister = _lsf.limHostAnnReq_swigregister
+limHostAnnReq_swigregister(limHostAnnReq)
+
+class param_entry(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, param_entry, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, param_entry, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["flags"] = _lsf.param_entry_flags_set
+    __swig_getmethods__["flags"] = _lsf.param_entry_flags_get
+    if _newclass:flags = _swig_property(_lsf.param_entry_flags_get, _lsf.param_entry_flags_set)
+    __swig_setmethods__["key"] = _lsf.param_entry_key_set
+    __swig_getmethods__["key"] = _lsf.param_entry_key_get
+    if _newclass:key = _swig_property(_lsf.param_entry_key_get, _lsf.param_entry_key_set)
+    __swig_setmethods__["value"] = _lsf.param_entry_value_set
+    __swig_getmethods__["value"] = _lsf.param_entry_value_get
+    if _newclass:value = _swig_property(_lsf.param_entry_value_get, _lsf.param_entry_value_set)
+    __swig_setmethods__["default_value"] = _lsf.param_entry_default_value_set
+    __swig_getmethods__["default_value"] = _lsf.param_entry_default_value_get
+    if _newclass:default_value = _swig_property(_lsf.param_entry_default_value_get, _lsf.param_entry_default_value_set)
+    def __init__(self): 
+        this = _lsf.new_param_entry()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_param_entry
+    __del__ = lambda self : None
+param_entry_swigregister = _lsf.param_entry_swigregister
+param_entry_swigregister(param_entry)
+HAS_PARAM_VALUE = _lsf.HAS_PARAM_VALUE
+HAS_PARAM_DEFAULT = _lsf.HAS_PARAM_DEFAULT
+
+class PKVP(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, PKVP, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, PKVP, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["num_params"] = _lsf.PKVP_num_params_set
+    __swig_getmethods__["num_params"] = _lsf.PKVP_num_params_get
+    if _newclass:num_params = _swig_property(_lsf.PKVP_num_params_get, _lsf.PKVP_num_params_set)
+    __swig_setmethods__["daemon_time"] = _lsf.PKVP_daemon_time_set
+    __swig_getmethods__["daemon_time"] = _lsf.PKVP_daemon_time_get
+    if _newclass:daemon_time = _swig_property(_lsf.PKVP_daemon_time_get, _lsf.PKVP_daemon_time_set)
+    __swig_setmethods__["param"] = _lsf.PKVP_param_set
+    __swig_getmethods__["param"] = _lsf.PKVP_param_get
+    if _newclass:param = _swig_property(_lsf.PKVP_param_get, _lsf.PKVP_param_set)
+    def __init__(self): 
+        this = _lsf.new_PKVP()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_PKVP
+    __del__ = lambda self : None
+PKVP_swigregister = _lsf.PKVP_swigregister
+PKVP_swigregister(PKVP)
+
+class hRusage(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, hRusage, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, hRusage, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["name"] = _lsf.hRusage_name_set
+    __swig_getmethods__["name"] = _lsf.hRusage_name_get
+    if _newclass:name = _swig_property(_lsf.hRusage_name_get, _lsf.hRusage_name_set)
+    __swig_setmethods__["mem"] = _lsf.hRusage_mem_set
+    __swig_getmethods__["mem"] = _lsf.hRusage_mem_get
+    if _newclass:mem = _swig_property(_lsf.hRusage_mem_get, _lsf.hRusage_mem_set)
+    __swig_setmethods__["swap"] = _lsf.hRusage_swap_set
+    __swig_getmethods__["swap"] = _lsf.hRusage_swap_get
+    if _newclass:swap = _swig_property(_lsf.hRusage_swap_get, _lsf.hRusage_swap_set)
+    __swig_setmethods__["utime"] = _lsf.hRusage_utime_set
+    __swig_getmethods__["utime"] = _lsf.hRusage_utime_get
+    if _newclass:utime = _swig_property(_lsf.hRusage_utime_get, _lsf.hRusage_utime_set)
+    __swig_setmethods__["stime"] = _lsf.hRusage_stime_set
+    __swig_getmethods__["stime"] = _lsf.hRusage_stime_get
+    if _newclass:stime = _swig_property(_lsf.hRusage_stime_get, _lsf.hRusage_stime_set)
+    __swig_setmethods__["hostExtendInfoPKVPs"] = _lsf.hRusage_hostExtendInfoPKVPs_set
+    __swig_getmethods__["hostExtendInfoPKVPs"] = _lsf.hRusage_hostExtendInfoPKVPs_get
+    if _newclass:hostExtendInfoPKVPs = _swig_property(_lsf.hRusage_hostExtendInfoPKVPs_get, _lsf.hRusage_hostExtendInfoPKVPs_set)
+    def __init__(self): 
+        this = _lsf.new_hRusage()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_hRusage
+    __del__ = lambda self : None
+hRusage_swigregister = _lsf.hRusage_swigregister
+hRusage_swigregister(hRusage)
+
+class jobRusagePack(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobRusagePack, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobRusagePack, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jrusage"] = _lsf.jobRusagePack_jrusage_set
+    __swig_getmethods__["jrusage"] = _lsf.jobRusagePack_jrusage_get
+    if _newclass:jrusage = _swig_property(_lsf.jobRusagePack_jrusage_get, _lsf.jobRusagePack_jrusage_set)
+    __swig_setmethods__["max_jrusage"] = _lsf.jobRusagePack_max_jrusage_set
+    __swig_getmethods__["max_jrusage"] = _lsf.jobRusagePack_max_jrusage_get
+    if _newclass:max_jrusage = _swig_property(_lsf.jobRusagePack_max_jrusage_get, _lsf.jobRusagePack_max_jrusage_set)
+    __swig_setmethods__["num_hrusage"] = _lsf.jobRusagePack_num_hrusage_set
+    __swig_getmethods__["num_hrusage"] = _lsf.jobRusagePack_num_hrusage_get
+    if _newclass:num_hrusage = _swig_property(_lsf.jobRusagePack_num_hrusage_get, _lsf.jobRusagePack_num_hrusage_set)
+    __swig_setmethods__["hrusage"] = _lsf.jobRusagePack_hrusage_set
+    __swig_getmethods__["hrusage"] = _lsf.jobRusagePack_hrusage_get
+    if _newclass:hrusage = _swig_property(_lsf.jobRusagePack_hrusage_get, _lsf.jobRusagePack_hrusage_set)
+    __swig_setmethods__["pamPid"] = _lsf.jobRusagePack_pamPid_set
+    __swig_getmethods__["pamPid"] = _lsf.jobRusagePack_pamPid_get
+    if _newclass:pamPid = _swig_property(_lsf.jobRusagePack_pamPid_get, _lsf.jobRusagePack_pamPid_set)
+    def __init__(self): 
+        this = _lsf.new_jobRusagePack()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobRusagePack
+    __del__ = lambda self : None
+jobRusagePack_swigregister = _lsf.jobRusagePack_swigregister
+jobRusagePack_swigregister(jobRusagePack)
+
+LSE_NO_ERR = _lsf.LSE_NO_ERR
+LSE_BAD_XDR = _lsf.LSE_BAD_XDR
+LSE_MSG_SYS = _lsf.LSE_MSG_SYS
+LSE_BAD_ARGS = _lsf.LSE_BAD_ARGS
+LSE_MASTR_UNKNW = _lsf.LSE_MASTR_UNKNW
+LSE_LIM_DOWN = _lsf.LSE_LIM_DOWN
+LSE_PROTOC_LIM = _lsf.LSE_PROTOC_LIM
+LSE_SOCK_SYS = _lsf.LSE_SOCK_SYS
+LSE_ACCEPT_SYS = _lsf.LSE_ACCEPT_SYS
+LSE_BAD_TASKF = _lsf.LSE_BAD_TASKF
+LSE_NO_HOST = _lsf.LSE_NO_HOST
+LSE_NO_ELHOST = _lsf.LSE_NO_ELHOST
+LSE_TIME_OUT = _lsf.LSE_TIME_OUT
+LSE_NIOS_DOWN = _lsf.LSE_NIOS_DOWN
+LSE_LIM_DENIED = _lsf.LSE_LIM_DENIED
+LSE_LIM_IGNORE = _lsf.LSE_LIM_IGNORE
+LSE_LIM_BADHOST = _lsf.LSE_LIM_BADHOST
+LSE_LIM_ALOCKED = _lsf.LSE_LIM_ALOCKED
+LSE_LIM_NLOCKED = _lsf.LSE_LIM_NLOCKED
+LSE_LIM_BADMOD = _lsf.LSE_LIM_BADMOD
+LSE_SIG_SYS = _lsf.LSE_SIG_SYS
+LSE_BAD_EXP = _lsf.LSE_BAD_EXP
+LSE_NORCHILD = _lsf.LSE_NORCHILD
+LSE_MALLOC = _lsf.LSE_MALLOC
+LSE_LSFCONF = _lsf.LSE_LSFCONF
+LSE_BAD_ENV = _lsf.LSE_BAD_ENV
+LSE_LIM_NREG = _lsf.LSE_LIM_NREG
+LSE_RES_NREG = _lsf.LSE_RES_NREG
+LSE_RES_NOMORECONN = _lsf.LSE_RES_NOMORECONN
+LSE_BADUSER = _lsf.LSE_BADUSER
+LSE_RES_ROOTSECURE = _lsf.LSE_RES_ROOTSECURE
+LSE_RES_DENIED = _lsf.LSE_RES_DENIED
+LSE_BAD_OPCODE = _lsf.LSE_BAD_OPCODE
+LSE_PROTOC_RES = _lsf.LSE_PROTOC_RES
+LSE_RES_CALLBACK = _lsf.LSE_RES_CALLBACK
+LSE_RES_NOMEM = _lsf.LSE_RES_NOMEM
+LSE_RES_FATAL = _lsf.LSE_RES_FATAL
+LSE_RES_PTY = _lsf.LSE_RES_PTY
+LSE_RES_SOCK = _lsf.LSE_RES_SOCK
+LSE_RES_FORK = _lsf.LSE_RES_FORK
+LSE_NOMORE_SOCK = _lsf.LSE_NOMORE_SOCK
+LSE_WDIR = _lsf.LSE_WDIR
+LSE_LOSTCON = _lsf.LSE_LOSTCON
+LSE_RES_INVCHILD = _lsf.LSE_RES_INVCHILD
+LSE_RES_KILL = _lsf.LSE_RES_KILL
+LSE_PTYMODE = _lsf.LSE_PTYMODE
+LSE_BAD_HOST = _lsf.LSE_BAD_HOST
+LSE_PROTOC_NIOS = _lsf.LSE_PROTOC_NIOS
+LSE_WAIT_SYS = _lsf.LSE_WAIT_SYS
+LSE_SETPARAM = _lsf.LSE_SETPARAM
+LSE_RPIDLISTLEN = _lsf.LSE_RPIDLISTLEN
+LSE_BAD_CLUSTER = _lsf.LSE_BAD_CLUSTER
+LSE_RES_VERSION = _lsf.LSE_RES_VERSION
+LSE_EXECV_SYS = _lsf.LSE_EXECV_SYS
+LSE_RES_DIR = _lsf.LSE_RES_DIR
+LSE_RES_DIRW = _lsf.LSE_RES_DIRW
+LSE_BAD_SERVID = _lsf.LSE_BAD_SERVID
+LSE_NLSF_HOST = _lsf.LSE_NLSF_HOST
+LSE_UNKWN_RESNAME = _lsf.LSE_UNKWN_RESNAME
+LSE_UNKWN_RESVALUE = _lsf.LSE_UNKWN_RESVALUE
+LSE_TASKEXIST = _lsf.LSE_TASKEXIST
+LSE_BAD_TID = _lsf.LSE_BAD_TID
+LSE_TOOMANYTASK = _lsf.LSE_TOOMANYTASK
+LSE_LIMIT_SYS = _lsf.LSE_LIMIT_SYS
+LSE_BAD_NAMELIST = _lsf.LSE_BAD_NAMELIST
+LSE_NO_LICENSE = _lsf.LSE_NO_LICENSE
+LSE_LIM_NOMEM = _lsf.LSE_LIM_NOMEM
+LSE_NIO_INIT = _lsf.LSE_NIO_INIT
+LSE_CONF_SYNTAX = _lsf.LSE_CONF_SYNTAX
+LSE_FILE_SYS = _lsf.LSE_FILE_SYS
+LSE_CONN_SYS = _lsf.LSE_CONN_SYS
+LSE_SELECT_SYS = _lsf.LSE_SELECT_SYS
+LSE_EOF = _lsf.LSE_EOF
+LSE_ACCT_FORMAT = _lsf.LSE_ACCT_FORMAT
+LSE_BAD_TIME = _lsf.LSE_BAD_TIME
+LSE_FORK = _lsf.LSE_FORK
+LSE_PIPE = _lsf.LSE_PIPE
+LSE_ESUB = _lsf.LSE_ESUB
+LSE_DCE_EXEC = _lsf.LSE_DCE_EXEC
+LSE_EAUTH = _lsf.LSE_EAUTH
+LSE_NO_FILE = _lsf.LSE_NO_FILE
+LSE_NO_CHAN = _lsf.LSE_NO_CHAN
+LSE_BAD_CHAN = _lsf.LSE_BAD_CHAN
+LSE_INTERNAL = _lsf.LSE_INTERNAL
+LSE_PROTOCOL = _lsf.LSE_PROTOCOL
+LSE_THRD_SYS = _lsf.LSE_THRD_SYS
+LSE_MISC_SYS = _lsf.LSE_MISC_SYS
+LSE_LOGON_FAIL = _lsf.LSE_LOGON_FAIL
+LSE_RES_RUSAGE = _lsf.LSE_RES_RUSAGE
+LSE_NO_RESOURCE = _lsf.LSE_NO_RESOURCE
+LSE_BAD_RESOURCE = _lsf.LSE_BAD_RESOURCE
+LSE_RES_PARENT = _lsf.LSE_RES_PARENT
+LSE_NO_PASSWD = _lsf.LSE_NO_PASSWD
+LSE_SUDOERS_CONF = _lsf.LSE_SUDOERS_CONF
+LSE_SUDOERS_ROOT = _lsf.LSE_SUDOERS_ROOT
+LSE_I18N_SETLC = _lsf.LSE_I18N_SETLC
+LSE_I18N_CATOPEN = _lsf.LSE_I18N_CATOPEN
+LSE_I18N_NOMEM = _lsf.LSE_I18N_NOMEM
+LSE_NO_MEM = _lsf.LSE_NO_MEM
+LSE_REGISTRY_SYS = _lsf.LSE_REGISTRY_SYS
+LSE_FILE_CLOSE = _lsf.LSE_FILE_CLOSE
+LSE_LIMCONF_NOTREADY = _lsf.LSE_LIMCONF_NOTREADY
+LSE_MASTER_LIM_DOWN = _lsf.LSE_MASTER_LIM_DOWN
+LSE_MLS_INVALID = _lsf.LSE_MLS_INVALID
+LSE_MLS_CLEARANCE = _lsf.LSE_MLS_CLEARANCE
+LSE_MLS_RHOST = _lsf.LSE_MLS_RHOST
+LSE_MLS_DOMINATE = _lsf.LSE_MLS_DOMINATE
+LSE_NO_CAL = _lsf.LSE_NO_CAL
+LSE_NO_NETWORK = _lsf.LSE_NO_NETWORK
+LSE_GETCONF_FAILED = _lsf.LSE_GETCONF_FAILED
+LSE_TSSINIT = _lsf.LSE_TSSINIT
+LSE_DYNM_DENIED = _lsf.LSE_DYNM_DENIED
+LSE_LIC_OVERUSE = _lsf.LSE_LIC_OVERUSE
+LSE_EGOCONF = _lsf.LSE_EGOCONF
+LSE_BAD_EGO_ENV = _lsf.LSE_BAD_EGO_ENV
+LSE_EGO_CONF_SYNTAX = _lsf.LSE_EGO_CONF_SYNTAX
+LSE_EGO_GETCONF_FAILED = _lsf.LSE_EGO_GETCONF_FAILED
+LSE_NS_LOOKUP = _lsf.LSE_NS_LOOKUP
+LSE_BAD_PASSWD = _lsf.LSE_BAD_PASSWD
+LSE_UNKWN_USER = _lsf.LSE_UNKWN_USER
+LSE_NOT_WINHOST = _lsf.LSE_NOT_WINHOST
+LSE_NOT_MASTERCAND = _lsf.LSE_NOT_MASTERCAND
+LSE_HOST_UNAUTH = _lsf.LSE_HOST_UNAUTH
+LSE_UNRESOLVALBE_HOST = _lsf.LSE_UNRESOLVALBE_HOST
+LSE_RESOURCE_NOT_CONSUMABLE = _lsf.LSE_RESOURCE_NOT_CONSUMABLE
+LSE_SHUTDOWN = _lsf.LSE_SHUTDOWN
+LSE_BAD_SYNTAX = _lsf.LSE_BAD_SYNTAX
+LSE_LIVE_PERSIST = _lsf.LSE_LIVE_PERSIST
+LSE_LIVE_FAIL = _lsf.LSE_LIVE_FAIL
+LSE_BAD_HOST_TYPE = _lsf.LSE_BAD_HOST_TYPE
+LSE_INVALID_LICENSE = _lsf.LSE_INVALID_LICENSE
+LSE_NO_ENTITLEMENT = _lsf.LSE_NO_ENTITLEMENT
+LSE_SLOTS_IN_RUSAGE = _lsf.LSE_SLOTS_IN_RUSAGE
+LSE_INVALID_EXCLAMATION_MARK = _lsf.LSE_INVALID_EXCLAMATION_MARK
+LSE_INVALID_MASTERHOSTS_NUMBER = _lsf.LSE_INVALID_MASTERHOSTS_NUMBER
+LSE_REMOVE_JOBVM = _lsf.LSE_REMOVE_JOBVM
+LSE_INVALID_AFFINITY_RESREQ = _lsf.LSE_INVALID_AFFINITY_RESREQ
+LSE_IP_RESOLVABLE_HOST = _lsf.LSE_IP_RESOLVABLE_HOST
+LSE_FAILED_UPD_REGHOST_DATA = _lsf.LSE_FAILED_UPD_REGHOST_DATA
+LSE_HS_BAD_AFTER_BRACKT = _lsf.LSE_HS_BAD_AFTER_BRACKT
+LSE_HS_NO_END_INDEX = _lsf.LSE_HS_NO_END_INDEX
+LSE_HS_BAD_COMMA = _lsf.LSE_HS_BAD_COMMA
+LSE_HS_BAD_FORMAT = _lsf.LSE_HS_BAD_FORMAT
+LSE_HS_BAD_ORDER = _lsf.LSE_HS_BAD_ORDER
+LSE_HS_BAD_MANY_DIGITS = _lsf.LSE_HS_BAD_MANY_DIGITS
+LSE_HS_BAD_NUM_DIGITS = _lsf.LSE_HS_BAD_NUM_DIGITS
+LSE_HS_BAD_END_INDEX = _lsf.LSE_HS_BAD_END_INDEX
+LSE_HS_BAD_INDEX = _lsf.LSE_HS_BAD_INDEX
+LSE_ASKED_HOSTS_NUMBER = _lsf.LSE_ASKED_HOSTS_NUMBER
+LSE_NO_SPACE = _lsf.LSE_NO_SPACE
+LSE_NO_GPUINFO = _lsf.LSE_NO_GPUINFO
+LSE_NO_CPUBIND_INFO = _lsf.LSE_NO_CPUBIND_INFO
+LSE_GPU_COMPACT_USAGE_ENABLED = _lsf.LSE_GPU_COMPACT_USAGE_ENABLED
+LSE_NERR = _lsf.LSE_NERR
+class funcProfileParams(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, funcProfileParams, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, funcProfileParams, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["flags"] = _lsf.funcProfileParams_flags_set
+    __swig_getmethods__["flags"] = _lsf.funcProfileParams_flags_get
+    if _newclass:flags = _swig_property(_lsf.funcProfileParams_flags_get, _lsf.funcProfileParams_flags_set)
+    __swig_setmethods__["timeLevel"] = _lsf.funcProfileParams_timeLevel_set
+    __swig_getmethods__["timeLevel"] = _lsf.funcProfileParams_timeLevel_get
+    if _newclass:timeLevel = _swig_property(_lsf.funcProfileParams_timeLevel_get, _lsf.funcProfileParams_timeLevel_set)
+    __swig_setmethods__["interval"] = _lsf.funcProfileParams_interval_set
+    __swig_getmethods__["interval"] = _lsf.funcProfileParams_interval_get
+    if _newclass:interval = _swig_property(_lsf.funcProfileParams_interval_get, _lsf.funcProfileParams_interval_set)
+    __swig_setmethods__["threshold"] = _lsf.funcProfileParams_threshold_set
+    __swig_getmethods__["threshold"] = _lsf.funcProfileParams_threshold_get
+    if _newclass:threshold = _swig_property(_lsf.funcProfileParams_threshold_get, _lsf.funcProfileParams_threshold_set)
+    __swig_setmethods__["logLevel"] = _lsf.funcProfileParams_logLevel_set
+    __swig_getmethods__["logLevel"] = _lsf.funcProfileParams_logLevel_get
+    if _newclass:logLevel = _swig_property(_lsf.funcProfileParams_logLevel_get, _lsf.funcProfileParams_logLevel_set)
+    __swig_setmethods__["logfunc"] = _lsf.funcProfileParams_logfunc_set
+    __swig_getmethods__["logfunc"] = _lsf.funcProfileParams_logfunc_get
+    if _newclass:logfunc = _swig_property(_lsf.funcProfileParams_logfunc_get, _lsf.funcProfileParams_logfunc_set)
+    def __init__(self): 
+        this = _lsf.new_funcProfileParams()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_funcProfileParams
+    __del__ = lambda self : None
+funcProfileParams_swigregister = _lsf.funcProfileParams_swigregister
+funcProfileParams_swigregister(funcProfileParams)
+PROFILE_FLAG_ENABLE = _lsf.PROFILE_FLAG_ENABLE
+PROFILE_FLAG_TIMELEVEL = _lsf.PROFILE_FLAG_TIMELEVEL
+PROFILE_FLAG_INTERVAL = _lsf.PROFILE_FLAG_INTERVAL
+PROFILE_FLAG_THRESHOLD = _lsf.PROFILE_FLAG_THRESHOLD
+PROFILE_FLAG_LOGLEVEL = _lsf.PROFILE_FLAG_LOGLEVEL
+PROFILE_FLAG_LOGFUNC = _lsf.PROFILE_FLAG_LOGFUNC
+
+
+def funcProfile_parseConfig(*args):
+  return _lsf.funcProfile_parseConfig(*args)
+funcProfile_parseConfig = _lsf.funcProfile_parseConfig
+
+def funcProfile_init(*args):
+  return _lsf.funcProfile_init(*args)
+funcProfile_init = _lsf.funcProfile_init
+
+def funcProfile_enterFunc(*args):
+  return _lsf.funcProfile_enterFunc(*args)
+funcProfile_enterFunc = _lsf.funcProfile_enterFunc
+
+def funcProfile_leaveFunc(*args):
+  return _lsf.funcProfile_leaveFunc(*args)
+funcProfile_leaveFunc = _lsf.funcProfile_leaveFunc
+
+def funcProfile_trackTime(*args):
+  return _lsf.funcProfile_trackTime(*args)
+funcProfile_trackTime = _lsf.funcProfile_trackTime
+class LS_TIMEVAL_T(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LS_TIMEVAL_T, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LS_TIMEVAL_T, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["rtime"] = _lsf.LS_TIMEVAL_T_rtime_set
+    __swig_getmethods__["rtime"] = _lsf.LS_TIMEVAL_T_rtime_get
+    if _newclass:rtime = _swig_property(_lsf.LS_TIMEVAL_T_rtime_get, _lsf.LS_TIMEVAL_T_rtime_set)
+    __swig_setmethods__["utime"] = _lsf.LS_TIMEVAL_T_utime_set
+    __swig_getmethods__["utime"] = _lsf.LS_TIMEVAL_T_utime_get
+    if _newclass:utime = _swig_property(_lsf.LS_TIMEVAL_T_utime_get, _lsf.LS_TIMEVAL_T_utime_set)
+    __swig_setmethods__["stime"] = _lsf.LS_TIMEVAL_T_stime_set
+    __swig_getmethods__["stime"] = _lsf.LS_TIMEVAL_T_stime_get
+    if _newclass:stime = _swig_property(_lsf.LS_TIMEVAL_T_stime_get, _lsf.LS_TIMEVAL_T_stime_set)
+    def __init__(self): 
+        this = _lsf.new_LS_TIMEVAL_T()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LS_TIMEVAL_T
+    __del__ = lambda self : None
+LS_TIMEVAL_T_swigregister = _lsf.LS_TIMEVAL_T_swigregister
+LS_TIMEVAL_T_swigregister(LS_TIMEVAL_T)
+
+LC_SCHED = _lsf.LC_SCHED
+LC_EXEC = _lsf.LC_EXEC
+LC_TRACE = _lsf.LC_TRACE
+LC_COMM = _lsf.LC_COMM
+LC_XDR = _lsf.LC_XDR
+LC_CHKPNT = _lsf.LC_CHKPNT
+LC_LICENCE = _lsf.LC_LICENCE
+LC_LICENSE = _lsf.LC_LICENSE
+LC_FILE = _lsf.LC_FILE
+LC_AFS = _lsf.LC_AFS
+LC_AUTH = _lsf.LC_AUTH
+LC_HANG = _lsf.LC_HANG
+LC_MULTI = _lsf.LC_MULTI
+LC_SIGNAL = _lsf.LC_SIGNAL
+LC_DCE = _lsf.LC_DCE
+LC_PIM = _lsf.LC_PIM
+LC_MEMORY = _lsf.LC_MEMORY
+LC_SYS = _lsf.LC_SYS
+LC_JLIMIT = _lsf.LC_JLIMIT
+LC_FAIR = _lsf.LC_FAIR
+LC_PREEMPT = _lsf.LC_PREEMPT
+LC_PEND = _lsf.LC_PEND
+LC_EEVENTD = _lsf.LC_EEVENTD
+LC_LOADINDX = _lsf.LC_LOADINDX
+LC_RESOURCE = _lsf.LC_RESOURCE
+LC_JGRP = _lsf.LC_JGRP
+LC_JARRAY = _lsf.LC_JARRAY
+LC_MPI = _lsf.LC_MPI
+LC_ELIM = _lsf.LC_ELIM
+LC_M_LOG = _lsf.LC_M_LOG
+LC_PERFM = _lsf.LC_PERFM
+LC_DLOG = _lsf.LC_DLOG
+LC_HPC = _lsf.LC_HPC
+LC_LICSCHED = _lsf.LC_LICSCHED
+LC_XDRVERSION = _lsf.LC_XDRVERSION
+LC_FLEX = _lsf.LC_FLEX
+LC_ADVRSV = _lsf.LC_ADVRSV
+LC_RESREQ = _lsf.LC_RESREQ
+LC2_SCHED = _lsf.LC2_SCHED
+LC2_EXEC = _lsf.LC2_EXEC
+LC2_TRACE = _lsf.LC2_TRACE
+LC2_COMM = _lsf.LC2_COMM
+LC2_XDR = _lsf.LC2_XDR
+LC2_CHKPNT = _lsf.LC2_CHKPNT
+LC2_LICENCE = _lsf.LC2_LICENCE
+LC2_LICENSE = _lsf.LC2_LICENSE
+LC2_FILE = _lsf.LC2_FILE
+LC2_AFS = _lsf.LC2_AFS
+LC2_AUTH = _lsf.LC2_AUTH
+LC2_HANG = _lsf.LC2_HANG
+LC2_MULTI = _lsf.LC2_MULTI
+LC2_SIGNAL = _lsf.LC2_SIGNAL
+LC2_DCE = _lsf.LC2_DCE
+LC2_PIM = _lsf.LC2_PIM
+LC2_MEMORY = _lsf.LC2_MEMORY
+LC2_SYS = _lsf.LC2_SYS
+LC2_JLIMIT = _lsf.LC2_JLIMIT
+LC2_FAIR = _lsf.LC2_FAIR
+LC2_PREEMPT = _lsf.LC2_PREEMPT
+LC2_PEND = _lsf.LC2_PEND
+LC2_EEVENTD = _lsf.LC2_EEVENTD
+LC2_LOADINDX = _lsf.LC2_LOADINDX
+LC2_RESOURCE = _lsf.LC2_RESOURCE
+LC2_JGRP = _lsf.LC2_JGRP
+LC2_JARRAY = _lsf.LC2_JARRAY
+LC2_MPI = _lsf.LC2_MPI
+LC2_ELIM = _lsf.LC2_ELIM
+LC2_M_LOG = _lsf.LC2_M_LOG
+LC2_PERFM = _lsf.LC2_PERFM
+LC2_DLOG = _lsf.LC2_DLOG
+LC2_HPC = _lsf.LC2_HPC
+LC2_LICSCHED = _lsf.LC2_LICSCHED
+LC2_XDRVERSION = _lsf.LC2_XDRVERSION
+LC2_FLEX = _lsf.LC2_FLEX
+LC2_ADVRSV = _lsf.LC2_ADVRSV
+LC2_RESREQ = _lsf.LC2_RESREQ
+LC2_USER1 = _lsf.LC2_USER1
+LC2_USER2 = _lsf.LC2_USER2
+LC2_SCHMOD_DEFAULT = _lsf.LC2_SCHMOD_DEFAULT
+LC2_SCHMOD_FCFS = _lsf.LC2_SCHMOD_FCFS
+LC2_SCHMOD_FAIRSHARE = _lsf.LC2_SCHMOD_FAIRSHARE
+LC2_SCHMOD_LIMIT = _lsf.LC2_SCHMOD_LIMIT
+LC2_SCHMOD_PARALLEL = _lsf.LC2_SCHMOD_PARALLEL
+LC2_SCHMOD_RESERVE = _lsf.LC2_SCHMOD_RESERVE
+LC2_SCHMOD_MC = _lsf.LC2_SCHMOD_MC
+LC2_SCHMOD_PREEMPTION = _lsf.LC2_SCHMOD_PREEMPTION
+LC2_SCHMOD_ADVRSV = _lsf.LC2_SCHMOD_ADVRSV
+LC2_SCHMOD_PS = _lsf.LC2_SCHMOD_PS
+LC2_SCHMOD_APS = _lsf.LC2_SCHMOD_APS
+LC2_SCHMOD_CPUSET = _lsf.LC2_SCHMOD_CPUSET
+LC2_GUARANTEE = _lsf.LC2_GUARANTEE
+LC2_INTERNAL_TEST = _lsf.LC2_INTERNAL_TEST
+LC2_LIVECONF = _lsf.LC2_LIVECONF
+LC2_PERFTIME = _lsf.LC2_PERFTIME
+LC2_MC_RESOURCE = _lsf.LC2_MC_RESOURCE
+LC2_ENTITLEMENT = _lsf.LC2_ENTITLEMENT
+LC2_KRB = _lsf.LC2_KRB
+LC2_DC = _lsf.LC2_DC
+LC2_CGROUP = _lsf.LC2_CGROUP
+LC2_TOPOLOGY = _lsf.LC2_TOPOLOGY
+LC2_AFFINITY = _lsf.LC2_AFFINITY
+LC2_LSF_PE = _lsf.LC2_LSF_PE
+LC2_G_FAIR = _lsf.LC2_G_FAIR
+LC2_HOST_POWER = _lsf.LC2_HOST_POWER
+LC2_FANOUT = _lsf.LC2_FANOUT
+LC2_BLAUNCH = _lsf.LC2_BLAUNCH
+LC2_EAS = _lsf.LC2_EAS
+LC2_DAS = _lsf.LC2_DAS
+LC2_EST = _lsf.LC2_EST
+LC2_JOBINFO_CACHE = _lsf.LC2_JOBINFO_CACHE
+LC2_RC = _lsf.LC2_RC
+LC2_DOCKER = _lsf.LC2_DOCKER
+LC2_CONTAINER = _lsf.LC2_CONTAINER
+LSF_EVENT_LIM_DOWN = _lsf.LSF_EVENT_LIM_DOWN
+LSF_EVENT_RES_DOWN = _lsf.LSF_EVENT_RES_DOWN
+LSF_EVENT_SBD_DOWN = _lsf.LSF_EVENT_SBD_DOWN
+LSF_EVENT_HOST_UNLIC = _lsf.LSF_EVENT_HOST_UNLIC
+LSF_EVENT_MASTER_ELECT = _lsf.LSF_EVENT_MASTER_ELECT
+LSF_EVENT_MASTER_RESIGN = _lsf.LSF_EVENT_MASTER_RESIGN
+LSF_EVENT_MBD_UP = _lsf.LSF_EVENT_MBD_UP
+LSF_EVENT_MBD_DOWN = _lsf.LSF_EVENT_MBD_DOWN
+LSF_EVENT_MBD_RECONFIG = _lsf.LSF_EVENT_MBD_RECONFIG
+LSF_EVENT_WORKDIR_FULL = _lsf.LSF_EVENT_WORKDIR_FULL
+LSF_EVENT_HOST_OPENED = _lsf.LSF_EVENT_HOST_OPENED
+LSF_EVENT_HOST_CLOSED = _lsf.LSF_EVENT_HOST_CLOSED
+LSF_EVENT_QUEUE_OPENED = _lsf.LSF_EVENT_QUEUE_OPENED
+LSF_EVENT_QUEUE_CLOSED = _lsf.LSF_EVENT_QUEUE_CLOSED
+LSF_EVENT_SCH_DOWN = _lsf.LSF_EVENT_SCH_DOWN
+LSF_EVENT_LIC_OVERUSE = _lsf.LSF_EVENT_LIC_OVERUSE
+LSF_EVENT_EBROKERD_DOWN = _lsf.LSF_EVENT_EBROKERD_DOWN
+LSF_NIOS_REQUEUE = _lsf.LSF_NIOS_REQUEUE
+
+def ls_readconfenv(*args):
+  return _lsf.ls_readconfenv(*args)
+ls_readconfenv = _lsf.ls_readconfenv
+
+def ls_placereq(*args):
+  return _lsf.ls_placereq(*args)
+ls_placereq = _lsf.ls_placereq
+
+def ls_placeofhosts(*args):
+  return _lsf.ls_placeofhosts(*args)
+ls_placeofhosts = _lsf.ls_placeofhosts
+
+def ls_load(*args):
+  return _lsf.ls_load(*args)
+ls_load = _lsf.ls_load
+
+def set_loadinfo_UseTcp():
+  return _lsf.set_loadinfo_UseTcp()
+set_loadinfo_UseTcp = _lsf.set_loadinfo_UseTcp
+
+def ls_loadofhosts(*args):
+  return _lsf.ls_loadofhosts(*args)
+ls_loadofhosts = _lsf.ls_loadofhosts
+
+def ls_loadinfo(*args):
+  return _lsf.ls_loadinfo(*args)
+ls_loadinfo = _lsf.ls_loadinfo
+
+def ls_loadadj(*args):
+  return _lsf.ls_loadadj(*args)
+ls_loadadj = _lsf.ls_loadadj
+
+def ls_eligible(*args):
+  return _lsf.ls_eligible(*args)
+ls_eligible = _lsf.ls_eligible
+
+def ls_resreq(*args):
+  return _lsf.ls_resreq(*args)
+ls_resreq = _lsf.ls_resreq
+
+def ls_insertrtask(*args):
+  return _lsf.ls_insertrtask(*args)
+ls_insertrtask = _lsf.ls_insertrtask
+
+def ls_insertltask(*args):
+  return _lsf.ls_insertltask(*args)
+ls_insertltask = _lsf.ls_insertltask
+
+def ls_deletertask(*args):
+  return _lsf.ls_deletertask(*args)
+ls_deletertask = _lsf.ls_deletertask
+
+def ls_deleteltask(*args):
+  return _lsf.ls_deleteltask(*args)
+ls_deleteltask = _lsf.ls_deleteltask
+
+def ls_listrtask(*args):
+  return _lsf.ls_listrtask(*args)
+ls_listrtask = _lsf.ls_listrtask
+
+def ls_listltask(*args):
+  return _lsf.ls_listltask(*args)
+ls_listltask = _lsf.ls_listltask
+
+def ls_findmyconnections():
+  return _lsf.ls_findmyconnections()
+ls_findmyconnections = _lsf.ls_findmyconnections
+
+def ls_isconnected(*args):
+  return _lsf.ls_isconnected(*args)
+ls_isconnected = _lsf.ls_isconnected
+
+def ls_getclustername():
+  return _lsf.ls_getclustername()
+ls_getclustername = _lsf.ls_getclustername
+
+def ls_clusterinfo(*args):
+  return _lsf.ls_clusterinfo(*args)
+ls_clusterinfo = _lsf.ls_clusterinfo
+
+def ls_sharedresourceinfo(*args):
+  return _lsf.ls_sharedresourceinfo(*args)
+ls_sharedresourceinfo = _lsf.ls_sharedresourceinfo
+
+def ls_getmastername():
+  return _lsf.ls_getmastername()
+ls_getmastername = _lsf.ls_getmastername
+
+def ls_getmyhostname():
+  return _lsf.ls_getmyhostname()
+ls_getmyhostname = _lsf.ls_getmyhostname
+
+def ls_getmyhostname2():
+  return _lsf.ls_getmyhostname2()
+ls_getmyhostname2 = _lsf.ls_getmyhostname2
+
+def ls_gethostinfo(*args):
+  return _lsf.ls_gethostinfo(*args)
+ls_gethostinfo = _lsf.ls_gethostinfo
+
+def ls_getISVmode():
+  return _lsf.ls_getISVmode()
+ls_getISVmode = _lsf.ls_getISVmode
+
+def ls_isshutdown():
+  return _lsf.ls_isshutdown()
+ls_isshutdown = _lsf.ls_isshutdown
+
+def ls_isPartialLicensingEnabled():
+  return _lsf.ls_isPartialLicensingEnabled()
+ls_isPartialLicensingEnabled = _lsf.ls_isPartialLicensingEnabled
+
+def ls_info():
+  return _lsf.ls_info()
+ls_info = _lsf.ls_info
+
+def ls_indexnames(*args):
+  return _lsf.ls_indexnames(*args)
+ls_indexnames = _lsf.ls_indexnames
+
+def ls_isclustername(*args):
+  return _lsf.ls_isclustername(*args)
+ls_isclustername = _lsf.ls_isclustername
+
+def ls_gethosttype(*args):
+  return _lsf.ls_gethosttype(*args)
+ls_gethosttype = _lsf.ls_gethosttype
+
+def ls_getmodelfactor(*args):
+  return _lsf.ls_getmodelfactor(*args)
+ls_getmodelfactor = _lsf.ls_getmodelfactor
+
+def ls_gethostfactor(*args):
+  return _lsf.ls_gethostfactor(*args)
+ls_gethostfactor = _lsf.ls_gethostfactor
+
+def ls_gethostfactor4GridBroker(*args):
+  return _lsf.ls_gethostfactor4GridBroker(*args)
+ls_gethostfactor4GridBroker = _lsf.ls_gethostfactor4GridBroker
+
+def ls_gethostmodel(*args):
+  return _lsf.ls_gethostmodel(*args)
+ls_gethostmodel = _lsf.ls_gethostmodel
+
+def ls_lockhost(*args):
+  return _lsf.ls_lockhost(*args)
+ls_lockhost = _lsf.ls_lockhost
+
+def ls_unlockhost():
+  return _lsf.ls_unlockhost()
+ls_unlockhost = _lsf.ls_unlockhost
+
+def ls_limcontrol(*args):
+  return _lsf.ls_limcontrol(*args)
+ls_limcontrol = _lsf.ls_limcontrol
+
+def ls_remtty(*args):
+  return _lsf.ls_remtty(*args)
+ls_remtty = _lsf.ls_remtty
+
+def ls_loctty(*args):
+  return _lsf.ls_loctty(*args)
+ls_loctty = _lsf.ls_loctty
+
+def ls_sysmsg():
+  return _lsf.ls_sysmsg()
+ls_sysmsg = _lsf.ls_sysmsg
+
+def ls_perror(*args):
+  return _lsf.ls_perror(*args)
+ls_perror = _lsf.ls_perror
+
+def ls_getconf(*args):
+  return _lsf.ls_getconf(*args)
+ls_getconf = _lsf.ls_getconf
+
+def ls_freeconf(*args):
+  return _lsf.ls_freeconf(*args)
+ls_freeconf = _lsf.ls_freeconf
+
+def ls_readshared(*args):
+  return _lsf.ls_readshared(*args)
+ls_readshared = _lsf.ls_readshared
+
+def ls_readcluster(*args):
+  return _lsf.ls_readcluster(*args)
+ls_readcluster = _lsf.ls_readcluster
+
+def ls_readcluster_ex(*args):
+  return _lsf.ls_readcluster_ex(*args)
+ls_readcluster_ex = _lsf.ls_readcluster_ex
+
+def getAdminID_r(*args):
+  return _lsf.getAdminID_r(*args)
+getAdminID_r = _lsf.getAdminID_r
+
+def _ls_initdebug(*args):
+  return _lsf._ls_initdebug(*args)
+_ls_initdebug = _lsf._ls_initdebug
+
+def ls_syslog(*args):
+  return _lsf.ls_syslog(*args)
+ls_syslog = _lsf.ls_syslog
+
+def ls_errlog(*args):
+  return _lsf.ls_errlog(*args)
+ls_errlog = _lsf.ls_errlog
+
+def ls_fdbusy(*args):
+  return _lsf.ls_fdbusy(*args)
+ls_fdbusy = _lsf.ls_fdbusy
+
+def ls_getmnthost(*args):
+  return _lsf.ls_getmnthost(*args)
+ls_getmnthost = _lsf.ls_getmnthost
+
+def ls_servavail(*args):
+  return _lsf.ls_servavail(*args)
+ls_servavail = _lsf.ls_servavail
+
+def ls_getpriority(*args):
+  return _lsf.ls_getpriority(*args)
+ls_getpriority = _lsf.ls_getpriority
+
+def ls_setpriority(*args):
+  return _lsf.ls_setpriority(*args)
+ls_setpriority = _lsf.ls_setpriority
+
+def ls_ruunix2lsf(*args):
+  return _lsf.ls_ruunix2lsf(*args)
+ls_ruunix2lsf = _lsf.ls_ruunix2lsf
+
+def ls_rulsf2unix(*args):
+  return _lsf.ls_rulsf2unix(*args)
+ls_rulsf2unix = _lsf.ls_rulsf2unix
+
+def cleanLsfRusage(*args):
+  return _lsf.cleanLsfRusage(*args)
+cleanLsfRusage = _lsf.cleanLsfRusage
+
+def cleanRusage(*args):
+  return _lsf.cleanRusage(*args)
+cleanRusage = _lsf.cleanRusage
+
+def ls_postevent(*args):
+  return _lsf.ls_postevent(*args)
+ls_postevent = _lsf.ls_postevent
+
+def ls_postmultievent(*args):
+  return _lsf.ls_postmultievent(*args)
+ls_postmultievent = _lsf.ls_postmultievent
+
+def ls_limhostann(*args):
+  return _lsf.ls_limhostann(*args)
+ls_limhostann = _lsf.ls_limhostann
+
+def ls_freelim_licensekey(*args):
+  return _lsf.ls_freelim_licensekey(*args)
+ls_freelim_licensekey = _lsf.ls_freelim_licensekey
+
+def ls_freelim_licensekey_reply(*args):
+  return _lsf.ls_freelim_licensekey_reply(*args)
+ls_freelim_licensekey_reply = _lsf.ls_freelim_licensekey_reply
+
+def ls_getLicenseInfo(*args):
+  return _lsf.ls_getLicenseInfo(*args)
+ls_getLicenseInfo = _lsf.ls_getLicenseInfo
+
+def ls_getentitlementinfo(*args):
+  return _lsf.ls_getentitlementinfo(*args)
+ls_getentitlementinfo = _lsf.ls_getentitlementinfo
+
+def ls_freeentitlementinfo(*args):
+  return _lsf.ls_freeentitlementinfo(*args)
+ls_freeentitlementinfo = _lsf.ls_freeentitlementinfo
+
+def ls_isASCEntitled():
+  return _lsf.ls_isASCEntitled()
+ls_isASCEntitled = _lsf.ls_isASCEntitled
+
+def ls_isConductorEntitled():
+  return _lsf.ls_isConductorEntitled()
+ls_isConductorEntitled = _lsf.ls_isConductorEntitled
+class extResInfo(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, extResInfo, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, extResInfo, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["name"] = _lsf.extResInfo_name_set
+    __swig_getmethods__["name"] = _lsf.extResInfo_name_get
+    if _newclass:name = _swig_property(_lsf.extResInfo_name_get, _lsf.extResInfo_name_set)
+    __swig_setmethods__["type"] = _lsf.extResInfo_type_set
+    __swig_getmethods__["type"] = _lsf.extResInfo_type_get
+    if _newclass:type = _swig_property(_lsf.extResInfo_type_get, _lsf.extResInfo_type_set)
+    __swig_setmethods__["interval"] = _lsf.extResInfo_interval_set
+    __swig_getmethods__["interval"] = _lsf.extResInfo_interval_get
+    if _newclass:interval = _swig_property(_lsf.extResInfo_interval_get, _lsf.extResInfo_interval_set)
+    __swig_setmethods__["increasing"] = _lsf.extResInfo_increasing_set
+    __swig_getmethods__["increasing"] = _lsf.extResInfo_increasing_get
+    if _newclass:increasing = _swig_property(_lsf.extResInfo_increasing_get, _lsf.extResInfo_increasing_set)
+    __swig_setmethods__["des"] = _lsf.extResInfo_des_set
+    __swig_getmethods__["des"] = _lsf.extResInfo_des_get
+    if _newclass:des = _swig_property(_lsf.extResInfo_des_get, _lsf.extResInfo_des_set)
+    def __init__(self): 
+        this = _lsf.new_extResInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_extResInfo
+    __del__ = lambda self : None
+extResInfo_swigregister = _lsf.extResInfo_swigregister
+extResInfo_swigregister(extResInfo)
+
+MAXFULLFILENAMELEN = _lsf.MAXFULLFILENAMELEN
+MAXFULLPATHNAMELEN = _lsf.MAXFULLPATHNAMELEN
+MAXFULLMSGSIZE = _lsf.MAXFULLMSGSIZE
+UNKNOWN_AUTO_DETECT = _lsf.UNKNOWN_AUTO_DETECT
+LiC_ACTION_ADDMEMBER = _lsf.LiC_ACTION_ADDMEMBER
+LiC_ACTION_RMMEMBER = _lsf.LiC_ACTION_RMMEMBER
+LiC_ACTION_UPDATE = _lsf.LiC_ACTION_UPDATE
+LiC_ACTION_CREATE = _lsf.LiC_ACTION_CREATE
+LiC_ACTION_DELETE = _lsf.LiC_ACTION_DELETE
+LiC_ACTION_ENFORCEDELETE = _lsf.LiC_ACTION_ENFORCEDELETE
+LiC_ACTION_DISABLE = _lsf.LiC_ACTION_DISABLE
+LiC_ACTION_END = _lsf.LiC_ACTION_END
+LiC_OBJECT_USER = _lsf.LiC_OBJECT_USER
+LiC_OBJECT_USERGROUP = _lsf.LiC_OBJECT_USERGROUP
+LiC_OBJECT_HOST = _lsf.LiC_OBJECT_HOST
+LiC_OBJECT_HOSTGROUP = _lsf.LiC_OBJECT_HOSTGROUP
+LiC_OBJECT_HOSTPARTITION = _lsf.LiC_OBJECT_HOSTPARTITION
+LiC_OBJECT_QUEUE = _lsf.LiC_OBJECT_QUEUE
+LiC_OBJECT_LIMIT = _lsf.LiC_OBJECT_LIMIT
+LiC_OBJECT_APPLICATION = _lsf.LiC_OBJECT_APPLICATION
+LiC_OBJECT_COMPUTEUNIT = _lsf.LiC_OBJECT_COMPUTEUNIT
+LiC_OBJECT_GUARPOOL = _lsf.LiC_OBJECT_GUARPOOL
+LiC_OBJECT_SERVICECLASS = _lsf.LiC_OBJECT_SERVICECLASS
+LiC_OBJECT_ADVRSV = _lsf.LiC_OBJECT_ADVRSV
+LiC_OBJECT_RESOURCEMAP = _lsf.LiC_OBJECT_RESOURCEMAP
+LiC_OBJECT_RESOURCERSV = _lsf.LiC_OBJECT_RESOURCERSV
+LiC_OBJECT_BASE_HOST = _lsf.LiC_OBJECT_BASE_HOST
+LiC_OBJECT_END = _lsf.LiC_OBJECT_END
+class LiveConfReq(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LiveConfReq, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LiveConfReq, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["actions"] = _lsf.LiveConfReq_actions_set
+    __swig_getmethods__["actions"] = _lsf.LiveConfReq_actions_get
+    if _newclass:actions = _swig_property(_lsf.LiveConfReq_actions_get, _lsf.LiveConfReq_actions_set)
+    __swig_setmethods__["object_type"] = _lsf.LiveConfReq_object_type_set
+    __swig_getmethods__["object_type"] = _lsf.LiveConfReq_object_type_get
+    if _newclass:object_type = _swig_property(_lsf.LiveConfReq_object_type_get, _lsf.LiveConfReq_object_type_set)
+    __swig_setmethods__["identity"] = _lsf.LiveConfReq_identity_set
+    __swig_getmethods__["identity"] = _lsf.LiveConfReq_identity_get
+    if _newclass:identity = _swig_property(_lsf.LiveConfReq_identity_get, _lsf.LiveConfReq_identity_set)
+    __swig_setmethods__["key_value"] = _lsf.LiveConfReq_key_value_set
+    __swig_getmethods__["key_value"] = _lsf.LiveConfReq_key_value_get
+    if _newclass:key_value = _swig_property(_lsf.LiveConfReq_key_value_get, _lsf.LiveConfReq_key_value_set)
+    __swig_setmethods__["comments"] = _lsf.LiveConfReq_comments_set
+    __swig_getmethods__["comments"] = _lsf.LiveConfReq_comments_get
+    if _newclass:comments = _swig_property(_lsf.LiveConfReq_comments_get, _lsf.LiveConfReq_comments_set)
+    __swig_setmethods__["seq"] = _lsf.LiveConfReq_seq_set
+    __swig_getmethods__["seq"] = _lsf.LiveConfReq_seq_get
+    if _newclass:seq = _swig_property(_lsf.LiveConfReq_seq_get, _lsf.LiveConfReq_seq_set)
+    def __init__(self): 
+        this = _lsf.new_LiveConfReq()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LiveConfReq
+    __del__ = lambda self : None
+LiveConfReq_swigregister = _lsf.LiveConfReq_swigregister
+LiveConfReq_swigregister(LiveConfReq)
+
+LiC_REMOVE_ACTIVE_REQ = _lsf.LiC_REMOVE_ACTIVE_REQ
+NO_SA = _lsf.NO_SA
+DESKTOP_SA = _lsf.DESKTOP_SA
+SERVER_SA = _lsf.SERVER_SA
+VM_SA = _lsf.VM_SA
+PU_NONE = _lsf.PU_NONE
+PU_HOST = _lsf.PU_HOST
+PU_NUMA = _lsf.PU_NUMA
+PU_SOCKET = _lsf.PU_SOCKET
+PU_CORE = _lsf.PU_CORE
+PU_THREAD = _lsf.PU_THREAD
+PU_MAX = _lsf.PU_MAX
+MEMBIND_UNDEFINED = _lsf.MEMBIND_UNDEFINED
+MEMBIND_LOCALONLY = _lsf.MEMBIND_LOCALONLY
+MEMBIND_LOCALPREFER = _lsf.MEMBIND_LOCALPREFER
+DISTRIBUTE_UNDEFINED = _lsf.DISTRIBUTE_UNDEFINED
+DISTRIBUTE_ANY = _lsf.DISTRIBUTE_ANY
+DISTRIBUTE_BALANCE = _lsf.DISTRIBUTE_BALANCE
+DISTRIBUTE_PACK = _lsf.DISTRIBUTE_PACK
+
+def buildPIMFileFormat(*args):
