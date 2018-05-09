@@ -1,0 +1,1084 @@
+_JOB_SWITCH
+LSB_RMT_JOB_MOVE = _lsf.LSB_RMT_JOB_MOVE
+LSB_RMT_JOB_RUN = _lsf.LSB_RMT_JOB_RUN
+LSB_RMT_JOBCTRL_NONE = _lsf.LSB_RMT_JOBCTRL_NONE
+LSB_RMT_JOBCTRL_INIT = _lsf.LSB_RMT_JOBCTRL_INIT
+LSB_RMT_JOBCTRL_REQ_SENT = _lsf.LSB_RMT_JOBCTRL_REQ_SENT
+LSB_RMT_JOBCTRL_REQ_RCVD = _lsf.LSB_RMT_JOBCTRL_REQ_RCVD
+LSB_RMT_JOBCTRL_REPLY_RCVD = _lsf.LSB_RMT_JOBCTRL_REPLY_RCVD
+LSB_RMT_JOBCTRL_ACK_RCVD = _lsf.LSB_RMT_JOBCTRL_ACK_RCVD
+class rmtJobCtrlRecord(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, rmtJobCtrlRecord, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, rmtJobCtrlRecord, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["rmtCluster"] = _lsf.rmtJobCtrlRecord_rmtCluster_set
+    __swig_getmethods__["rmtCluster"] = _lsf.rmtJobCtrlRecord_rmtCluster_get
+    if _newclass:rmtCluster = _swig_property(_lsf.rmtJobCtrlRecord_rmtCluster_get, _lsf.rmtJobCtrlRecord_rmtCluster_set)
+    __swig_setmethods__["rmtJobCtrlId"] = _lsf.rmtJobCtrlRecord_rmtJobCtrlId_set
+    __swig_getmethods__["rmtJobCtrlId"] = _lsf.rmtJobCtrlRecord_rmtJobCtrlId_get
+    if _newclass:rmtJobCtrlId = _swig_property(_lsf.rmtJobCtrlRecord_rmtJobCtrlId_get, _lsf.rmtJobCtrlRecord_rmtJobCtrlId_set)
+    __swig_setmethods__["numSuccJobId"] = _lsf.rmtJobCtrlRecord_numSuccJobId_set
+    __swig_getmethods__["numSuccJobId"] = _lsf.rmtJobCtrlRecord_numSuccJobId_get
+    if _newclass:numSuccJobId = _swig_property(_lsf.rmtJobCtrlRecord_numSuccJobId_get, _lsf.rmtJobCtrlRecord_numSuccJobId_set)
+    __swig_setmethods__["succJobIdArray"] = _lsf.rmtJobCtrlRecord_succJobIdArray_set
+    __swig_getmethods__["succJobIdArray"] = _lsf.rmtJobCtrlRecord_succJobIdArray_get
+    if _newclass:succJobIdArray = _swig_property(_lsf.rmtJobCtrlRecord_succJobIdArray_get, _lsf.rmtJobCtrlRecord_succJobIdArray_set)
+    __swig_setmethods__["numFailJobId"] = _lsf.rmtJobCtrlRecord_numFailJobId_set
+    __swig_getmethods__["numFailJobId"] = _lsf.rmtJobCtrlRecord_numFailJobId_get
+    if _newclass:numFailJobId = _swig_property(_lsf.rmtJobCtrlRecord_numFailJobId_get, _lsf.rmtJobCtrlRecord_numFailJobId_set)
+    __swig_setmethods__["failJobIdArray"] = _lsf.rmtJobCtrlRecord_failJobIdArray_set
+    __swig_getmethods__["failJobIdArray"] = _lsf.rmtJobCtrlRecord_failJobIdArray_get
+    if _newclass:failJobIdArray = _swig_property(_lsf.rmtJobCtrlRecord_failJobIdArray_get, _lsf.rmtJobCtrlRecord_failJobIdArray_set)
+    __swig_setmethods__["failReason"] = _lsf.rmtJobCtrlRecord_failReason_set
+    __swig_getmethods__["failReason"] = _lsf.rmtJobCtrlRecord_failReason_get
+    if _newclass:failReason = _swig_property(_lsf.rmtJobCtrlRecord_failReason_get, _lsf.rmtJobCtrlRecord_failReason_set)
+    def __init__(self): 
+        this = _lsf.new_rmtJobCtrlRecord()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_rmtJobCtrlRecord
+    __del__ = lambda self : None
+rmtJobCtrlRecord_swigregister = _lsf.rmtJobCtrlRecord_swigregister
+rmtJobCtrlRecord_swigregister(rmtJobCtrlRecord)
+
+LSB_SJA_FORCE = _lsf.LSB_SJA_FORCE
+class jobArrayIndex(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobArrayIndex, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobArrayIndex, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["indexRangeCnt"] = _lsf.jobArrayIndex_indexRangeCnt_set
+    __swig_getmethods__["indexRangeCnt"] = _lsf.jobArrayIndex_indexRangeCnt_get
+    if _newclass:indexRangeCnt = _swig_property(_lsf.jobArrayIndex_indexRangeCnt_get, _lsf.jobArrayIndex_indexRangeCnt_set)
+    __swig_setmethods__["indexRangeStart"] = _lsf.jobArrayIndex_indexRangeStart_set
+    __swig_getmethods__["indexRangeStart"] = _lsf.jobArrayIndex_indexRangeStart_get
+    if _newclass:indexRangeStart = _swig_property(_lsf.jobArrayIndex_indexRangeStart_get, _lsf.jobArrayIndex_indexRangeStart_set)
+    __swig_setmethods__["indexRangeEnd"] = _lsf.jobArrayIndex_indexRangeEnd_set
+    __swig_getmethods__["indexRangeEnd"] = _lsf.jobArrayIndex_indexRangeEnd_get
+    if _newclass:indexRangeEnd = _swig_property(_lsf.jobArrayIndex_indexRangeEnd_get, _lsf.jobArrayIndex_indexRangeEnd_set)
+    __swig_setmethods__["indexRangeStep"] = _lsf.jobArrayIndex_indexRangeStep_set
+    __swig_getmethods__["indexRangeStep"] = _lsf.jobArrayIndex_indexRangeStep_get
+    if _newclass:indexRangeStep = _swig_property(_lsf.jobArrayIndex_indexRangeStep_get, _lsf.jobArrayIndex_indexRangeStep_set)
+    def __init__(self): 
+        this = _lsf.new_jobArrayIndex()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobArrayIndex
+    __del__ = lambda self : None
+jobArrayIndex_swigregister = _lsf.jobArrayIndex_swigregister
+jobArrayIndex_swigregister(jobArrayIndex)
+
+class jobArrayID(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobArrayID, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobArrayID, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["baseID"] = _lsf.jobArrayID_baseID_set
+    __swig_getmethods__["baseID"] = _lsf.jobArrayID_baseID_get
+    if _newclass:baseID = _swig_property(_lsf.jobArrayID_baseID_get, _lsf.jobArrayID_baseID_set)
+    __swig_setmethods__["arrayIndex"] = _lsf.jobArrayID_arrayIndex_set
+    __swig_getmethods__["arrayIndex"] = _lsf.jobArrayID_arrayIndex_get
+    if _newclass:arrayIndex = _swig_property(_lsf.jobArrayID_arrayIndex_get, _lsf.jobArrayID_arrayIndex_set)
+    def __init__(self): 
+        this = _lsf.new_jobArrayID()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobArrayID
+    __del__ = lambda self : None
+jobArrayID_swigregister = _lsf.jobArrayID_swigregister
+jobArrayID_swigregister(jobArrayID)
+
+class rmtJobCtrlRecord2(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, rmtJobCtrlRecord2, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, rmtJobCtrlRecord2, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["rmtCluster"] = _lsf.rmtJobCtrlRecord2_rmtCluster_set
+    __swig_getmethods__["rmtCluster"] = _lsf.rmtJobCtrlRecord2_rmtCluster_get
+    if _newclass:rmtCluster = _swig_property(_lsf.rmtJobCtrlRecord2_rmtCluster_get, _lsf.rmtJobCtrlRecord2_rmtCluster_set)
+    __swig_setmethods__["rmtJobCtrlId"] = _lsf.rmtJobCtrlRecord2_rmtJobCtrlId_set
+    __swig_getmethods__["rmtJobCtrlId"] = _lsf.rmtJobCtrlRecord2_rmtJobCtrlId_get
+    if _newclass:rmtJobCtrlId = _swig_property(_lsf.rmtJobCtrlRecord2_rmtJobCtrlId_get, _lsf.rmtJobCtrlRecord2_rmtJobCtrlId_set)
+    __swig_setmethods__["numSuccJobId"] = _lsf.rmtJobCtrlRecord2_numSuccJobId_set
+    __swig_getmethods__["numSuccJobId"] = _lsf.rmtJobCtrlRecord2_numSuccJobId_get
+    if _newclass:numSuccJobId = _swig_property(_lsf.rmtJobCtrlRecord2_numSuccJobId_get, _lsf.rmtJobCtrlRecord2_numSuccJobId_set)
+    __swig_setmethods__["succJobIdArray"] = _lsf.rmtJobCtrlRecord2_succJobIdArray_set
+    __swig_getmethods__["succJobIdArray"] = _lsf.rmtJobCtrlRecord2_succJobIdArray_get
+    if _newclass:succJobIdArray = _swig_property(_lsf.rmtJobCtrlRecord2_succJobIdArray_get, _lsf.rmtJobCtrlRecord2_succJobIdArray_set)
+    __swig_setmethods__["numFailJobId"] = _lsf.rmtJobCtrlRecord2_numFailJobId_set
+    __swig_getmethods__["numFailJobId"] = _lsf.rmtJobCtrlRecord2_numFailJobId_get
+    if _newclass:numFailJobId = _swig_property(_lsf.rmtJobCtrlRecord2_numFailJobId_get, _lsf.rmtJobCtrlRecord2_numFailJobId_set)
+    __swig_setmethods__["failJobIdArray"] = _lsf.rmtJobCtrlRecord2_failJobIdArray_set
+    __swig_getmethods__["failJobIdArray"] = _lsf.rmtJobCtrlRecord2_failJobIdArray_get
+    if _newclass:failJobIdArray = _swig_property(_lsf.rmtJobCtrlRecord2_failJobIdArray_get, _lsf.rmtJobCtrlRecord2_failJobIdArray_set)
+    __swig_setmethods__["failReason"] = _lsf.rmtJobCtrlRecord2_failReason_set
+    __swig_getmethods__["failReason"] = _lsf.rmtJobCtrlRecord2_failReason_get
+    if _newclass:failReason = _swig_property(_lsf.rmtJobCtrlRecord2_failReason_get, _lsf.rmtJobCtrlRecord2_failReason_set)
+    def __init__(self): 
+        this = _lsf.new_rmtJobCtrlRecord2()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_rmtJobCtrlRecord2
+    __del__ = lambda self : None
+rmtJobCtrlRecord2_swigregister = _lsf.rmtJobCtrlRecord2_swigregister
+rmtJobCtrlRecord2_swigregister(rmtJobCtrlRecord2)
+
+ALL_USERS = _lsf.ALL_USERS
+ALL_JOB = _lsf.ALL_JOB
+DONE_JOB = _lsf.DONE_JOB
+PEND_JOB = _lsf.PEND_JOB
+SUSP_JOB = _lsf.SUSP_JOB
+CUR_JOB = _lsf.CUR_JOB
+LAST_JOB = _lsf.LAST_JOB
+RUN_JOB = _lsf.RUN_JOB
+JOBID_ONLY = _lsf.JOBID_ONLY
+HOST_NAME = _lsf.HOST_NAME
+EXIT_JOB = _lsf.EXIT_JOB
+NO_PEND_REASONS = _lsf.NO_PEND_REASONS
+JGRP_INFO = _lsf.JGRP_INFO
+JGRP_RECURSIVE = _lsf.JGRP_RECURSIVE
+JGRP_ARRAY_INFO = _lsf.JGRP_ARRAY_INFO
+JOBID_ONLY_ALL = _lsf.JOBID_ONLY_ALL
+ZOMBIE_JOB = _lsf.ZOMBIE_JOB
+TRANSPARENT_MC = _lsf.TRANSPARENT_MC
+EXCEPT_JOB = _lsf.EXCEPT_JOB
+MUREX_JOB = _lsf.MUREX_JOB
+ALLOC_FILE = _lsf.ALLOC_FILE
+FORWARDED_JOB = _lsf.FORWARDED_JOB
+SYM_TOP_LEVEL_ONLY = _lsf.SYM_TOP_LEVEL_ONLY
+FILTER_RECALLED_JOBS = _lsf.FILTER_RECALLED_JOBS
+JGRP_NAME = _lsf.JGRP_NAME
+COND_HOSTNAME = _lsf.COND_HOSTNAME
+FROM_BJOBSCMD = _lsf.FROM_BJOBSCMD
+WITH_LOPTION = _lsf.WITH_LOPTION
+APS_JOB = _lsf.APS_JOB
+UGRP_INFO = _lsf.UGRP_INFO
+TIME_LEFT = _lsf.TIME_LEFT
+FINISH_TIME = _lsf.FINISH_TIME
+COM_PERCENTAGE = _lsf.COM_PERCENTAGE
+SSCHED_JOB = _lsf.SSCHED_JOB
+NON_INTERACTIVE_JOB = _lsf.NON_INTERACTIVE_JOB
+REMOTE_PENDING_JOB = _lsf.REMOTE_PENDING_JOB
+MR_JOB = _lsf.MR_JOB
+PEND_JOB_ELIGIBLE = _lsf.PEND_JOB_ELIGIBLE
+PEND_JOB_INELIGIBLE = _lsf.PEND_JOB_INELIGIBLE
+PEND_JOB_ELIGIBLE_AND_INELIGIBLE = _lsf.PEND_JOB_ELIGIBLE_AND_INELIGIBLE
+PEND_JOB_ELIGIBLE_WITH_PEND = _lsf.PEND_JOB_ELIGIBLE_WITH_PEND
+OLD_PEND_MSG = _lsf.OLD_PEND_MSG
+PEND_REASON_SUM = _lsf.PEND_REASON_SUM
+JOB_RUSAGE_FILTER = _lsf.JOB_RUSAGE_FILTER
+CJSON_JOB = _lsf.CJSON_JOB
+IGNORE_JOB = _lsf.IGNORE_JOB
+TIME_FORMAT = _lsf.TIME_FORMAT
+JGRP_NODE_JOB = _lsf.JGRP_NODE_JOB
+JGRP_NODE_GROUP = _lsf.JGRP_NODE_GROUP
+JGRP_NODE_ARRAY = _lsf.JGRP_NODE_ARRAY
+JGRP_NODE_SLA = _lsf.JGRP_NODE_SLA
+LSB_MAX_ARRAY_JOBID = _lsf.LSB_MAX_ARRAY_JOBID
+LSB_MAX_ARRAY_IDX = _lsf.LSB_MAX_ARRAY_IDX
+LSB_MAX_SEDJOB_RUNID = _lsf.LSB_MAX_SEDJOB_RUNID
+JGRP_INACTIVE = _lsf.JGRP_INACTIVE
+JGRP_ACTIVE = _lsf.JGRP_ACTIVE
+JGRP_HOLD = _lsf.JGRP_HOLD
+JGRP_UNDEFINED = _lsf.JGRP_UNDEFINED
+JGRP_RELEASE = _lsf.JGRP_RELEASE
+JGRP_DEL = _lsf.JGRP_DEL
+JGRP_COUNT_NJOBS = _lsf.JGRP_COUNT_NJOBS
+JGRP_COUNT_PEND = _lsf.JGRP_COUNT_PEND
+JGRP_COUNT_NPSUSP = _lsf.JGRP_COUNT_NPSUSP
+JGRP_COUNT_NRUN = _lsf.JGRP_COUNT_NRUN
+JGRP_COUNT_NSSUSP = _lsf.JGRP_COUNT_NSSUSP
+JGRP_COUNT_NUSUSP = _lsf.JGRP_COUNT_NUSUSP
+JGRP_COUNT_NEXIT = _lsf.JGRP_COUNT_NEXIT
+JGRP_COUNT_NDONE = _lsf.JGRP_COUNT_NDONE
+JGRP_COUNT_NJOBS_SLOTS = _lsf.JGRP_COUNT_NJOBS_SLOTS
+JGRP_COUNT_PEND_SLOTS = _lsf.JGRP_COUNT_PEND_SLOTS
+JGRP_COUNT_RUN_SLOTS = _lsf.JGRP_COUNT_RUN_SLOTS
+JGRP_COUNT_SSUSP_SLOTS = _lsf.JGRP_COUNT_SSUSP_SLOTS
+JGRP_COUNT_USUSP_SLOTS = _lsf.JGRP_COUNT_USUSP_SLOTS
+JGRP_COUNT_RESV_SLOTS = _lsf.JGRP_COUNT_RESV_SLOTS
+JGRP_MOD_LIMIT = _lsf.JGRP_MOD_LIMIT
+JGRP_MOD_OWNER = _lsf.JGRP_MOD_OWNER
+JGRP_MOD_OWNER_EVENT = _lsf.JGRP_MOD_OWNER_EVENT
+NUM_JGRP_JOB_COUNTERS = _lsf.NUM_JGRP_JOB_COUNTERS
+NUM_JGRP_COUNTERS = _lsf.NUM_JGRP_COUNTERS
+JGRP_CREATE_EXP = _lsf.JGRP_CREATE_EXP
+JGRP_CREATE_IMP = _lsf.JGRP_CREATE_IMP
+class jgrp(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jgrp, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jgrp, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["name"] = _lsf.jgrp_name_set
+    __swig_getmethods__["name"] = _lsf.jgrp_name_get
+    if _newclass:name = _swig_property(_lsf.jgrp_name_get, _lsf.jgrp_name_set)
+    __swig_setmethods__["path"] = _lsf.jgrp_path_set
+    __swig_getmethods__["path"] = _lsf.jgrp_path_get
+    if _newclass:path = _swig_property(_lsf.jgrp_path_get, _lsf.jgrp_path_set)
+    __swig_setmethods__["user"] = _lsf.jgrp_user_set
+    __swig_getmethods__["user"] = _lsf.jgrp_user_get
+    if _newclass:user = _swig_property(_lsf.jgrp_user_get, _lsf.jgrp_user_set)
+    __swig_setmethods__["sla"] = _lsf.jgrp_sla_set
+    __swig_getmethods__["sla"] = _lsf.jgrp_sla_get
+    if _newclass:sla = _swig_property(_lsf.jgrp_sla_get, _lsf.jgrp_sla_set)
+    __swig_setmethods__["counters"] = _lsf.jgrp_counters_set
+    __swig_getmethods__["counters"] = _lsf.jgrp_counters_get
+    if _newclass:counters = _swig_property(_lsf.jgrp_counters_get, _lsf.jgrp_counters_set)
+    __swig_setmethods__["maxJLimit"] = _lsf.jgrp_maxJLimit_set
+    __swig_getmethods__["maxJLimit"] = _lsf.jgrp_maxJLimit_get
+    if _newclass:maxJLimit = _swig_property(_lsf.jgrp_maxJLimit_get, _lsf.jgrp_maxJLimit_set)
+    def __init__(self): 
+        this = _lsf.new_jgrp()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jgrp
+    __del__ = lambda self : None
+jgrp_swigregister = _lsf.jgrp_swigregister
+jgrp_swigregister(jgrp)
+
+class jobAttrInfoEnt(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobAttrInfoEnt, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobAttrInfoEnt, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jobId"] = _lsf.jobAttrInfoEnt_jobId_set
+    __swig_getmethods__["jobId"] = _lsf.jobAttrInfoEnt_jobId_get
+    if _newclass:jobId = _swig_property(_lsf.jobAttrInfoEnt_jobId_get, _lsf.jobAttrInfoEnt_jobId_set)
+    __swig_setmethods__["port"] = _lsf.jobAttrInfoEnt_port_set
+    __swig_getmethods__["port"] = _lsf.jobAttrInfoEnt_port_get
+    if _newclass:port = _swig_property(_lsf.jobAttrInfoEnt_port_get, _lsf.jobAttrInfoEnt_port_set)
+    __swig_setmethods__["hostname"] = _lsf.jobAttrInfoEnt_hostname_set
+    __swig_getmethods__["hostname"] = _lsf.jobAttrInfoEnt_hostname_get
+    if _newclass:hostname = _swig_property(_lsf.jobAttrInfoEnt_hostname_get, _lsf.jobAttrInfoEnt_hostname_set)
+    def __init__(self): 
+        this = _lsf.new_jobAttrInfoEnt()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobAttrInfoEnt
+    __del__ = lambda self : None
+jobAttrInfoEnt_swigregister = _lsf.jobAttrInfoEnt_swigregister
+jobAttrInfoEnt_swigregister(jobAttrInfoEnt)
+
+class jobAttrSetLog(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobAttrSetLog, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobAttrSetLog, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jobId"] = _lsf.jobAttrSetLog_jobId_set
+    __swig_getmethods__["jobId"] = _lsf.jobAttrSetLog_jobId_get
+    if _newclass:jobId = _swig_property(_lsf.jobAttrSetLog_jobId_get, _lsf.jobAttrSetLog_jobId_set)
+    __swig_setmethods__["idx"] = _lsf.jobAttrSetLog_idx_set
+    __swig_getmethods__["idx"] = _lsf.jobAttrSetLog_idx_get
+    if _newclass:idx = _swig_property(_lsf.jobAttrSetLog_idx_get, _lsf.jobAttrSetLog_idx_set)
+    __swig_setmethods__["uid"] = _lsf.jobAttrSetLog_uid_set
+    __swig_getmethods__["uid"] = _lsf.jobAttrSetLog_uid_get
+    if _newclass:uid = _swig_property(_lsf.jobAttrSetLog_uid_get, _lsf.jobAttrSetLog_uid_set)
+    __swig_setmethods__["port"] = _lsf.jobAttrSetLog_port_set
+    __swig_getmethods__["port"] = _lsf.jobAttrSetLog_port_get
+    if _newclass:port = _swig_property(_lsf.jobAttrSetLog_port_get, _lsf.jobAttrSetLog_port_set)
+    __swig_setmethods__["hostname"] = _lsf.jobAttrSetLog_hostname_set
+    __swig_getmethods__["hostname"] = _lsf.jobAttrSetLog_hostname_get
+    if _newclass:hostname = _swig_property(_lsf.jobAttrSetLog_hostname_get, _lsf.jobAttrSetLog_hostname_set)
+    def __init__(self): 
+        this = _lsf.new_jobAttrSetLog()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobAttrSetLog
+    __del__ = lambda self : None
+jobAttrSetLog_swigregister = _lsf.jobAttrSetLog_swigregister
+jobAttrSetLog_swigregister(jobAttrSetLog)
+
+class reasonRefString(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, reasonRefString, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, reasonRefString, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["strId"] = _lsf.reasonRefString_strId_set
+    __swig_getmethods__["strId"] = _lsf.reasonRefString_strId_get
+    if _newclass:strId = _swig_property(_lsf.reasonRefString_strId_get, _lsf.reasonRefString_strId_set)
+    __swig_setmethods__["refStr"] = _lsf.reasonRefString_refStr_set
+    __swig_getmethods__["refStr"] = _lsf.reasonRefString_refStr_get
+    if _newclass:refStr = _swig_property(_lsf.reasonRefString_refStr_get, _lsf.reasonRefString_refStr_set)
+    def __init__(self): 
+        this = _lsf.new_reasonRefString()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_reasonRefString
+    __del__ = lambda self : None
+reasonRefString_swigregister = _lsf.reasonRefString_swigregister
+reasonRefString_swigregister(reasonRefString)
+
+class reasonRefStrTab(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, reasonRefStrTab, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, reasonRefStrTab, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["tabId"] = _lsf.reasonRefStrTab_tabId_set
+    __swig_getmethods__["tabId"] = _lsf.reasonRefStrTab_tabId_get
+    if _newclass:tabId = _swig_property(_lsf.reasonRefStrTab_tabId_get, _lsf.reasonRefStrTab_tabId_set)
+    __swig_setmethods__["refStrCnt"] = _lsf.reasonRefStrTab_refStrCnt_set
+    __swig_getmethods__["refStrCnt"] = _lsf.reasonRefStrTab_refStrCnt_get
+    if _newclass:refStrCnt = _swig_property(_lsf.reasonRefStrTab_refStrCnt_get, _lsf.reasonRefStrTab_refStrCnt_set)
+    __swig_setmethods__["refString"] = _lsf.reasonRefStrTab_refString_set
+    __swig_getmethods__["refString"] = _lsf.reasonRefStrTab_refString_get
+    if _newclass:refString = _swig_property(_lsf.reasonRefStrTab_refString_get, _lsf.reasonRefStrTab_refString_set)
+    def __init__(self): 
+        this = _lsf.new_reasonRefStrTab()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_reasonRefStrTab
+    __del__ = lambda self : None
+reasonRefStrTab_swigregister = _lsf.reasonRefStrTab_swigregister
+reasonRefStrTab_swigregister(reasonRefStrTab)
+
+class LSB_ReasonMsgConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LSB_ReasonMsgConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LSB_ReasonMsgConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["reasonIdCnt"] = _lsf.LSB_ReasonMsgConf_reasonIdCnt_set
+    __swig_getmethods__["reasonIdCnt"] = _lsf.LSB_ReasonMsgConf_reasonIdCnt_get
+    if _newclass:reasonIdCnt = _swig_property(_lsf.LSB_ReasonMsgConf_reasonIdCnt_get, _lsf.LSB_ReasonMsgConf_reasonIdCnt_set)
+    __swig_setmethods__["reasonId"] = _lsf.LSB_ReasonMsgConf_reasonId_set
+    __swig_getmethods__["reasonId"] = _lsf.LSB_ReasonMsgConf_reasonId_get
+    if _newclass:reasonId = _swig_property(_lsf.LSB_ReasonMsgConf_reasonId_get, _lsf.LSB_ReasonMsgConf_reasonId_set)
+    __swig_setmethods__["reasonMsg"] = _lsf.LSB_ReasonMsgConf_reasonMsg_set
+    __swig_getmethods__["reasonMsg"] = _lsf.LSB_ReasonMsgConf_reasonMsg_get
+    if _newclass:reasonMsg = _swig_property(_lsf.LSB_ReasonMsgConf_reasonMsg_get, _lsf.LSB_ReasonMsgConf_reasonMsg_set)
+    def __init__(self): 
+        this = _lsf.new_LSB_ReasonMsgConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LSB_ReasonMsgConf
+    __del__ = lambda self : None
+LSB_ReasonMsgConf_swigregister = _lsf.LSB_ReasonMsgConf_swigregister
+LSB_ReasonMsgConf_swigregister(LSB_ReasonMsgConf)
+
+class LSB_RsrcConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LSB_RsrcConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LSB_RsrcConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["rsrcName"] = _lsf.LSB_RsrcConf_rsrcName_set
+    __swig_getmethods__["rsrcName"] = _lsf.LSB_RsrcConf_rsrcName_get
+    if _newclass:rsrcName = _swig_property(_lsf.LSB_RsrcConf_rsrcName_get, _lsf.LSB_RsrcConf_rsrcName_set)
+    __swig_setmethods__["rsrcPriority"] = _lsf.LSB_RsrcConf_rsrcPriority_set
+    __swig_getmethods__["rsrcPriority"] = _lsf.LSB_RsrcConf_rsrcPriority_get
+    if _newclass:rsrcPriority = _swig_property(_lsf.LSB_RsrcConf_rsrcPriority_get, _lsf.LSB_RsrcConf_rsrcPriority_set)
+    __swig_setmethods__["reasonMsg"] = _lsf.LSB_RsrcConf_reasonMsg_set
+    __swig_getmethods__["reasonMsg"] = _lsf.LSB_RsrcConf_reasonMsg_get
+    if _newclass:reasonMsg = _swig_property(_lsf.LSB_RsrcConf_reasonMsg_get, _lsf.LSB_RsrcConf_reasonMsg_set)
+    def __init__(self): 
+        this = _lsf.new_LSB_RsrcConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LSB_RsrcConf
+    __del__ = lambda self : None
+LSB_RsrcConf_swigregister = _lsf.LSB_RsrcConf_swigregister
+LSB_RsrcConf_swigregister(LSB_RsrcConf)
+
+class LSB_ReasonConf(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, LSB_ReasonConf, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, LSB_ReasonConf, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["reasonMsgCnt"] = _lsf.LSB_ReasonConf_reasonMsgCnt_set
+    __swig_getmethods__["reasonMsgCnt"] = _lsf.LSB_ReasonConf_reasonMsgCnt_get
+    if _newclass:reasonMsgCnt = _swig_property(_lsf.LSB_ReasonConf_reasonMsgCnt_get, _lsf.LSB_ReasonConf_reasonMsgCnt_set)
+    __swig_setmethods__["reasonMsgConf"] = _lsf.LSB_ReasonConf_reasonMsgConf_set
+    __swig_getmethods__["reasonMsgConf"] = _lsf.LSB_ReasonConf_reasonMsgConf_get
+    if _newclass:reasonMsgConf = _swig_property(_lsf.LSB_ReasonConf_reasonMsgConf_get, _lsf.LSB_ReasonConf_reasonMsgConf_set)
+    __swig_setmethods__["rsrcCnt"] = _lsf.LSB_ReasonConf_rsrcCnt_set
+    __swig_getmethods__["rsrcCnt"] = _lsf.LSB_ReasonConf_rsrcCnt_get
+    if _newclass:rsrcCnt = _swig_property(_lsf.LSB_ReasonConf_rsrcCnt_get, _lsf.LSB_ReasonConf_rsrcCnt_set)
+    __swig_setmethods__["rsrcConf"] = _lsf.LSB_ReasonConf_rsrcConf_set
+    __swig_getmethods__["rsrcConf"] = _lsf.LSB_ReasonConf_rsrcConf_get
+    if _newclass:rsrcConf = _swig_property(_lsf.LSB_ReasonConf_rsrcConf_get, _lsf.LSB_ReasonConf_rsrcConf_set)
+    __swig_setmethods__["priorityConfCnt"] = _lsf.LSB_ReasonConf_priorityConfCnt_set
+    __swig_getmethods__["priorityConfCnt"] = _lsf.LSB_ReasonConf_priorityConfCnt_get
+    if _newclass:priorityConfCnt = _swig_property(_lsf.LSB_ReasonConf_priorityConfCnt_get, _lsf.LSB_ReasonConf_priorityConfCnt_set)
+    __swig_setmethods__["msgConfCnt"] = _lsf.LSB_ReasonConf_msgConfCnt_set
+    __swig_getmethods__["msgConfCnt"] = _lsf.LSB_ReasonConf_msgConfCnt_get
+    if _newclass:msgConfCnt = _swig_property(_lsf.LSB_ReasonConf_msgConfCnt_get, _lsf.LSB_ReasonConf_msgConfCnt_set)
+    def __init__(self): 
+        this = _lsf.new_LSB_ReasonConf()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_LSB_ReasonConf
+    __del__ = lambda self : None
+LSB_ReasonConf_swigregister = _lsf.LSB_ReasonConf_swigregister
+LSB_ReasonConf_swigregister(LSB_ReasonConf)
+
+class jobInfoHead(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobInfoHead, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobInfoHead, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numJobs"] = _lsf.jobInfoHead_numJobs_set
+    __swig_getmethods__["numJobs"] = _lsf.jobInfoHead_numJobs_get
+    if _newclass:numJobs = _swig_property(_lsf.jobInfoHead_numJobs_get, _lsf.jobInfoHead_numJobs_set)
+    __swig_setmethods__["jobIds"] = _lsf.jobInfoHead_jobIds_set
+    __swig_getmethods__["jobIds"] = _lsf.jobInfoHead_jobIds_get
+    if _newclass:jobIds = _swig_property(_lsf.jobInfoHead_jobIds_get, _lsf.jobInfoHead_jobIds_set)
+    __swig_setmethods__["numHosts"] = _lsf.jobInfoHead_numHosts_set
+    __swig_getmethods__["numHosts"] = _lsf.jobInfoHead_numHosts_get
+    if _newclass:numHosts = _swig_property(_lsf.jobInfoHead_numHosts_get, _lsf.jobInfoHead_numHosts_set)
+    __swig_setmethods__["hostNames"] = _lsf.jobInfoHead_hostNames_set
+    __swig_getmethods__["hostNames"] = _lsf.jobInfoHead_hostNames_get
+    if _newclass:hostNames = _swig_property(_lsf.jobInfoHead_hostNames_get, _lsf.jobInfoHead_hostNames_set)
+    __swig_setmethods__["numClusters"] = _lsf.jobInfoHead_numClusters_set
+    __swig_getmethods__["numClusters"] = _lsf.jobInfoHead_numClusters_get
+    if _newclass:numClusters = _swig_property(_lsf.jobInfoHead_numClusters_get, _lsf.jobInfoHead_numClusters_set)
+    __swig_setmethods__["clusterNames"] = _lsf.jobInfoHead_clusterNames_set
+    __swig_getmethods__["clusterNames"] = _lsf.jobInfoHead_clusterNames_get
+    if _newclass:clusterNames = _swig_property(_lsf.jobInfoHead_clusterNames_get, _lsf.jobInfoHead_clusterNames_set)
+    __swig_setmethods__["numRemoteHosts"] = _lsf.jobInfoHead_numRemoteHosts_set
+    __swig_getmethods__["numRemoteHosts"] = _lsf.jobInfoHead_numRemoteHosts_get
+    if _newclass:numRemoteHosts = _swig_property(_lsf.jobInfoHead_numRemoteHosts_get, _lsf.jobInfoHead_numRemoteHosts_set)
+    __swig_setmethods__["remoteHosts"] = _lsf.jobInfoHead_remoteHosts_set
+    __swig_getmethods__["remoteHosts"] = _lsf.jobInfoHead_remoteHosts_get
+    if _newclass:remoteHosts = _swig_property(_lsf.jobInfoHead_remoteHosts_get, _lsf.jobInfoHead_remoteHosts_set)
+    __swig_setmethods__["strTableCnt"] = _lsf.jobInfoHead_strTableCnt_set
+    __swig_getmethods__["strTableCnt"] = _lsf.jobInfoHead_strTableCnt_get
+    if _newclass:strTableCnt = _swig_property(_lsf.jobInfoHead_strTableCnt_get, _lsf.jobInfoHead_strTableCnt_set)
+    __swig_setmethods__["strRefTable"] = _lsf.jobInfoHead_strRefTable_set
+    __swig_getmethods__["strRefTable"] = _lsf.jobInfoHead_strRefTable_get
+    if _newclass:strRefTable = _swig_property(_lsf.jobInfoHead_strRefTable_get, _lsf.jobInfoHead_strRefTable_set)
+    __swig_setmethods__["reasonMsgCnt"] = _lsf.jobInfoHead_reasonMsgCnt_set
+    __swig_getmethods__["reasonMsgCnt"] = _lsf.jobInfoHead_reasonMsgCnt_get
+    if _newclass:reasonMsgCnt = _swig_property(_lsf.jobInfoHead_reasonMsgCnt_get, _lsf.jobInfoHead_reasonMsgCnt_set)
+    __swig_setmethods__["reasonMsgConf"] = _lsf.jobInfoHead_reasonMsgConf_set
+    __swig_getmethods__["reasonMsgConf"] = _lsf.jobInfoHead_reasonMsgConf_get
+    if _newclass:reasonMsgConf = _swig_property(_lsf.jobInfoHead_reasonMsgConf_get, _lsf.jobInfoHead_reasonMsgConf_set)
+    __swig_setmethods__["rsrcMsgCnt"] = _lsf.jobInfoHead_rsrcMsgCnt_set
+    __swig_getmethods__["rsrcMsgCnt"] = _lsf.jobInfoHead_rsrcMsgCnt_get
+    if _newclass:rsrcMsgCnt = _swig_property(_lsf.jobInfoHead_rsrcMsgCnt_get, _lsf.jobInfoHead_rsrcMsgCnt_set)
+    __swig_setmethods__["rsrcMsgConf"] = _lsf.jobInfoHead_rsrcMsgConf_set
+    __swig_getmethods__["rsrcMsgConf"] = _lsf.jobInfoHead_rsrcMsgConf_get
+    if _newclass:rsrcMsgConf = _swig_property(_lsf.jobInfoHead_rsrcMsgConf_get, _lsf.jobInfoHead_rsrcMsgConf_set)
+    def __init__(self): 
+        this = _lsf.new_jobInfoHead()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobInfoHead
+    __del__ = lambda self : None
+jobInfoHead_swigregister = _lsf.jobInfoHead_swigregister
+jobInfoHead_swigregister(jobInfoHead)
+
+class jobInfoHead4Query(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobInfoHead4Query, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobInfoHead4Query, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jobInfoHead"] = _lsf.jobInfoHead4Query_jobInfoHead_set
+    __swig_getmethods__["jobInfoHead"] = _lsf.jobInfoHead4Query_jobInfoHead_get
+    if _newclass:jobInfoHead = _swig_property(_lsf.jobInfoHead4Query_jobInfoHead_get, _lsf.jobInfoHead4Query_jobInfoHead_set)
+    __swig_setmethods__["nField"] = _lsf.jobInfoHead4Query_nField_set
+    __swig_getmethods__["nField"] = _lsf.jobInfoHead4Query_nField_get
+    if _newclass:nField = _swig_property(_lsf.jobInfoHead4Query_nField_get, _lsf.jobInfoHead4Query_nField_set)
+    def __init__(self): 
+        this = _lsf.new_jobInfoHead4Query()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobInfoHead4Query
+    __del__ = lambda self : None
+jobInfoHead4Query_swigregister = _lsf.jobInfoHead4Query_swigregister
+jobInfoHead4Query_swigregister(jobInfoHead4Query)
+
+class jobInfoHeadExt(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobInfoHeadExt, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobInfoHeadExt, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jobInfoHead"] = _lsf.jobInfoHeadExt_jobInfoHead_set
+    __swig_getmethods__["jobInfoHead"] = _lsf.jobInfoHeadExt_jobInfoHead_get
+    if _newclass:jobInfoHead = _swig_property(_lsf.jobInfoHeadExt_jobInfoHead_get, _lsf.jobInfoHeadExt_jobInfoHead_set)
+    __swig_setmethods__["groupInfo"] = _lsf.jobInfoHeadExt_groupInfo_set
+    __swig_getmethods__["groupInfo"] = _lsf.jobInfoHeadExt_groupInfo_get
+    if _newclass:groupInfo = _swig_property(_lsf.jobInfoHeadExt_groupInfo_get, _lsf.jobInfoHeadExt_groupInfo_set)
+    __swig_setmethods__["nField"] = _lsf.jobInfoHeadExt_nField_set
+    __swig_getmethods__["nField"] = _lsf.jobInfoHeadExt_nField_get
+    if _newclass:nField = _swig_property(_lsf.jobInfoHeadExt_nField_get, _lsf.jobInfoHeadExt_nField_set)
+    def __init__(self): 
+        this = _lsf.new_jobInfoHeadExt()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_jobInfoHeadExt
+    __del__ = lambda self : None
+jobInfoHeadExt_swigregister = _lsf.jobInfoHeadExt_swigregister
+jobInfoHeadExt_swigregister(jobInfoHeadExt)
+
+class reserveItem(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, reserveItem, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, reserveItem, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["resName"] = _lsf.reserveItem_resName_set
+    __swig_getmethods__["resName"] = _lsf.reserveItem_resName_get
+    if _newclass:resName = _swig_property(_lsf.reserveItem_resName_get, _lsf.reserveItem_resName_set)
+    __swig_setmethods__["nHost"] = _lsf.reserveItem_nHost_set
+    __swig_getmethods__["nHost"] = _lsf.reserveItem_nHost_get
+    if _newclass:nHost = _swig_property(_lsf.reserveItem_nHost_get, _lsf.reserveItem_nHost_set)
+    __swig_setmethods__["value"] = _lsf.reserveItem_value_set
+    __swig_getmethods__["value"] = _lsf.reserveItem_value_get
+    if _newclass:value = _swig_property(_lsf.reserveItem_value_get, _lsf.reserveItem_value_set)
+    __swig_setmethods__["shared"] = _lsf.reserveItem_shared_set
+    __swig_getmethods__["shared"] = _lsf.reserveItem_shared_get
+    if _newclass:shared = _swig_property(_lsf.reserveItem_shared_get, _lsf.reserveItem_shared_set)
+    def __init__(self): 
+        this = _lsf.new_reserveItem()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_reserveItem
+    __del__ = lambda self : None
+reserveItem_swigregister = _lsf.reserveItem_swigregister
+reserveItem_swigregister(reserveItem)
+
+AC_JOB_INFO_PRE_DISPATCH = _lsf.AC_JOB_INFO_PRE_DISPATCH
+AC_JOB_INFO_VMJOB = _lsf.AC_JOB_INFO_VMJOB
+AC_JOB_INFO_SAVING_MACHINES = _lsf.AC_JOB_INFO_SAVING_MACHINES
+AC_JOB_INFO_MACHINE_SAVED = _lsf.AC_JOB_INFO_MACHINE_SAVED
+AC_JOB_INFO_RESTORING_MACHINES = _lsf.AC_JOB_INFO_RESTORING_MACHINES
+AC_JOB_INFO_PROV_DONE = _lsf.AC_JOB_INFO_PROV_DONE
+AC_JOB_INFO_MIGRATING = _lsf.AC_JOB_INFO_MIGRATING
+AC_JOB_INFO_CHECKPOINTING_MACHINES = _lsf.AC_JOB_INFO_CHECKPOINTING_MACHINES
+AC_JOB_INFO_RESTARTING_MACHINES = _lsf.AC_JOB_INFO_RESTARTING_MACHINES
+AC_JOB_INFO_SHUTTINGDOWN_MACHINES = _lsf.AC_JOB_INFO_SHUTTINGDOWN_MACHINES
+AC_JOB_INFO_IN_HOST_DEFRAG = _lsf.AC_JOB_INFO_IN_HOST_DEFRAG
+class acInfo(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, acInfo, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, acInfo, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["flag"] = _lsf.acInfo_flag_set
+    __swig_getmethods__["flag"] = _lsf.acInfo_flag_get
+    if _newclass:flag = _swig_property(_lsf.acInfo_flag_get, _lsf.acInfo_flag_set)
+    __swig_setmethods__["provStartTime"] = _lsf.acInfo_provStartTime_set
+    __swig_getmethods__["provStartTime"] = _lsf.acInfo_provStartTime_get
+    if _newclass:provStartTime = _swig_property(_lsf.acInfo_provStartTime_get, _lsf.acInfo_provStartTime_set)
+    __swig_setmethods__["provEndTime"] = _lsf.acInfo_provEndTime_set
+    __swig_getmethods__["provEndTime"] = _lsf.acInfo_provEndTime_get
+    if _newclass:provEndTime = _swig_property(_lsf.acInfo_provEndTime_get, _lsf.acInfo_provEndTime_set)
+    __swig_setmethods__["reqId"] = _lsf.acInfo_reqId_set
+    __swig_getmethods__["reqId"] = _lsf.acInfo_reqId_get
+    if _newclass:reqId = _swig_property(_lsf.acInfo_reqId_get, _lsf.acInfo_reqId_set)
+    __swig_setmethods__["numVmHosts"] = _lsf.acInfo_numVmHosts_set
+    __swig_getmethods__["numVmHosts"] = _lsf.acInfo_numVmHosts_get
+    if _newclass:numVmHosts = _swig_property(_lsf.acInfo_numVmHosts_get, _lsf.acInfo_numVmHosts_set)
+    __swig_setmethods__["vmHosts"] = _lsf.acInfo_vmHosts_set
+    __swig_getmethods__["vmHosts"] = _lsf.acInfo_vmHosts_get
+    if _newclass:vmHosts = _swig_property(_lsf.acInfo_vmHosts_get, _lsf.acInfo_vmHosts_set)
+    __swig_setmethods__["numVmHostTypes"] = _lsf.acInfo_numVmHostTypes_set
+    __swig_getmethods__["numVmHostTypes"] = _lsf.acInfo_numVmHostTypes_get
+    if _newclass:numVmHostTypes = _swig_property(_lsf.acInfo_numVmHostTypes_get, _lsf.acInfo_numVmHostTypes_set)
+    __swig_setmethods__["vmHostTypes"] = _lsf.acInfo_vmHostTypes_set
+    __swig_getmethods__["vmHostTypes"] = _lsf.acInfo_vmHostTypes_get
+    if _newclass:vmHostTypes = _swig_property(_lsf.acInfo_vmHostTypes_get, _lsf.acInfo_vmHostTypes_set)
+    def __init__(self): 
+        this = _lsf.new_acInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_acInfo
+    __del__ = lambda self : None
+acInfo_swigregister = _lsf.acInfo_swigregister
+acInfo_swigregister(acInfo)
+
+class affinityTaskInfo_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, affinityTaskInfo_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, affinityTaskInfo_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["pu_type"] = _lsf.affinityTaskInfo_t_pu_type_set
+    __swig_getmethods__["pu_type"] = _lsf.affinityTaskInfo_t_pu_type_get
+    if _newclass:pu_type = _swig_property(_lsf.affinityTaskInfo_t_pu_type_get, _lsf.affinityTaskInfo_t_pu_type_set)
+    __swig_setmethods__["pu_list"] = _lsf.affinityTaskInfo_t_pu_list_set
+    __swig_getmethods__["pu_list"] = _lsf.affinityTaskInfo_t_pu_list_get
+    if _newclass:pu_list = _swig_property(_lsf.affinityTaskInfo_t_pu_list_get, _lsf.affinityTaskInfo_t_pu_list_set)
+    __swig_setmethods__["expu_type"] = _lsf.affinityTaskInfo_t_expu_type_set
+    __swig_getmethods__["expu_type"] = _lsf.affinityTaskInfo_t_expu_type_get
+    if _newclass:expu_type = _swig_property(_lsf.affinityTaskInfo_t_expu_type_get, _lsf.affinityTaskInfo_t_expu_type_set)
+    __swig_setmethods__["mem_bind_policy"] = _lsf.affinityTaskInfo_t_mem_bind_policy_set
+    __swig_getmethods__["mem_bind_policy"] = _lsf.affinityTaskInfo_t_mem_bind_policy_get
+    if _newclass:mem_bind_policy = _swig_property(_lsf.affinityTaskInfo_t_mem_bind_policy_get, _lsf.affinityTaskInfo_t_mem_bind_policy_set)
+    __swig_setmethods__["mem_node_id"] = _lsf.affinityTaskInfo_t_mem_node_id_set
+    __swig_getmethods__["mem_node_id"] = _lsf.affinityTaskInfo_t_mem_node_id_get
+    if _newclass:mem_node_id = _swig_property(_lsf.affinityTaskInfo_t_mem_node_id_get, _lsf.affinityTaskInfo_t_mem_node_id_set)
+    __swig_setmethods__["cpu_bind_level"] = _lsf.affinityTaskInfo_t_cpu_bind_level_set
+    __swig_getmethods__["cpu_bind_level"] = _lsf.affinityTaskInfo_t_cpu_bind_level_get
+    if _newclass:cpu_bind_level = _swig_property(_lsf.affinityTaskInfo_t_cpu_bind_level_get, _lsf.affinityTaskInfo_t_cpu_bind_level_set)
+    def __init__(self): 
+        this = _lsf.new_affinityTaskInfo_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_affinityTaskInfo_t
+    __del__ = lambda self : None
+affinityTaskInfo_t_swigregister = _lsf.affinityTaskInfo_t_swigregister
+affinityTaskInfo_t_swigregister(affinityTaskInfo_t)
+
+class affinityHostInfo_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, affinityHostInfo_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, affinityHostInfo_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["hostname"] = _lsf.affinityHostInfo_t_hostname_set
+    __swig_getmethods__["hostname"] = _lsf.affinityHostInfo_t_hostname_get
+    if _newclass:hostname = _swig_property(_lsf.affinityHostInfo_t_hostname_get, _lsf.affinityHostInfo_t_hostname_set)
+    __swig_setmethods__["num_task"] = _lsf.affinityHostInfo_t_num_task_set
+    __swig_getmethods__["num_task"] = _lsf.affinityHostInfo_t_num_task_get
+    if _newclass:num_task = _swig_property(_lsf.affinityHostInfo_t_num_task_get, _lsf.affinityHostInfo_t_num_task_set)
+    __swig_setmethods__["mem_per_task"] = _lsf.affinityHostInfo_t_mem_per_task_set
+    __swig_getmethods__["mem_per_task"] = _lsf.affinityHostInfo_t_mem_per_task_get
+    if _newclass:mem_per_task = _swig_property(_lsf.affinityHostInfo_t_mem_per_task_get, _lsf.affinityHostInfo_t_mem_per_task_set)
+    __swig_setmethods__["taffinity"] = _lsf.affinityHostInfo_t_taffinity_set
+    __swig_getmethods__["taffinity"] = _lsf.affinityHostInfo_t_taffinity_get
+    if _newclass:taffinity = _swig_property(_lsf.affinityHostInfo_t_taffinity_get, _lsf.affinityHostInfo_t_taffinity_set)
+    def __init__(self): 
+        this = _lsf.new_affinityHostInfo_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_affinityHostInfo_t
+    __del__ = lambda self : None
+affinityHostInfo_t_swigregister = _lsf.affinityHostInfo_t_swigregister
+affinityHostInfo_t_swigregister(affinityHostInfo_t)
+
+class allocHostInfo_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, allocHostInfo_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, allocHostInfo_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numAllocHosts"] = _lsf.allocHostInfo_t_numAllocHosts_set
+    __swig_getmethods__["numAllocHosts"] = _lsf.allocHostInfo_t_numAllocHosts_get
+    if _newclass:numAllocHosts = _swig_property(_lsf.allocHostInfo_t_numAllocHosts_get, _lsf.allocHostInfo_t_numAllocHosts_set)
+    __swig_setmethods__["hostNameList"] = _lsf.allocHostInfo_t_hostNameList_set
+    __swig_getmethods__["hostNameList"] = _lsf.allocHostInfo_t_hostNameList_get
+    if _newclass:hostNameList = _swig_property(_lsf.allocHostInfo_t_hostNameList_get, _lsf.allocHostInfo_t_hostNameList_set)
+    __swig_setmethods__["numSlotsList"] = _lsf.allocHostInfo_t_numSlotsList_set
+    __swig_getmethods__["numSlotsList"] = _lsf.allocHostInfo_t_numSlotsList_get
+    if _newclass:numSlotsList = _swig_property(_lsf.allocHostInfo_t_numSlotsList_get, _lsf.allocHostInfo_t_numSlotsList_set)
+    def __init__(self): 
+        this = _lsf.new_allocHostInfo_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_allocHostInfo_t
+    __del__ = lambda self : None
+allocHostInfo_t_swigregister = _lsf.allocHostInfo_t_swigregister
+allocHostInfo_t_swigregister(allocHostInfo_t)
+
+class stinfile(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, stinfile, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, stinfile, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["options"] = _lsf.stinfile_options_set
+    __swig_getmethods__["options"] = _lsf.stinfile_options_get
+    if _newclass:options = _swig_property(_lsf.stinfile_options_get, _lsf.stinfile_options_set)
+    __swig_setmethods__["host"] = _lsf.stinfile_host_set
+    __swig_getmethods__["host"] = _lsf.stinfile_host_get
+    if _newclass:host = _swig_property(_lsf.stinfile_host_get, _lsf.stinfile_host_set)
+    __swig_setmethods__["name"] = _lsf.stinfile_name_set
+    __swig_getmethods__["name"] = _lsf.stinfile_name_get
+    if _newclass:name = _swig_property(_lsf.stinfile_name_get, _lsf.stinfile_name_set)
+    __swig_setmethods__["hash"] = _lsf.stinfile_hash_set
+    __swig_getmethods__["hash"] = _lsf.stinfile_hash_get
+    if _newclass:hash = _swig_property(_lsf.stinfile_hash_get, _lsf.stinfile_hash_set)
+    __swig_setmethods__["size"] = _lsf.stinfile_size_set
+    __swig_getmethods__["size"] = _lsf.stinfile_size_get
+    if _newclass:size = _swig_property(_lsf.stinfile_size_get, _lsf.stinfile_size_set)
+    __swig_setmethods__["modifyTime"] = _lsf.stinfile_modifyTime_set
+    __swig_getmethods__["modifyTime"] = _lsf.stinfile_modifyTime_get
+    if _newclass:modifyTime = _swig_property(_lsf.stinfile_modifyTime_get, _lsf.stinfile_modifyTime_set)
+    def __init__(self): 
+        this = _lsf.new_stinfile()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_stinfile
+    __del__ = lambda self : None
+stinfile_swigregister = _lsf.stinfile_swigregister
+stinfile_swigregister(stinfile)
+
+STINFILE_NONE = _lsf.STINFILE_NONE
+STINFILE_IN = _lsf.STINFILE_IN
+STINFILE_TAG = _lsf.STINFILE_TAG
+STINFILE_EXISTS = _lsf.STINFILE_EXISTS
+STINFILE_LINKED = _lsf.STINFILE_LINKED
+ESTIMATION_SIM_POINT_START_TIME = _lsf.ESTIMATION_SIM_POINT_START_TIME
+ESTIMATION_SIM_BOUND_START_TIME = _lsf.ESTIMATION_SIM_BOUND_START_TIME
+class estimationResults(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, estimationResults, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, estimationResults, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["flag"] = _lsf.estimationResults_flag_set
+    __swig_getmethods__["flag"] = _lsf.estimationResults_flag_get
+    if _newclass:flag = _swig_property(_lsf.estimationResults_flag_get, _lsf.estimationResults_flag_set)
+    __swig_setmethods__["estJobStartTime"] = _lsf.estimationResults_estJobStartTime_set
+    __swig_getmethods__["estJobStartTime"] = _lsf.estimationResults_estJobStartTime_get
+    if _newclass:estJobStartTime = _swig_property(_lsf.estimationResults_estJobStartTime_get, _lsf.estimationResults_estJobStartTime_set)
+    __swig_setmethods__["estJobAlloc"] = _lsf.estimationResults_estJobAlloc_set
+    __swig_getmethods__["estJobAlloc"] = _lsf.estimationResults_estJobAlloc_get
+    if _newclass:estJobAlloc = _swig_property(_lsf.estimationResults_estJobAlloc_get, _lsf.estimationResults_estJobAlloc_set)
+    __swig_setmethods__["estStartTime"] = _lsf.estimationResults_estStartTime_set
+    __swig_getmethods__["estStartTime"] = _lsf.estimationResults_estStartTime_get
+    if _newclass:estStartTime = _swig_property(_lsf.estimationResults_estStartTime_get, _lsf.estimationResults_estStartTime_set)
+    __swig_setmethods__["estUpdateTime"] = _lsf.estimationResults_estUpdateTime_set
+    __swig_getmethods__["estUpdateTime"] = _lsf.estimationResults_estUpdateTime_get
+    if _newclass:estUpdateTime = _swig_property(_lsf.estimationResults_estUpdateTime_get, _lsf.estimationResults_estUpdateTime_set)
+    __swig_setmethods__["firstEstJobStartTime"] = _lsf.estimationResults_firstEstJobStartTime_set
+    __swig_getmethods__["firstEstJobStartTime"] = _lsf.estimationResults_firstEstJobStartTime_get
+    if _newclass:firstEstJobStartTime = _swig_property(_lsf.estimationResults_firstEstJobStartTime_get, _lsf.estimationResults_firstEstJobStartTime_set)
+    def __init__(self): 
+        this = _lsf.new_estimationResults()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_estimationResults
+    __del__ = lambda self : None
+estimationResults_swigregister = _lsf.estimationResults_swigregister
+estimationResults_swigregister(estimationResults)
+
+class ReasonRefEntry(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ReasonRefEntry, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ReasonRefEntry, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["objIndexes"] = _lsf.ReasonRefEntry_objIndexes_set
+    __swig_getmethods__["objIndexes"] = _lsf.ReasonRefEntry_objIndexes_get
+    if _newclass:objIndexes = _swig_property(_lsf.ReasonRefEntry_objIndexes_get, _lsf.ReasonRefEntry_objIndexes_set)
+    __swig_setmethods__["objCnt"] = _lsf.ReasonRefEntry_objCnt_set
+    __swig_getmethods__["objCnt"] = _lsf.ReasonRefEntry_objCnt_get
+    if _newclass:objCnt = _swig_property(_lsf.ReasonRefEntry_objCnt_get, _lsf.ReasonRefEntry_objCnt_set)
+    __swig_setmethods__["rsrc"] = _lsf.ReasonRefEntry_rsrc_set
+    __swig_getmethods__["rsrc"] = _lsf.ReasonRefEntry_rsrc_get
+    if _newclass:rsrc = _swig_property(_lsf.ReasonRefEntry_rsrc_get, _lsf.ReasonRefEntry_rsrc_set)
+    __swig_setmethods__["location"] = _lsf.ReasonRefEntry_location_set
+    __swig_getmethods__["location"] = _lsf.ReasonRefEntry_location_get
+    if _newclass:location = _swig_property(_lsf.ReasonRefEntry_location_get, _lsf.ReasonRefEntry_location_set)
+    __swig_setmethods__["reasonId"] = _lsf.ReasonRefEntry_reasonId_set
+    __swig_getmethods__["reasonId"] = _lsf.ReasonRefEntry_reasonId_get
+    if _newclass:reasonId = _swig_property(_lsf.ReasonRefEntry_reasonId_get, _lsf.ReasonRefEntry_reasonId_set)
+    def __init__(self): 
+        this = _lsf.new_ReasonRefEntry()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_ReasonRefEntry
+    __del__ = lambda self : None
+ReasonRefEntry_swigregister = _lsf.ReasonRefEntry_swigregister
+ReasonRefEntry_swigregister(ReasonRefEntry)
+
+class pendingReasonInfo_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, pendingReasonInfo_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, pendingReasonInfo_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numEntries"] = _lsf.pendingReasonInfo_t_numEntries_set
+    __swig_getmethods__["numEntries"] = _lsf.pendingReasonInfo_t_numEntries_get
+    if _newclass:numEntries = _swig_property(_lsf.pendingReasonInfo_t_numEntries_get, _lsf.pendingReasonInfo_t_numEntries_set)
+    __swig_setmethods__["reasonEntries"] = _lsf.pendingReasonInfo_t_reasonEntries_set
+    __swig_getmethods__["reasonEntries"] = _lsf.pendingReasonInfo_t_reasonEntries_get
+    if _newclass:reasonEntries = _swig_property(_lsf.pendingReasonInfo_t_reasonEntries_get, _lsf.pendingReasonInfo_t_reasonEntries_set)
+    __swig_setmethods__["nonCandStart"] = _lsf.pendingReasonInfo_t_nonCandStart_set
+    __swig_getmethods__["nonCandStart"] = _lsf.pendingReasonInfo_t_nonCandStart_get
+    if _newclass:nonCandStart = _swig_property(_lsf.pendingReasonInfo_t_nonCandStart_get, _lsf.pendingReasonInfo_t_nonCandStart_set)
+    __swig_setmethods__["singleReason"] = _lsf.pendingReasonInfo_t_singleReason_set
+    __swig_getmethods__["singleReason"] = _lsf.pendingReasonInfo_t_singleReason_get
+    if _newclass:singleReason = _swig_property(_lsf.pendingReasonInfo_t_singleReason_get, _lsf.pendingReasonInfo_t_singleReason_set)
+    __swig_setmethods__["stringTableId"] = _lsf.pendingReasonInfo_t_stringTableId_set
+    __swig_getmethods__["stringTableId"] = _lsf.pendingReasonInfo_t_stringTableId_get
+    if _newclass:stringTableId = _swig_property(_lsf.pendingReasonInfo_t_stringTableId_get, _lsf.pendingReasonInfo_t_stringTableId_set)
+    __swig_setmethods__["clusterNameIdx"] = _lsf.pendingReasonInfo_t_clusterNameIdx_set
+    __swig_getmethods__["clusterNameIdx"] = _lsf.pendingReasonInfo_t_clusterNameIdx_get
+    if _newclass:clusterNameIdx = _swig_property(_lsf.pendingReasonInfo_t_clusterNameIdx_get, _lsf.pendingReasonInfo_t_clusterNameIdx_set)
+    __swig_setmethods__["reasonMsg"] = _lsf.pendingReasonInfo_t_reasonMsg_set
+    __swig_getmethods__["reasonMsg"] = _lsf.pendingReasonInfo_t_reasonMsg_get
+    if _newclass:reasonMsg = _swig_property(_lsf.pendingReasonInfo_t_reasonMsg_get, _lsf.pendingReasonInfo_t_reasonMsg_set)
+    def __init__(self): 
+        this = _lsf.new_pendingReasonInfo_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_pendingReasonInfo_t
+    __del__ = lambda self : None
+pendingReasonInfo_t_swigregister = _lsf.pendingReasonInfo_t_swigregister
+pendingReasonInfo_t_swigregister(pendingReasonInfo_t)
+
+class reasonMessage_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, reasonMessage_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, reasonMessage_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["reasonId"] = _lsf.reasonMessage_t_reasonId_set
+    __swig_getmethods__["reasonId"] = _lsf.reasonMessage_t_reasonId_get
+    if _newclass:reasonId = _swig_property(_lsf.reasonMessage_t_reasonId_get, _lsf.reasonMessage_t_reasonId_set)
+    __swig_setmethods__["reasonMsg"] = _lsf.reasonMessage_t_reasonMsg_set
+    __swig_getmethods__["reasonMsg"] = _lsf.reasonMessage_t_reasonMsg_get
+    if _newclass:reasonMsg = _swig_property(_lsf.reasonMessage_t_reasonMsg_get, _lsf.reasonMessage_t_reasonMsg_set)
+    __swig_setmethods__["detailInfo"] = _lsf.reasonMessage_t_detailInfo_set
+    __swig_getmethods__["detailInfo"] = _lsf.reasonMessage_t_detailInfo_get
+    if _newclass:detailInfo = _swig_property(_lsf.reasonMessage_t_detailInfo_get, _lsf.reasonMessage_t_detailInfo_set)
+    __swig_setmethods__["hostName"] = _lsf.reasonMessage_t_hostName_set
+    __swig_getmethods__["hostName"] = _lsf.reasonMessage_t_hostName_get
+    if _newclass:hostName = _swig_property(_lsf.reasonMessage_t_hostName_get, _lsf.reasonMessage_t_hostName_set)
+    def __init__(self): 
+        this = _lsf.new_reasonMessage_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_reasonMessage_t
+    __del__ = lambda self : None
+reasonMessage_t_swigregister = _lsf.reasonMessage_t_swigregister
+reasonMessage_t_swigregister(reasonMessage_t)
+
+class allLevelReasonMsg_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, allLevelReasonMsg_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, allLevelReasonMsg_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["hostNum"] = _lsf.allLevelReasonMsg_t_hostNum_set
+    __swig_getmethods__["hostNum"] = _lsf.allLevelReasonMsg_t_hostNum_get
+    if _newclass:hostNum = _swig_property(_lsf.allLevelReasonMsg_t_hostNum_get, _lsf.allLevelReasonMsg_t_hostNum_set)
+    __swig_setmethods__["levelZeroMsg"] = _lsf.allLevelReasonMsg_t_levelZeroMsg_set
+    __swig_getmethods__["levelZeroMsg"] = _lsf.allLevelReasonMsg_t_levelZeroMsg_get
+    if _newclass:levelZeroMsg = _swig_property(_lsf.allLevelReasonMsg_t_levelZeroMsg_get, _lsf.allLevelReasonMsg_t_levelZeroMsg_set)
+    __swig_setmethods__["levelOneMsg"] = _lsf.allLevelReasonMsg_t_levelOneMsg_set
+    __swig_getmethods__["levelOneMsg"] = _lsf.allLevelReasonMsg_t_levelOneMsg_get
+    if _newclass:levelOneMsg = _swig_property(_lsf.allLevelReasonMsg_t_levelOneMsg_get, _lsf.allLevelReasonMsg_t_levelOneMsg_set)
+    __swig_setmethods__["candidatehNum"] = _lsf.allLevelReasonMsg_t_candidatehNum_set
+    __swig_getmethods__["candidatehNum"] = _lsf.allLevelReasonMsg_t_candidatehNum_get
+    if _newclass:candidatehNum = _swig_property(_lsf.allLevelReasonMsg_t_candidatehNum_get, _lsf.allLevelReasonMsg_t_candidatehNum_set)
+    __swig_setmethods__["levelTwoMsg"] = _lsf.allLevelReasonMsg_t_levelTwoMsg_set
+    __swig_getmethods__["levelTwoMsg"] = _lsf.allLevelReasonMsg_t_levelTwoMsg_get
+    if _newclass:levelTwoMsg = _swig_property(_lsf.allLevelReasonMsg_t_levelTwoMsg_get, _lsf.allLevelReasonMsg_t_levelTwoMsg_set)
+    __swig_setmethods__["noncandidatehNum"] = _lsf.allLevelReasonMsg_t_noncandidatehNum_set
+    __swig_getmethods__["noncandidatehNum"] = _lsf.allLevelReasonMsg_t_noncandidatehNum_get
+    if _newclass:noncandidatehNum = _swig_property(_lsf.allLevelReasonMsg_t_noncandidatehNum_get, _lsf.allLevelReasonMsg_t_noncandidatehNum_set)
+    __swig_setmethods__["levelThreeMsg"] = _lsf.allLevelReasonMsg_t_levelThreeMsg_set
+    __swig_getmethods__["levelThreeMsg"] = _lsf.allLevelReasonMsg_t_levelThreeMsg_get
+    if _newclass:levelThreeMsg = _swig_property(_lsf.allLevelReasonMsg_t_levelThreeMsg_get, _lsf.allLevelReasonMsg_t_levelThreeMsg_set)
+    def __init__(self): 
+        this = _lsf.new_allLevelReasonMsg_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_allLevelReasonMsg_t
+    __del__ = lambda self : None
+allLevelReasonMsg_t_swigregister = _lsf.allLevelReasonMsg_t_swigregister
+allLevelReasonMsg_t_swigregister(allLevelReasonMsg_t)
+
+class jobInfoEnt(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, jobInfoEnt, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, jobInfoEnt, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["jobId"] = _lsf.jobInfoEnt_jobId_set
+    __swig_getmethods__["jobId"] = _lsf.jobInfoEnt_jobId_get
+    if _newclass:jobId = _swig_property(_lsf.jobInfoEnt_jobId_get, _lsf.jobInfoEnt_jobId_set)
+    __swig_setmethods__["user"] = _lsf.jobInfoEnt_user_set
+    __swig_getmethods__["user"] = _lsf.jobInfoEnt_user_get
+    if _newclass:user = _swig_property(_lsf.jobInfoEnt_user_get, _lsf.jobInfoEnt_user_set)
+    __swig_setmethods__["status"] = _lsf.jobInfoEnt_status_set
+    __swig_getmethods__["status"] = _lsf.jobInfoEnt_status_get
+    if _newclass:status = _swig_property(_lsf.jobInfoEnt_status_get, _lsf.jobInfoEnt_status_set)
+    __swig_setmethods__["reasonTb"] = _lsf.jobInfoEnt_reasonTb_set
+    __swig_getmethods__["reasonTb"] = _lsf.jobInfoEnt_reasonTb_get
+    if _newclass:reasonTb = _swig_property(_lsf.jobInfoEnt_reasonTb_get, _lsf.jobInfoEnt_reasonTb_set)
+    __swig_setmethods__["numReasons"] = _lsf.jobInfoEnt_numReasons_set
+    __swig_getmethods__["numReasons"] = _lsf.jobInfoEnt_numReasons_get
+    if _newclass:numReasons = _swig_property(_lsf.jobInfoEnt_numReasons_get, _lsf.jobInfoEnt_numReasons_set)
+    __swig_setmethods__["reasons"] = _lsf.jobInfoEnt_reasons_set
+    __swig_getmethods__["reasons"] = _lsf.jobInfoEnt_reasons_get
+    if _newclass:reasons = _swig_property(_lsf.jobInfoEnt_reasons_get, _lsf.jobInfoEnt_reasons_set)
+    __swig_setmethods__["subreasons"] = _lsf.jobInfoEnt_subreasons_set
+    __swig_getmethods__["subreasons"] = _lsf.jobInfoEnt_subreasons_get
+    if _newclass:subreasons = _swig_property(_lsf.jobInfoEnt_subreasons_get, _lsf.jobInfoEnt_subreasons_set)
+    __swig_setmethods__["jobPid"] = _lsf.jobInfoEnt_jobPid_set
+    __swig_getmethods__["jobPid"] = _lsf.jobInfoEnt_jobPid_get
+    if _newclass:jobPid = _swig_property(_lsf.jobInfoEnt_jobPid_get, _lsf.jobInfoEnt_jobPid_set)
+    __swig_setmethods__["submitTime"] = _lsf.jobInfoEnt_submitTime_set
+    __swig_getmethods__["submitTime"] = _lsf.jobInfoEnt_submitTime_get
+    if _newclass:submitTime = _swig_property(_lsf.jobInfoEnt_submitTime_get, _lsf.jobInfoEnt_submitTime_set)
+    __swig_setmethods__["reserveTime"] = _lsf.jobInfoEnt_reserveTime_set
+    __swig_getmethods__["reserveTime"] = _lsf.jobInfoEnt_reserveTime_get
+    if _newclass:reserveTime = _swig_property(_lsf.jobInfoEnt_reserveTime_get, _lsf.jobInfoEnt_reserveTime_set)
+    __swig_setmethods__["startTime"] = _lsf.jobInfoEnt_startTime_set
+    __swig_getmethods__["startTime"] = _lsf.jobInfoEnt_startTime_get
+    if _newclass:startTime = _swig_property(_lsf.jobInfoEnt_startTime_get, _lsf.jobInfoEnt_startTime_set)
+    __swig_setmethods__["predictedStartTime"] = _lsf.jobInfoEnt_predictedStartTime_set
+    __swig_getmethods__["predictedStartTime"] = _lsf.jobInfoEnt_predictedStartTime_get
+    if _newclass:predictedStartTime = _swig_property(_lsf.jobInfoEnt_predictedStartTime_get, _lsf.jobInfoEnt_predictedStartTime_set)
+    __swig_setmethods__["endTime"] = _lsf.jobInfoEnt_endTime_set
+    __swig_getmethods__["endTime"] = _lsf.jobInfoEnt_endTime_get
+    if _newclass:endTime = _swig_property(_lsf.jobInfoEnt_endTime_get, _lsf.jobInfoEnt_endTime_set)
+    __swig_setmethods__["lastEvent"] = _lsf.jobInfoEnt_lastEvent_set
+    __swig_getmethods__["lastEvent"] = _lsf.jobInfoEnt_lastEvent_get
+    if _newclass:lastEvent = _swig_property(_lsf.jobInfoEnt_lastEvent_get, _lsf.jobInfoEnt_lastEvent_set)
+    __swig_setmethods__["nextEvent"] = _lsf.jobInfoEnt_nextEvent_set
+    __swig_getmethods__["nextEvent"] = _lsf.jobInfoEnt_nextEvent_get
+    if _newclass:nextEvent = _swig_property(_lsf.jobInfoEnt_nextEvent_get, _lsf.jobInfoEnt_nextEvent_set)
+    __swig_setmethods__["duration"] = _lsf.jobInfoEnt_duration_set
+    __swig_getmethods__["duration"] = _lsf.jobInfoEnt_duration_get
+    if _newclass:duration = _swig_property(_lsf.jobInfoEnt_duration_get, _lsf.jobInfoEnt_duration_set)
+    __swig_setmethods__["cpuTime"] = _lsf.jobInfoEnt_cpuTime_set
+    __swig_getmethods__["cpuTime"] = _lsf.jobInfoEnt_cpuTime_get
+    if _newclass:cpuTime = _swig_property(_lsf.jobInfoEnt_cpuTime_get, _lsf.jobInfoEnt_cpuTime_set)
+    __swig_setmethods__["umask"] = _lsf.jobInfoEnt_umask_set
+    __swig_getmethods__["umask"] = _lsf.jobInfoEnt_umask_get
+    if _newclass:umask = _swig_property(_lsf.jobInfoEnt_umask_get, _lsf.jobInfoEnt_umask_set)
+    __swig_setmethods__["cwd"] = _lsf.jobInfoEnt_cwd_set
+    __swig_getmethods__["cwd"] = _lsf.jobInfoEnt_cwd_get
+    if _newclass:cwd = _swig_property(_lsf.jobInfoEnt_cwd_get, _lsf.jobInfoEnt_cwd_set)
+    __swig_setmethods__["subHomeDir"] = _lsf.jobInfoEnt_subHomeDir_set
+    __swig_getmethods__["subHomeDir"] = _lsf.jobInfoEnt_subHomeDir_get
+    if _newclass:subHomeDir = _swig_property(_lsf.jobInfoEnt_subHomeDir_get, _lsf.jobInfoEnt_subHomeDir_set)
+    __swig_setmethods__["fromHost"] = _lsf.jobInfoEnt_fromHost_set
+    __swig_getmethods__["fromHost"] = _lsf.jobInfoEnt_fromHost_get
+    if _newclass:fromHost = _swig_property(_lsf.jobInfoEnt_fromHost_get, _lsf.jobInfoEnt_fromHost_set)
+    __swig_setmethods__["exHosts"] = _lsf.jobInfoEnt_exHosts_set
+    __swig_getmethods__["exHosts"] = _lsf.jobInfoEnt_exHosts_get
+    if _newclass:exHosts = _swig_property(_lsf.jobInfoEnt_exHosts_get, _lsf.jobInfoEnt_exHosts_set)
+    __swig_setmethods__["numExHosts"] = _lsf.jobInfoEnt_numExHosts_set
+    __swig_getmethods__["numExHosts"] = _lsf.jobInfoEnt_numExHosts_get
+    if _newclass:numExHosts = _swig_property(_lsf.jobInfoEnt_numExHosts_get, _lsf.jobInfoEnt_numExHosts_set)
+    __swig_setmethods__["cpuFactor"] = _lsf.jobInfoEnt_cpuFactor_set
+    __swig_getmethods__["cpuFactor"] = _lsf.jobInfoEnt_cpuFactor_get
+    if _newclass:cpuFactor = _swig_property(_lsf.jobInfoEnt_cpuFactor_get, _lsf.jobInfoEnt_cpuFactor_set)
+    __swig_setmethods__["nIdx"] = _lsf.jobInfoEnt_nIdx_set
+    __swig_getmethods__["nIdx"] = _lsf.jobInfoEnt_nIdx_get
+    if _newclass:nIdx = _swig_property(_lsf.jobInfoEnt_nIdx_get, _lsf.jobInfoEnt_nIdx_set)
+    __swig_setmethods__["loadSched"] = _lsf.jobInfoEnt_loadSched_set
+    __swig_getmethods__["loadSched"] = _lsf.jobInfoEnt_loadSched_get
+    if _newclass:loadSched = _swig_property(_lsf.jobInfoEnt_loadSched_get, _lsf.jobInfoEnt_loadSched_set)
+    __swig_setmethods__["loadStop"] = _lsf.jobInfoEnt_loadStop_set
+    __swig_getmethods__["loadStop"] = _lsf.jobInfoEnt_loadStop_get
+    if _newclass:loadStop = _swig_property(_lsf.jobInfoEnt_loadStop_get, _lsf.jobInfoEnt_loadStop_set)
+    __swig_setmethods__["submit"] = _lsf.jobInfoEnt_submit_set
+    __swig_getmethods__["submit"] = _lsf.jobInfoEnt_submit_get
+    if _newclass:submit = _swig_property(_lsf.jobInfoEnt_submit_get, _lsf.jobInfoEnt_submit_set)
+    __swig_setmethods__["exitStatus"] = _lsf.jobInfoEnt_exitStatus_set
+    __swig_getmethods__["exitStatus"] = _lsf.jobInfoEnt_exitStatus_get
+    if _newclass:exitStatus = _swig_property(_lsf.jobInfoEnt_exitStatus_get, _lsf.jobInfoEnt_exitStatus_set)
+    __swig_setmethods__["execUid"] = _lsf.jobInfoEnt_execUid_set
+    __swig_getmethods__["execUid"] = _lsf.jobInfoEnt_execUid_get
+    if _newclass:execUid = _swig_property(_lsf.jobInfoEnt_execUid_get, _lsf.jobInfoEnt_execUid_set)
+    __swig_setmethods__["execHome"] = _lsf.jobInfoEnt_execHome_set
+    __swig_getmethods__["execHome"] = _lsf.jobInfoEnt_execHome_get
+    if _newclass:execHome = _swig_property(_lsf.jobInfoEnt_execHome_get, _lsf.jobInfoEnt_execHome_set)
+    __swig_setmethods__["execCwd"] = _lsf.jobInfoEnt_execCwd_set
+    __swig_getmethods__["execCwd"] = _lsf.jobInfoEnt_execCwd_get
+    if _newclass:execCwd = _swig_property(_lsf.jobInfoEnt_execCwd_get, _lsf.jobInfoEnt_execCwd_set)
+    __swig_setmethods__["execUsername"] = _lsf.jobInfoEnt_execUsername_set
+    __swig_getmethods__["execUsername"] = _lsf.jobInfoEnt_execUsername_get
+    if _newclass:execUsername = _swig_property(_lsf.jobInfoEnt_execUsername_get, _lsf.jobInfoEnt_execUsername_set)
+    __swig_setmethods__["jRusageUpdateTime"] = _lsf.jobInfoEnt_jRusageUpdateTime_set
+    __swig_getmethods__["jRusageUpdateTime"] = _lsf.jobInfoEnt_jRusageUpdateTime_get
+    if _newclass:jRusageUpdateTime = _swig_property(_lsf.jobInfoEnt_jRusageUpdateTime_get, _lsf.jobInfoEnt_jRusageUpdateTime_set)
+    __swig_setmethods__["runRusage"] = _lsf.jobInfoEnt_runRusage_set
+    __swig_getmethods__["runRusage"] = _lsf.jobInfoEnt_runRusage_get
+    if _newclass:runRusage = _swig_property(_lsf.jobInfoEnt_runRusage_get, _lsf.jobInfoEnt_runRusage_set)
+    __swig_setmethods__["jType"] = _lsf.jobInfoEnt_jType_set
+    __swig_getmethods__["jType"] = _lsf.jobInfoEnt_jType_get
+    if _newclass:jType = _swig_property(_lsf.jobInfoEnt_jType_get, _lsf.jobInfoEnt_jType_set)
+    __swig_setmethods__["parentGroup"] = _lsf.jobInfoEnt_parentGroup_set
+    __swig_getmethods__["parentGroup"] = _lsf.jobInfoEnt_parentGroup_get
+    if _newclass:parentGroup = _swig_property(_lsf.jobInfoEnt_parentGroup_get, _lsf.jobInfoEnt_parentGroup_set)
+    __swig_setmethods__["jName"] = _lsf.jobInfoEnt_jName_set
+    __swig_getmethods__["jName"] = _lsf.jobInfoEnt_jName_get
+    if _newclass:jName = _swig_property(_lsf.jobInfoEnt_jName_get, _lsf.jobInfoEnt_jName_set)
+    __swig_setmethods__["counter"] = _lsf.jobInfoEnt_counter_set
+    __swig_getmethods__["counter"] = _lsf.jobInfoEnt_counter_get
+    if _newclass:counter = _swig_property(_lsf.jobInfoEnt_counter_get, _lsf.jobInfoEnt_counter_set)
+    __swig_setmethods__["port"] = _lsf.jobInfoEnt_port_set
+    __swig_getmethods__["port"] = _lsf.jobInfoEnt_port_get
+    if _newclass:port = _swig_property(_lsf.jobInfoEnt_port_get, _lsf.jobInfoEnt_port_set)
+    __swig_setmethods__["jobPriority"] = _lsf.jobInfoEnt_jobPriority_set
+    __swig_getmethods__["jobPriority"] = _lsf.jobInfoEnt_jobPriority_get
+    if _newclass:jobPriority = _swig_property(_lsf.jobInfoEnt_jobPriority_get, _lsf.jobInfoEnt_jobPriority_set)
+    __swig_setmethods__["numExternalMsg"] = _lsf.jobInfoEnt_numExternalMsg_set
+    __swig_getmethods__["numExternalMsg"] = _lsf.jobInfoEnt_numExternalMsg_get
+    if _newclass:numExternalMsg = _swig_property(_lsf.jobInfoEnt_numExternalMsg_get, _lsf.jobInfoEnt_numExternalMsg_set)
+    __swig_setmethods__["externalMsg"] = _lsf.jobInfoEnt_externalMsg_set
+    __swig_getmethods__["externalMsg"] = _lsf.jobInfoEnt_externalMsg_get
+    if _newclass:externalMsg = _swig_property(_lsf.jobInfoEnt_externalMsg_get, _lsf.jobInfoEnt_externalMsg_set)
+    __swig_setmethods__["clusterId"] = _lsf.jobInfoEnt_clusterId_set
+    __swig_getmethods__["clusterId"] = _lsf.jobInfoEnt_clusterId_get
+    if _newclass:clusterId = _swig_property(_lsf.jobInfoEnt_clusterId_get, _lsf.jobInfoEnt_clusterId_set)
+    __swig_setmethods__["detailReason"] = _lsf.jobInfoEnt_detailReason_set
+    __swig_getmethods__["detailReason"] = _lsf.jobInfoEnt_detailReason_get
+    if _newclass:detailReason = _swig_property(_lsf.jobInfoEnt_detailReason_get, _lsf.jobInfoEnt_detailReason_set)
+    __swig_setmethods__["idleFactor"] = _lsf.jobInfoEnt_idleFactor_set
+    __swig_getmethods__["idleFactor"] = _lsf.jobInfoEnt_idleFactor_get
+    if _newclass:idleFactor = _swig_property(_lsf.jobInfoEnt_idleFactor_get, _lsf.jobInfoEnt_idleFactor_set)
+    __swig_setmethods__["exceptMask"] = _lsf.jobInfoEnt_exceptMask_set
+    __swig_getmethods__["exceptMask"] = _lsf.jobInfoEnt_exceptMask_get
+    if _newclass:exceptMask = _swig_property(_lsf.jobInfoEnt_exceptMask_get, _lsf.jobInfoEnt_exceptMask_set)
+    __swig_setmethods__["additionalInfo"] = _lsf.jobInfoEnt_additionalInfo_set
+    __swig_getmethods__["additionalInfo"] = _lsf.jobInfoEnt_additionalInfo_get
+    if _newclass:additionalInfo = _swig_property(_lsf.jobInfoEnt_additionalInfo_get, _lsf.jobInfoEnt_additionalInfo_set)
+    __swig_setmethods__["exitInfo"] = _lsf.jobInfoEnt_exitInfo_set
+    __swig_getmethods__["exitInfo"] = _lsf.jobInfoEnt_exitInfo_get
+    if _newclass:exitInfo = _swig_property(_lsf.jobInfoEnt_exitInfo_get, _lsf.jobInfoEnt_exitInfo_set)
+    __swig_setmethods__["warningTimePeriod"] = _lsf.jobInfoEnt_warningTimePeriod_set
+    __swig_getmethods__["warningTimePeriod"] = _lsf.jobInfoEnt_warningTimePeriod_get
+    if _newclass:warningTimePeriod = _swig_property(_lsf.jobInfoEnt_warningTimePeriod_get, _lsf.jobInfoEnt_warningTimePeriod_set)
+    __swig_setmethods__["warningAction"] = _lsf.jobInfoEnt_warningAction_set
+    __swig_getmethods__["warningAction"] = _lsf.jobInfoEnt_warningAction_get
+    if _newclass:warningAction = _swig_property(_lsf.jobInfoEnt_warningAction_get, _lsf.jobInfoEnt_warningAction_set)
+    __swig_setmethods__["chargedSAAP"] = _lsf.jobInfoEnt_chargedSAAP_set
+    __swig_getmethods__["chargedSAAP"] = _lsf.jobInfoEnt_chargedSAAP_get
+    if _newclass:chargedSAAP = _swig_property(_lsf.jobInfoEnt_chargedSAAP_get, _lsf.jobInfoEnt_chargedSAAP_set)
+    __swig_setmethods__["execRusage"] = _lsf.jobInfoEnt_execRusage_set
+    __swig_getmethods__["execRusage"] = _lsf.jobInfoEnt_execRusage_get
+    if _newclass:execRusage = _swig_property(_lsf.jobInfoEnt_execRusage_get, _lsf.jobInfoEnt_execRusage_set)
+    __swig_setmethods__["rsvInActive"] = _lsf.jobInfoEnt_rsvInActive_set
+    __swig_getmethods__["rsvInActive"] = _lsf.jobInfoEnt_rsvInActive_get
+    if _newclass:rsvInActive = _swig_property(_lsf.jobInfoEnt_rsvInActive_get, _lsf.jobInfoEnt_rsvInActive_set)
+    __swig_setmethods__["numLicense"] = _lsf.jobInfoEnt_numLicense_set
+    __swig_getmethods__["numLicense"] = _lsf.jobInfoEnt_numLicense_get
+    if _newclass:numLicense = _swig_property(_lsf.jobInfoEnt_numLicense_get, _lsf.jobInfoEnt_numLicense_set)
+    __swig_setmethods__["licenseNames"] = _lsf.jobInfoEnt_licenseNames_set
+    __swig_getmethods__["licenseNames"] = _lsf.jobInfoEnt_licenseNames_get
+    if _newclass:licenseNames = _swig_property(_lsf.jobInfoEnt_licenseNames_get, _lsf.jobInfoEnt_licenseNames_set)
+    __swig_setmethods__["aps"] = _lsf.jobInfoEnt_aps_set
+    __swig_getmethods__["aps"] = _lsf.jobInfoEnt_aps_get
+    if _newclass:aps = _swig_property(_lsf.jobInfoEnt_aps_get, _lsf.jobInfoEnt_aps_set)
+    __swig_setmethods__["adminAps"] = _lsf.jobInfoEnt_adminAps_set
+    __swig_getmethods__["adminAps"] = _lsf.jobInfoEnt_adminAps_get
+    if _newclass:adminAps = _swig_property(_lsf.jobInfoEnt_adminAps_get, _lsf.jobInfoEnt_adminAps_set)
+    __swig_setmethods__["runTime"] = _lsf.jobInfoEnt_runTime_set
+    __swig_getmethods__["runTime"] = _lsf.jobInfoEnt_runTime_get
+    if _newclass:runTime = _swig_property(_lsf.jobInfoEnt_runTime_get, _lsf.jobInfoEnt_runTime_set)
+    __swig_setmethods__["reserveCnt"] = _lsf.jobInfoEnt_reserveCnt_set
+    __swig_getmethods__["reserveCnt"] = _lsf.jobInfoEnt_reserveCnt_get
+    if _newclass:reserveCnt = _swig_property(_lsf.jobInfoEnt_reserveCnt_get, _lsf.jobInfoEnt_reserveCnt_set)
+    __swig_setmethods__["items"] = _lsf.jobInfoEnt_items_set
+    __swig_getmethods__["items"] = _lsf.jobInfoEnt_items_get
+    if _newclass:items = _swig_property(_lsf.jobInfoEnt_items_get, _lsf.jobInfoEnt_items_set)
+    __swig_setmethods__["adminFactorVal"] = _lsf.jobInfoEnt_adminFactorVal_set
+    __swig_getmethods__["adminFactorVal"] = _lsf.jobInfoEnt_adminFactorVal_get
+    if _newclass:adminFactorVal = _swig_property(_lsf.jobInfoEnt_adminFactorVal_get, _lsf.jobInfoEnt_adminFactorVal_set)
+    __swig_setmethods__["resizeMin"] = _lsf.jobInfoEnt_resizeMin_set
+    __swig_getmethods__["resizeMin"] = _lsf.jobInfoEnt_resizeMin_get
+    if _newclass:resizeMin = _swig_property
