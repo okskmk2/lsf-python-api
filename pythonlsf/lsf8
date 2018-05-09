@@ -16,7 +16,7 @@ providerCluEnt_swigregister = _lsf.providerCluEnt_swigregister
 providerCluEnt_swigregister(providerCluEnt)
 
 class rmbCluInfoEnt(_object):
-    __swig_setmethods__ = {}a
+    __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, rmbCluInfoEnt, name, value)
     __swig_getmethods__ = {}
     __getattr__ = lambda self, name: _swig_getattr(self, rmbCluInfoEnt, name)
