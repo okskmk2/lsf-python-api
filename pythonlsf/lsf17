@@ -1,0 +1,362 @@
+Info_numStartJobs_set
+    __swig_getmethods__["numStartJobs"] = _lsf.shareLoadInfo_numStartJobs_get
+    if _newclass:numStartJobs = _swig_property(_lsf.shareLoadInfo_numStartJobs_get, _lsf.shareLoadInfo_numStartJobs_set)
+    __swig_setmethods__["numReserveJobs"] = _lsf.shareLoadInfo_numReserveJobs_set
+    __swig_getmethods__["numReserveJobs"] = _lsf.shareLoadInfo_numReserveJobs_get
+    if _newclass:numReserveJobs = _swig_property(_lsf.shareLoadInfo_numReserveJobs_get, _lsf.shareLoadInfo_numReserveJobs_set)
+    __swig_setmethods__["histCpuTime"] = _lsf.shareLoadInfo_histCpuTime_set
+    __swig_getmethods__["histCpuTime"] = _lsf.shareLoadInfo_histCpuTime_get
+    if _newclass:histCpuTime = _swig_property(_lsf.shareLoadInfo_histCpuTime_get, _lsf.shareLoadInfo_histCpuTime_set)
+    __swig_setmethods__["shareAdjustment"] = _lsf.shareLoadInfo_shareAdjustment_set
+    __swig_getmethods__["shareAdjustment"] = _lsf.shareLoadInfo_shareAdjustment_get
+    if _newclass:shareAdjustment = _swig_property(_lsf.shareLoadInfo_shareAdjustment_get, _lsf.shareLoadInfo_shareAdjustment_set)
+    def __init__(self): 
+        this = _lsf.new_shareLoadInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_shareLoadInfo
+    __del__ = lambda self : None
+shareLoadInfo_swigregister = _lsf.shareLoadInfo_swigregister
+shareLoadInfo_swigregister(shareLoadInfo)
+
+class participantShareLoad(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, participantShareLoad, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, participantShareLoad, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["participant"] = _lsf.participantShareLoad_participant_set
+    __swig_getmethods__["participant"] = _lsf.participantShareLoad_participant_get
+    if _newclass:participant = _swig_property(_lsf.participantShareLoad_participant_get, _lsf.participantShareLoad_participant_set)
+    __swig_setmethods__["load"] = _lsf.participantShareLoad_load_set
+    __swig_getmethods__["load"] = _lsf.participantShareLoad_load_get
+    if _newclass:load = _swig_property(_lsf.participantShareLoad_load_get, _lsf.participantShareLoad_load_set)
+    def __init__(self): 
+        this = _lsf.new_participantShareLoad()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_participantShareLoad
+    __del__ = lambda self : None
+participantShareLoad_swigregister = _lsf.participantShareLoad_swigregister
+participantShareLoad_swigregister(participantShareLoad)
+
+class globalShareAcctEnt(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, globalShareAcctEnt, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, globalShareAcctEnt, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["path"] = _lsf.globalShareAcctEnt_path_set
+    __swig_getmethods__["path"] = _lsf.globalShareAcctEnt_path_get
+    if _newclass:path = _swig_property(_lsf.globalShareAcctEnt_path_get, _lsf.globalShareAcctEnt_path_set)
+    __swig_setmethods__["sumLoad"] = _lsf.globalShareAcctEnt_sumLoad_set
+    __swig_getmethods__["sumLoad"] = _lsf.globalShareAcctEnt_sumLoad_get
+    if _newclass:sumLoad = _swig_property(_lsf.globalShareAcctEnt_sumLoad_get, _lsf.globalShareAcctEnt_sumLoad_set)
+    __swig_setmethods__["numParticipantLoads"] = _lsf.globalShareAcctEnt_numParticipantLoads_set
+    __swig_getmethods__["numParticipantLoads"] = _lsf.globalShareAcctEnt_numParticipantLoads_get
+    if _newclass:numParticipantLoads = _swig_property(_lsf.globalShareAcctEnt_numParticipantLoads_get, _lsf.globalShareAcctEnt_numParticipantLoads_set)
+    __swig_setmethods__["participantLoads"] = _lsf.globalShareAcctEnt_participantLoads_set
+    __swig_getmethods__["participantLoads"] = _lsf.globalShareAcctEnt_participantLoads_get
+    if _newclass:participantLoads = _swig_property(_lsf.globalShareAcctEnt_participantLoads_get, _lsf.globalShareAcctEnt_participantLoads_set)
+    def __init__(self): 
+        this = _lsf.new_globalShareAcctEnt()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_globalShareAcctEnt
+    __del__ = lambda self : None
+globalShareAcctEnt_swigregister = _lsf.globalShareAcctEnt_swigregister
+globalShareAcctEnt_swigregister(globalShareAcctEnt)
+
+LOAD_ENT_OK = _lsf.LOAD_ENT_OK
+LOAD_ENT_BAD_CLUSTER = _lsf.LOAD_ENT_BAD_CLUSTER
+class globalFairshareLoadEnt(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, globalFairshareLoadEnt, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, globalFairshareLoadEnt, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["policyName"] = _lsf.globalFairshareLoadEnt_policyName_set
+    __swig_getmethods__["policyName"] = _lsf.globalFairshareLoadEnt_policyName_get
+    if _newclass:policyName = _swig_property(_lsf.globalFairshareLoadEnt_policyName_get, _lsf.globalFairshareLoadEnt_policyName_set)
+    __swig_setmethods__["error"] = _lsf.globalFairshareLoadEnt_error_set
+    __swig_getmethods__["error"] = _lsf.globalFairshareLoadEnt_error_get
+    if _newclass:error = _swig_property(_lsf.globalFairshareLoadEnt_error_get, _lsf.globalFairshareLoadEnt_error_set)
+    __swig_setmethods__["numShareAcctEnts"] = _lsf.globalFairshareLoadEnt_numShareAcctEnts_set
+    __swig_getmethods__["numShareAcctEnts"] = _lsf.globalFairshareLoadEnt_numShareAcctEnts_get
+    if _newclass:numShareAcctEnts = _swig_property(_lsf.globalFairshareLoadEnt_numShareAcctEnts_get, _lsf.globalFairshareLoadEnt_numShareAcctEnts_set)
+    __swig_setmethods__["shareAcctEnts"] = _lsf.globalFairshareLoadEnt_shareAcctEnts_set
+    __swig_getmethods__["shareAcctEnts"] = _lsf.globalFairshareLoadEnt_shareAcctEnts_get
+    if _newclass:shareAcctEnts = _swig_property(_lsf.globalFairshareLoadEnt_shareAcctEnts_get, _lsf.globalFairshareLoadEnt_shareAcctEnts_set)
+    def __init__(self): 
+        this = _lsf.new_globalFairshareLoadEnt()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_globalFairshareLoadEnt
+    __del__ = lambda self : None
+globalFairshareLoadEnt_swigregister = _lsf.globalFairshareLoadEnt_swigregister
+globalFairshareLoadEnt_swigregister(globalFairshareLoadEnt)
+
+
+def lsb_globalFairshareLoad(*args):
+  return _lsf.lsb_globalFairshareLoad(*args)
+lsb_globalFairshareLoad = _lsf.lsb_globalFairshareLoad
+GPD_CTRL_RESTART = _lsf.GPD_CTRL_RESTART
+
+def lsb_gpdCtrl(*args):
+  return _lsf.lsb_gpdCtrl(*args)
+lsb_gpdCtrl = _lsf.lsb_gpdCtrl
+
+def lsb_wait(*args):
+  return _lsf.lsb_wait(*args)
+lsb_wait = _lsf.lsb_wait
+BWAIT_TRIG = _lsf.BWAIT_TRIG
+BWAIT_TIMEOUT = _lsf.BWAIT_TIMEOUT
+BWAIT_INVALID = _lsf.BWAIT_INVALID
+BWAIT_NOJOB = _lsf.BWAIT_NOJOB
+BWAIT_NOARRAY = _lsf.BWAIT_NOARRAY
+BWAIT_SYNTAXERR = _lsf.BWAIT_SYNTAXERR
+BWAIT_MAXJOBNAME = _lsf.BWAIT_MAXJOBNAME
+BWAIT_NULL = _lsf.BWAIT_NULL
+
+def lsb_ac_vminfo(*args):
+  return _lsf.lsb_ac_vminfo(*args)
+lsb_ac_vminfo = _lsf.lsb_ac_vminfo
+
+def lsb_ac_hostinfo(*args):
+  return _lsf.lsb_ac_hostinfo(*args)
+lsb_ac_hostinfo = _lsf.lsb_ac_hostinfo
+
+def lsb_ac_provisioninfo(*args):
+  return _lsf.lsb_ac_provisioninfo(*args)
+lsb_ac_provisioninfo = _lsf.lsb_ac_provisioninfo
+
+def lsb_ac_templateinfo(*args):
+  return _lsf.lsb_ac_templateinfo(*args)
+lsb_ac_templateinfo = _lsf.lsb_ac_templateinfo
+
+def lsb_ac_parameters():
+  return _lsf.lsb_ac_parameters()
+lsb_ac_parameters = _lsf.lsb_ac_parameters
+
+def lsb_cleanjob(*args):
+  return _lsf.lsb_cleanjob(*args)
+lsb_cleanjob = _lsf.lsb_cleanjob
+class energyPolicyTag_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, energyPolicyTag_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, energyPolicyTag_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["energy_tag_name"] = _lsf.energyPolicyTag_t_energy_tag_name_set
+    __swig_getmethods__["energy_tag_name"] = _lsf.energyPolicyTag_t_energy_tag_name_get
+    if _newclass:energy_tag_name = _swig_property(_lsf.energyPolicyTag_t_energy_tag_name_get, _lsf.energyPolicyTag_t_energy_tag_name_set)
+    __swig_setmethods__["job_id"] = _lsf.energyPolicyTag_t_job_id_set
+    __swig_getmethods__["job_id"] = _lsf.energyPolicyTag_t_job_id_get
+    if _newclass:job_id = _swig_property(_lsf.energyPolicyTag_t_job_id_get, _lsf.energyPolicyTag_t_job_id_set)
+    __swig_setmethods__["user_name"] = _lsf.energyPolicyTag_t_user_name_set
+    __swig_getmethods__["user_name"] = _lsf.energyPolicyTag_t_user_name_get
+    if _newclass:user_name = _swig_property(_lsf.energyPolicyTag_t_user_name_get, _lsf.energyPolicyTag_t_user_name_set)
+    __swig_setmethods__["cluster_name"] = _lsf.energyPolicyTag_t_cluster_name_set
+    __swig_getmethods__["cluster_name"] = _lsf.energyPolicyTag_t_cluster_name_get
+    if _newclass:cluster_name = _swig_property(_lsf.energyPolicyTag_t_cluster_name_get, _lsf.energyPolicyTag_t_cluster_name_set)
+    __swig_setmethods__["default_frequency"] = _lsf.energyPolicyTag_t_default_frequency_set
+    __swig_getmethods__["default_frequency"] = _lsf.energyPolicyTag_t_default_frequency_get
+    if _newclass:default_frequency = _swig_property(_lsf.energyPolicyTag_t_default_frequency_get, _lsf.energyPolicyTag_t_default_frequency_set)
+    __swig_setmethods__["num_freq"] = _lsf.energyPolicyTag_t_num_freq_set
+    __swig_getmethods__["num_freq"] = _lsf.energyPolicyTag_t_num_freq_get
+    if _newclass:num_freq = _swig_property(_lsf.energyPolicyTag_t_num_freq_get, _lsf.energyPolicyTag_t_num_freq_set)
+    __swig_setmethods__["frequencies"] = _lsf.energyPolicyTag_t_frequencies_set
+    __swig_getmethods__["frequencies"] = _lsf.energyPolicyTag_t_frequencies_get
+    if _newclass:frequencies = _swig_property(_lsf.energyPolicyTag_t_frequencies_get, _lsf.energyPolicyTag_t_frequencies_set)
+    __swig_setmethods__["predict_power"] = _lsf.energyPolicyTag_t_predict_power_set
+    __swig_getmethods__["predict_power"] = _lsf.energyPolicyTag_t_predict_power_get
+    if _newclass:predict_power = _swig_property(_lsf.energyPolicyTag_t_predict_power_get, _lsf.energyPolicyTag_t_predict_power_set)
+    __swig_setmethods__["energy_saving_pct"] = _lsf.energyPolicyTag_t_energy_saving_pct_set
+    __swig_getmethods__["energy_saving_pct"] = _lsf.energyPolicyTag_t_energy_saving_pct_get
+    if _newclass:energy_saving_pct = _swig_property(_lsf.energyPolicyTag_t_energy_saving_pct_get, _lsf.energyPolicyTag_t_energy_saving_pct_set)
+    __swig_setmethods__["predict_elapse_time"] = _lsf.energyPolicyTag_t_predict_elapse_time_set
+    __swig_getmethods__["predict_elapse_time"] = _lsf.energyPolicyTag_t_predict_elapse_time_get
+    if _newclass:predict_elapse_time = _swig_property(_lsf.energyPolicyTag_t_predict_elapse_time_get, _lsf.energyPolicyTag_t_predict_elapse_time_set)
+    __swig_setmethods__["perf_degrad_pct"] = _lsf.energyPolicyTag_t_perf_degrad_pct_set
+    __swig_getmethods__["perf_degrad_pct"] = _lsf.energyPolicyTag_t_perf_degrad_pct_get
+    if _newclass:perf_degrad_pct = _swig_property(_lsf.energyPolicyTag_t_perf_degrad_pct_get, _lsf.energyPolicyTag_t_perf_degrad_pct_set)
+    def __init__(self): 
+        this = _lsf.new_energyPolicyTag_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_energyPolicyTag_t
+    __del__ = lambda self : None
+energyPolicyTag_t_swigregister = _lsf.energyPolicyTag_t_swigregister
+energyPolicyTag_t_swigregister(energyPolicyTag_t)
+
+class energyPolicyTagReq_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, energyPolicyTagReq_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, energyPolicyTagReq_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["options"] = _lsf.energyPolicyTagReq_t_options_set
+    __swig_getmethods__["options"] = _lsf.energyPolicyTagReq_t_options_get
+    if _newclass:options = _swig_property(_lsf.energyPolicyTagReq_t_options_get, _lsf.energyPolicyTagReq_t_options_set)
+    __swig_setmethods__["ntag"] = _lsf.energyPolicyTagReq_t_ntag_set
+    __swig_getmethods__["ntag"] = _lsf.energyPolicyTagReq_t_ntag_get
+    if _newclass:ntag = _swig_property(_lsf.energyPolicyTagReq_t_ntag_get, _lsf.energyPolicyTagReq_t_ntag_set)
+    __swig_setmethods__["userName"] = _lsf.energyPolicyTagReq_t_userName_set
+    __swig_getmethods__["userName"] = _lsf.energyPolicyTagReq_t_userName_get
+    if _newclass:userName = _swig_property(_lsf.energyPolicyTagReq_t_userName_get, _lsf.energyPolicyTagReq_t_userName_set)
+    __swig_setmethods__["tagName"] = _lsf.energyPolicyTagReq_t_tagName_set
+    __swig_getmethods__["tagName"] = _lsf.energyPolicyTagReq_t_tagName_get
+    if _newclass:tagName = _swig_property(_lsf.energyPolicyTagReq_t_tagName_get, _lsf.energyPolicyTagReq_t_tagName_set)
+    def __init__(self): 
+        this = _lsf.new_energyPolicyTagReq_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_energyPolicyTagReq_t
+    __del__ = lambda self : None
+energyPolicyTagReq_t_swigregister = _lsf.energyPolicyTagReq_t_swigregister
+energyPolicyTagReq_t_swigregister(energyPolicyTagReq_t)
+
+QUERY_ENERGY_POLICY_TAG = _lsf.QUERY_ENERGY_POLICY_TAG
+REMOVE_ENERGY_POLICY_TAG = _lsf.REMOVE_ENERGY_POLICY_TAG
+class energyPolicyTagReply_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, energyPolicyTagReply_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, energyPolicyTagReply_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numTag"] = _lsf.energyPolicyTagReply_t_numTag_set
+    __swig_getmethods__["numTag"] = _lsf.energyPolicyTagReply_t_numTag_get
+    if _newclass:numTag = _swig_property(_lsf.energyPolicyTagReply_t_numTag_get, _lsf.energyPolicyTagReply_t_numTag_set)
+    __swig_setmethods__["tags"] = _lsf.energyPolicyTagReply_t_tags_set
+    __swig_getmethods__["tags"] = _lsf.energyPolicyTagReply_t_tags_get
+    if _newclass:tags = _swig_property(_lsf.energyPolicyTagReply_t_tags_get, _lsf.energyPolicyTagReply_t_tags_set)
+    def __init__(self): 
+        this = _lsf.new_energyPolicyTagReply_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_energyPolicyTagReply_t
+    __del__ = lambda self : None
+energyPolicyTagReply_t_swigregister = _lsf.energyPolicyTagReply_t_swigregister
+energyPolicyTagReply_t_swigregister(energyPolicyTagReply_t)
+
+class cleanEnergyPolicyTagReply_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, cleanEnergyPolicyTagReply_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, cleanEnergyPolicyTagReply_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["numTag"] = _lsf.cleanEnergyPolicyTagReply_t_numTag_set
+    __swig_getmethods__["numTag"] = _lsf.cleanEnergyPolicyTagReply_t_numTag_get
+    if _newclass:numTag = _swig_property(_lsf.cleanEnergyPolicyTagReply_t_numTag_get, _lsf.cleanEnergyPolicyTagReply_t_numTag_set)
+    __swig_setmethods__["removedTags"] = _lsf.cleanEnergyPolicyTagReply_t_removedTags_set
+    __swig_getmethods__["removedTags"] = _lsf.cleanEnergyPolicyTagReply_t_removedTags_get
+    if _newclass:removedTags = _swig_property(_lsf.cleanEnergyPolicyTagReply_t_removedTags_get, _lsf.cleanEnergyPolicyTagReply_t_removedTags_set)
+    __swig_setmethods__["numFailed"] = _lsf.cleanEnergyPolicyTagReply_t_numFailed_set
+    __swig_getmethods__["numFailed"] = _lsf.cleanEnergyPolicyTagReply_t_numFailed_get
+    if _newclass:numFailed = _swig_property(_lsf.cleanEnergyPolicyTagReply_t_numFailed_get, _lsf.cleanEnergyPolicyTagReply_t_numFailed_set)
+    __swig_setmethods__["failedTags"] = _lsf.cleanEnergyPolicyTagReply_t_failedTags_set
+    __swig_getmethods__["failedTags"] = _lsf.cleanEnergyPolicyTagReply_t_failedTags_get
+    if _newclass:failedTags = _swig_property(_lsf.cleanEnergyPolicyTagReply_t_failedTags_get, _lsf.cleanEnergyPolicyTagReply_t_failedTags_set)
+    __swig_setmethods__["failedReasons"] = _lsf.cleanEnergyPolicyTagReply_t_failedReasons_set
+    __swig_getmethods__["failedReasons"] = _lsf.cleanEnergyPolicyTagReply_t_failedReasons_get
+    if _newclass:failedReasons = _swig_property(_lsf.cleanEnergyPolicyTagReply_t_failedReasons_get, _lsf.cleanEnergyPolicyTagReply_t_failedReasons_set)
+    def __init__(self): 
+        this = _lsf.new_cleanEnergyPolicyTagReply_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_cleanEnergyPolicyTagReply_t
+    __del__ = lambda self : None
+cleanEnergyPolicyTagReply_t_swigregister = _lsf.cleanEnergyPolicyTagReply_t_swigregister
+cleanEnergyPolicyTagReply_t_swigregister(cleanEnergyPolicyTagReply_t)
+
+
+def lsb_queryEnergyTag(*args):
+  return _lsf.lsb_queryEnergyTag(*args)
+lsb_queryEnergyTag = _lsf.lsb_queryEnergyTag
+
+def lsb_removeEnergyTag(*args):
+  return _lsf.lsb_removeEnergyTag(*args)
+lsb_removeEnergyTag = _lsf.lsb_removeEnergyTag
+class proxyReq(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, proxyReq, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, proxyReq, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["options"] = _lsf.proxyReq_options_set
+    __swig_getmethods__["options"] = _lsf.proxyReq_options_get
+    if _newclass:options = _swig_property(_lsf.proxyReq_options_get, _lsf.proxyReq_options_set)
+    __swig_setmethods__["fromHost"] = _lsf.proxyReq_fromHost_set
+    __swig_getmethods__["fromHost"] = _lsf.proxyReq_fromHost_get
+    if _newclass:fromHost = _swig_property(_lsf.proxyReq_fromHost_get, _lsf.proxyReq_fromHost_set)
+    __swig_setmethods__["fromIPaddrs"] = _lsf.proxyReq_fromIPaddrs_set
+    __swig_getmethods__["fromIPaddrs"] = _lsf.proxyReq_fromIPaddrs_get
+    if _newclass:fromIPaddrs = _swig_property(_lsf.proxyReq_fromIPaddrs_get, _lsf.proxyReq_fromIPaddrs_set)
+    __swig_setmethods__["fromPort"] = _lsf.proxyReq_fromPort_set
+    __swig_getmethods__["fromPort"] = _lsf.proxyReq_fromPort_get
+    if _newclass:fromPort = _swig_property(_lsf.proxyReq_fromPort_get, _lsf.proxyReq_fromPort_set)
+    __swig_setmethods__["data"] = _lsf.proxyReq_data_set
+    __swig_getmethods__["data"] = _lsf.proxyReq_data_get
+    if _newclass:data = _swig_property(_lsf.proxyReq_data_get, _lsf.proxyReq_data_set)
+    def __init__(self): 
+        this = _lsf.new_proxyReq()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_proxyReq
+    __del__ = lambda self : None
+proxyReq_swigregister = _lsf.proxyReq_swigregister
+proxyReq_swigregister(proxyReq)
+
+
+def get_host_names():
+  return _lsf.get_host_names()
+get_host_names = _lsf.get_host_names
+
+def get_host_info():
+  return _lsf.get_host_info()
+get_host_info = _lsf.get_host_info
+SEEK_SET = _lsf.SEEK_SET
+SEEK_CUR = _lsf.SEEK_CUR
+SEEK_END = _lsf.SEEK_END
+
+def lsb_fseek(*args):
+  return _lsf.lsb_fseek(*args)
+lsb_fseek = _lsf.lsb_fseek
+
+def lsb_ftell(*args):
+  return _lsf.lsb_ftell(*args)
+lsb_ftell = _lsf.lsb_ftell
+
+def get_load_of_hosts():
+  return _lsf.get_load_of_hosts()
+get_load_of_hosts = _lsf.get_load_of_hosts
+
+def get_host_load(*args):
+  return _lsf.get_host_load(*args)
+get_host_load = _lsf.get_host_load
+
+def get_queue_info_by_name(*args):
+  return _lsf.get_queue_info_by_name(*args)
+get_queue_info_by_name = _lsf.get_queue_info_by_name
+
+def get_user_info_by_name(*args):
+  return _lsf.get_user_info_by_name(*args)
+get_user_info_by_name = _lsf.get_user_info_by_name
+
+def get_host_info_by_name(*args):
+  return _lsf.get_host_info_by_name(*args)
+get_host_info_by_name = _lsf.get_host_info_by_name
+
+def get_hostgroup_info_by_name(*args):
+  return _lsf.get_hostgroup_info_by_name(*args)
+get_hostgroup_info_by_name = _lsf.get_hostgroup_info_by_name
+
+def get_usergroup_info_by_name(*args):
+  return _lsf.get_usergroup_info_by_name(*args)
+get_usergroup_info_by_name = _lsf.get_usergroup_info_by_name
+
+def get_conf_value(*args):
+  return _lsf.get_conf_value(*args)
+get_conf_value = _lsf.get_conf_value
+
+
