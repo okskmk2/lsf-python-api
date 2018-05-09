@@ -1,0 +1,1524 @@
+
+  return _lsf.buildPIMFileFormat(*args)
+buildPIMFileFormat = _lsf.buildPIMFileFormat
+ULLONG_MAX = _lsf.ULLONG_MAX
+LSF_VERSION = _lsf.LSF_VERSION
+LSF_CURRENT_VERSION = _lsf.LSF_CURRENT_VERSION
+LSF_CURRENT_VERSION_STRIPPED = _lsf.LSF_CURRENT_VERSION_STRIPPED
+LSF_PRODUCT_COPYRIGHT_STR = _lsf.LSF_PRODUCT_COPYRIGHT_STR
+LSF_NAME_STR = _lsf.LSF_NAME_STR
+LSF_IDENTIFIER_STR = _lsf.LSF_IDENTIFIER_STR
+LSF_PRODUCT_NAME_STR = _lsf.LSF_PRODUCT_NAME_STR
+LSF_PRODUCT_COMMENT_STR = _lsf.LSF_PRODUCT_COMMENT_STR
+LSF_PRODUCT_BUILD_STR = _lsf.LSF_PRODUCT_BUILD_STR
+LSF_PRODUCT_MAJOR_VERSION = _lsf.LSF_PRODUCT_MAJOR_VERSION
+LSF_PRODUCT_MINOR_VERSION = _lsf.LSF_PRODUCT_MINOR_VERSION
+LSF_PRODUCT_MAINTAIN_VERSION = _lsf.LSF_PRODUCT_MAINTAIN_VERSION
+LSF_PRODUCT_FOURTH_VERSION = _lsf.LSF_PRODUCT_FOURTH_VERSION
+LSF_PRODUCT_MAJOR_VERSION_STR = _lsf.LSF_PRODUCT_MAJOR_VERSION_STR
+LSF_PRODUCT_MINOR_VERSION_STR = _lsf.LSF_PRODUCT_MINOR_VERSION_STR
+LSF_PRODUCT_MAINTAIN_VERSION_STR = _lsf.LSF_PRODUCT_MAINTAIN_VERSION_STR
+LSF_PRODUCT_FOURTH_VERSION_STR = _lsf.LSF_PRODUCT_FOURTH_VERSION_STR
+LSF_PRODUCT_VERSION_STR = _lsf.LSF_PRODUCT_VERSION_STR
+LSF_FILE_VERSION_STR = _lsf.LSF_FILE_VERSION_STR
+WIN_VERSION_NUMBER = _lsf.WIN_VERSION_NUMBER
+_VERSION_STR_LSID_ = _lsf._VERSION_STR_LSID_
+NIO_STDIN_ON = _lsf.NIO_STDIN_ON
+NIO_STDIN_OFF = _lsf.NIO_STDIN_OFF
+NIO_TAGSTDOUT_ON = _lsf.NIO_TAGSTDOUT_ON
+NIO_TAGSTDOUT_OFF = _lsf.NIO_TAGSTDOUT_OFF
+NIO_TASK_STDINON = _lsf.NIO_TASK_STDINON
+NIO_TASK_STDINOFF = _lsf.NIO_TASK_STDINOFF
+NIO_TASK_ALL = _lsf.NIO_TASK_ALL
+NIO_TASK_CONNECTED = _lsf.NIO_TASK_CONNECTED
+NIO_STATUS = _lsf.NIO_STATUS
+NIO_STDOUT = _lsf.NIO_STDOUT
+NIO_EOF = _lsf.NIO_EOF
+NIO_IOERR = _lsf.NIO_IOERR
+NIO_REQUEUE = _lsf.NIO_REQUEUE
+NIO_STDERR = _lsf.NIO_STDERR
+class nioEvent(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, nioEvent, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, nioEvent, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["tid"] = _lsf.nioEvent_tid_set
+    __swig_getmethods__["tid"] = _lsf.nioEvent_tid_get
+    if _newclass:tid = _swig_property(_lsf.nioEvent_tid_get, _lsf.nioEvent_tid_set)
+    __swig_setmethods__["type"] = _lsf.nioEvent_type_set
+    __swig_getmethods__["type"] = _lsf.nioEvent_type_get
+    if _newclass:type = _swig_property(_lsf.nioEvent_type_get, _lsf.nioEvent_type_set)
+    __swig_setmethods__["status"] = _lsf.nioEvent_status_set
+    __swig_getmethods__["status"] = _lsf.nioEvent_status_get
+    if _newclass:status = _swig_property(_lsf.nioEvent_status_get, _lsf.nioEvent_status_set)
+    def __init__(self): 
+        this = _lsf.new_nioEvent()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_nioEvent
+    __del__ = lambda self : None
+nioEvent_swigregister = _lsf.nioEvent_swigregister
+nioEvent_swigregister(nioEvent)
+
+class nioInfo(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, nioInfo, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, nioInfo, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["num"] = _lsf.nioInfo_num_set
+    __swig_getmethods__["num"] = _lsf.nioInfo_num_get
+    if _newclass:num = _swig_property(_lsf.nioInfo_num_get, _lsf.nioInfo_num_set)
+    __swig_setmethods__["ioTask"] = _lsf.nioInfo_ioTask_set
+    __swig_getmethods__["ioTask"] = _lsf.nioInfo_ioTask_get
+    if _newclass:ioTask = _swig_property(_lsf.nioInfo_ioTask_get, _lsf.nioInfo_ioTask_set)
+    def __init__(self): 
+        this = _lsf.new_nioInfo()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_nioInfo
+    __del__ = lambda self : None
+nioInfo_swigregister = _lsf.nioInfo_swigregister
+nioInfo_swigregister(nioInfo)
+
+
+def ls_initdebug(*args):
+  return _lsf.ls_initdebug(*args)
+ls_initdebug = _lsf.ls_initdebug
+
+def ls_initrex(*args):
+  return _lsf.ls_initrex(*args)
+ls_initrex = _lsf.ls_initrex
+
+def ls_donerex():
+  return _lsf.ls_donerex()
+ls_donerex = _lsf.ls_donerex
+
+def ls_niossync(*args):
+  return _lsf.ls_niossync(*args)
+ls_niossync = _lsf.ls_niossync
+
+def ls_setstdin(*args):
+  return _lsf.ls_setstdin(*args)
+ls_setstdin = _lsf.ls_setstdin
+
+def ls_getstdin(*args):
+  return _lsf.ls_getstdin(*args)
+ls_getstdin = _lsf.ls_getstdin
+
+def ls_setstdout(*args):
+  return _lsf.ls_setstdout(*args)
+ls_setstdout = _lsf.ls_setstdout
+
+def ls_stdinmode(*args):
+  return _lsf.ls_stdinmode(*args)
+ls_stdinmode = _lsf.ls_stdinmode
+
+def ls_stoprex():
+  return _lsf.ls_stoprex()
+ls_stoprex = _lsf.ls_stoprex
+
+def ls_chdir(*args):
+  return _lsf.ls_chdir(*args)
+ls_chdir = _lsf.ls_chdir
+
+def ls_connect(*args):
+  return _lsf.ls_connect(*args)
+ls_connect = _lsf.ls_connect
+
+def ls_rkill(*args):
+  return _lsf.ls_rkill(*args)
+ls_rkill = _lsf.ls_rkill
+
+def ls_rsetenv(*args):
+  return _lsf.ls_rsetenv(*args)
+ls_rsetenv = _lsf.ls_rsetenv
+
+def ls_rsetenv_async(*args):
+  return _lsf.ls_rsetenv_async(*args)
+ls_rsetenv_async = _lsf.ls_rsetenv_async
+
+def ls_rescontrol(*args):
+  return _lsf.ls_rescontrol(*args)
+ls_rescontrol = _lsf.ls_rescontrol
+
+def ls_getacctrec(*args):
+  return _lsf.ls_getacctrec(*args)
+ls_getacctrec = _lsf.ls_getacctrec
+
+def ls_getacctrec_ext(*args):
+  return _lsf.ls_getacctrec_ext(*args)
+ls_getacctrec_ext = _lsf.ls_getacctrec_ext
+
+def ls_putacctrec(*args):
+  return _lsf.ls_putacctrec(*args)
+ls_putacctrec = _lsf.ls_putacctrec
+
+def ls_putacctrec_ext(*args):
+  return _lsf.ls_putacctrec_ext(*args)
+ls_putacctrec_ext = _lsf.ls_putacctrec_ext
+
+def ls_rexecv(*args):
+  return _lsf.ls_rexecv(*args)
+ls_rexecv = _lsf.ls_rexecv
+
+def ls_rexecve(*args):
+  return _lsf.ls_rexecve(*args)
+ls_rexecve = _lsf.ls_rexecve
+
+def ls_rexecv2(*args):
+  return _lsf.ls_rexecv2(*args)
+ls_rexecv2 = _lsf.ls_rexecv2
+
+def ls_startserver(*args):
+  return _lsf.ls_startserver(*args)
+ls_startserver = _lsf.ls_startserver
+
+def ls_rtask(*args):
+  return _lsf.ls_rtask(*args)
+ls_rtask = _lsf.ls_rtask
+
+def ls_rtaske(*args):
+  return _lsf.ls_rtaske(*args)
+ls_rtaske = _lsf.ls_rtaske
+
+def ls_rtask2(*args):
+  return _lsf.ls_rtask2(*args)
+ls_rtask2 = _lsf.ls_rtask2
+
+def ls_rwait(*args):
+  return _lsf.ls_rwait(*args)
+ls_rwait = _lsf.ls_rwait
+
+def ls_rwaittid(*args):
+  return _lsf.ls_rwaittid(*args)
+ls_rwaittid = _lsf.ls_rwaittid
+
+def ls_conntaskport(*args):
+  return _lsf.ls_conntaskport(*args)
+ls_conntaskport = _lsf.ls_conntaskport
+
+def ls_ropen(*args):
+  return _lsf.ls_ropen(*args)
+ls_ropen = _lsf.ls_ropen
+
+def ls_rclose(*args):
+  return _lsf.ls_rclose(*args)
+ls_rclose = _lsf.ls_rclose
+
+def ls_rwrite(*args):
+  return _lsf.ls_rwrite(*args)
+ls_rwrite = _lsf.ls_rwrite
+
+def ls_rread(*args):
+  return _lsf.ls_rread(*args)
+ls_rread = _lsf.ls_rread
+
+def ls_rlseek(*args):
+  return _lsf.ls_rlseek(*args)
+ls_rlseek = _lsf.ls_rlseek
+
+def ls_runlink(*args):
+  return _lsf.ls_runlink(*args)
+ls_runlink = _lsf.ls_runlink
+
+def ls_rfstat(*args):
+  return _lsf.ls_rfstat(*args)
+ls_rfstat = _lsf.ls_rfstat
+
+def ls_rstat(*args):
+  return _lsf.ls_rstat(*args)
+ls_rstat = _lsf.ls_rstat
+
+def ls_rgetmnthost(*args):
+  return _lsf.ls_rgetmnthost(*args)
+ls_rgetmnthost = _lsf.ls_rgetmnthost
+
+def ls_rfcontrol(*args):
+  return _lsf.ls_rfcontrol(*args)
+ls_rfcontrol = _lsf.ls_rfcontrol
+
+def ls_rfterminate(*args):
+  return _lsf.ls_rfterminate(*args)
+ls_rfterminate = _lsf.ls_rfterminate
+
+def ls_createdir(*args):
+  return _lsf.ls_createdir(*args)
+ls_createdir = _lsf.ls_createdir
+class ls_task_params_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ls_task_params_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ls_task_params_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["cmdline"] = _lsf.ls_task_params_t_cmdline_set
+    __swig_getmethods__["cmdline"] = _lsf.ls_task_params_t_cmdline_get
+    if _newclass:cmdline = _swig_property(_lsf.ls_task_params_t_cmdline_get, _lsf.ls_task_params_t_cmdline_set)
+    __swig_setmethods__["node"] = _lsf.ls_task_params_t_node_set
+    __swig_getmethods__["node"] = _lsf.ls_task_params_t_node_get
+    if _newclass:node = _swig_property(_lsf.ls_task_params_t_node_get, _lsf.ls_task_params_t_node_set)
+    __swig_setmethods__["env"] = _lsf.ls_task_params_t_env_set
+    __swig_getmethods__["env"] = _lsf.ls_task_params_t_env_get
+    if _newclass:env = _swig_property(_lsf.ls_task_params_t_env_get, _lsf.ls_task_params_t_env_set)
+    def __init__(self): 
+        this = _lsf.new_ls_task_params_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_ls_task_params_t
+    __del__ = lambda self : None
+ls_task_params_t_swigregister = _lsf.ls_task_params_t_swigregister
+ls_task_params_t_swigregister(ls_task_params_t)
+
+class ls_task_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, ls_task_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, ls_task_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["params"] = _lsf.ls_task_t_params_set
+    __swig_getmethods__["params"] = _lsf.ls_task_t_params_get
+    if _newclass:params = _swig_property(_lsf.ls_task_t_params_get, _lsf.ls_task_t_params_set)
+    __swig_setmethods__["pid"] = _lsf.ls_task_t_pid_set
+    __swig_getmethods__["pid"] = _lsf.ls_task_t_pid_get
+    if _newclass:pid = _swig_property(_lsf.ls_task_t_pid_get, _lsf.ls_task_t_pid_set)
+    __swig_setmethods__["taskId"] = _lsf.ls_task_t_taskId_set
+    __swig_getmethods__["taskId"] = _lsf.ls_task_t_taskId_get
+    if _newclass:taskId = _swig_property(_lsf.ls_task_t_taskId_get, _lsf.ls_task_t_taskId_set)
+    def __init__(self): 
+        this = _lsf.new_ls_task_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_ls_task_t
+    __del__ = lambda self : None
+ls_task_t_swigregister = _lsf.ls_task_t_swigregister
+ls_task_t_swigregister(ls_task_t)
+
+class rmi_buffer_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, rmi_buffer_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, rmi_buffer_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["invoker_url"] = _lsf.rmi_buffer_t_invoker_url_set
+    __swig_getmethods__["invoker_url"] = _lsf.rmi_buffer_t_invoker_url_get
+    if _newclass:invoker_url = _swig_property(_lsf.rmi_buffer_t_invoker_url_get, _lsf.rmi_buffer_t_invoker_url_set)
+    __swig_setmethods__["storage"] = _lsf.rmi_buffer_t_storage_set
+    __swig_getmethods__["storage"] = _lsf.rmi_buffer_t_storage_get
+    if _newclass:storage = _swig_property(_lsf.rmi_buffer_t_storage_get, _lsf.rmi_buffer_t_storage_set)
+    __swig_setmethods__["size"] = _lsf.rmi_buffer_t_size_set
+    __swig_getmethods__["size"] = _lsf.rmi_buffer_t_size_get
+    if _newclass:size = _swig_property(_lsf.rmi_buffer_t_size_get, _lsf.rmi_buffer_t_size_set)
+    def __init__(self): 
+        this = _lsf.new_rmi_buffer_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_rmi_buffer_t
+    __del__ = lambda self : None
+rmi_buffer_t_swigregister = _lsf.rmi_buffer_t_swigregister
+rmi_buffer_t_swigregister(rmi_buffer_t)
+
+class rmi_handler_t(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, rmi_handler_t, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, rmi_handler_t, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["handler_name"] = _lsf.rmi_handler_t_handler_name_set
+    __swig_getmethods__["handler_name"] = _lsf.rmi_handler_t_handler_name_get
+    if _newclass:handler_name = _swig_property(_lsf.rmi_handler_t_handler_name_get, _lsf.rmi_handler_t_handler_name_set)
+    __swig_setmethods__["handler"] = _lsf.rmi_handler_t_handler_set
+    __swig_getmethods__["handler"] = _lsf.rmi_handler_t_handler_get
+    if _newclass:handler = _swig_property(_lsf.rmi_handler_t_handler_get, _lsf.rmi_handler_t_handler_set)
+    __swig_setmethods__["desc"] = _lsf.rmi_handler_t_desc_set
+    __swig_getmethods__["desc"] = _lsf.rmi_handler_t_desc_get
+    if _newclass:desc = _swig_property(_lsf.rmi_handler_t_desc_get, _lsf.rmi_handler_t_desc_set)
+    def __init__(self): 
+        this = _lsf.new_rmi_handler_t()
+        try: self.this.append(this)
+        except: self.this = this
+    __swig_destroy__ = _lsf.delete_rmi_handler_t
+    __del__ = lambda self : None
+rmi_handler_t_swigregister = _lsf.rmi_handler_t_swigregister
+rmi_handler_t_swigregister(rmi_handler_t)
+
+DEF_MAXJOBS_PER_PACK = _lsf.DEF_MAXJOBS_PER_PACK
+_PATH_NULL = _lsf._PATH_NULL
+LSB_EVENT_VERSION3_0 = _lsf.LSB_EVENT_VERSION3_0
+LSB_EVENT_VERSION3_1 = _lsf.LSB_EVENT_VERSION3_1
+LSB_EVENT_VERSION3_2 = _lsf.LSB_EVENT_VERSION3_2
+LSB_EVENT_VERSION4_0 = _lsf.LSB_EVENT_VERSION4_0
+LSB_EVENT_VERSION4_1 = _lsf.LSB_EVENT_VERSION4_1
+LSB_EVENT_VERSION4_2 = _lsf.LSB_EVENT_VERSION4_2
+LSB_EVENT_VERSION5_0 = _lsf.LSB_EVENT_VERSION5_0
+LSB_EVENT_VERSION5_1 = _lsf.LSB_EVENT_VERSION5_1
+LSB_EVENT_VERSION6_0 = _lsf.LSB_EVENT_VERSION6_0
+LSB_EVENT_VERSION6_1 = _lsf.LSB_EVENT_VERSION6_1
+LSB_EVENT_VERSION6_2 = _lsf.LSB_EVENT_VERSION6_2
+LSB_EVENT_VERSION7_0 = _lsf.LSB_EVENT_VERSION7_0
+LSB_EVENT_VERSION7_0_1 = _lsf.LSB_EVENT_VERSION7_0_1
+LSB_EVENT_VERSION7_0_2 = _lsf.LSB_EVENT_VERSION7_0_2
+LSB_EVENT_VERSION7_0_3 = _lsf.LSB_EVENT_VERSION7_0_3
+LSB_EVENT_VERSION7_0_4 = _lsf.LSB_EVENT_VERSION7_0_4
+LSB_EVENT_VERSION7_0_5 = _lsf.LSB_EVENT_VERSION7_0_5
+LSB_EVENT_VERSION7_0_6 = _lsf.LSB_EVENT_VERSION7_0_6
+LSB_EVENT_VERSION8_0 = _lsf.LSB_EVENT_VERSION8_0
+LSB_EVENT_VERSION8_0_2 = _lsf.LSB_EVENT_VERSION8_0_2
+LSB_EVENT_VERSION8_3 = _lsf.LSB_EVENT_VERSION8_3
+LSB_EVENT_VERSION9_1 = _lsf.LSB_EVENT_VERSION9_1
+LSB_EVENT_VERSION9_1_1 = _lsf.LSB_EVENT_VERSION9_1_1
+LSB_EVENT_VERSION9_1_1_1 = _lsf.LSB_EVENT_VERSION9_1_1_1
+LSB_EVENT_VERSION9_1_2 = _lsf.LSB_EVENT_VERSION9_1_2
+LSB_EVENT_VERSION9_1_3 = _lsf.LSB_EVENT_VERSION9_1_3
+LSB_EVENT_VERSION10_1 = _lsf.LSB_EVENT_VERSION10_1
+THIS_VERSION = _lsf.THIS_VERSION
+MAX_VERSION_LEN = _lsf.MAX_VERSION_LEN
+MAX_HPART_USERS = _lsf.MAX_HPART_USERS
+MAX_CHARLEN = _lsf.MAX_CHARLEN
+MAX_LSB_NAME_LEN = _lsf.MAX_LSB_NAME_LEN
+MAX_LSB_UG_NAME_LEN = _lsf.MAX_LSB_UG_NAME_LEN
+MAX_LSB_HG_NAME_LEN = _lsf.MAX_LSB_HG_NAME_LEN
+MAX_LSB_UG_HIERDEPTH = _lsf.MAX_LSB_UG_HIERDEPTH
+MAX_CMD_DESC_LEN = _lsf.MAX_CMD_DESC_LEN
+MAX_CALENDARS = _lsf.MAX_CALENDARS
+MAX_USER_EQUIVALENT = _lsf.MAX_USER_EQUIVALENT
+MAX_USER_MAPPING = _lsf.MAX_USER_MAPPING
+MAXDESCLEN = _lsf.MAXDESCLEN
+MAX_GROUPS = _lsf.MAX_GROUPS
+MAX_LSB_LP_LEN = _lsf.MAX_LSB_LP_LEN
+FILENAMEPADDING = _lsf.FILENAMEPADDING
+MAX_PARAM_LEN = _lsf.MAX_PARAM_LEN
+DEFAULT_MSG_DESC = _lsf.DEFAULT_MSG_DESC
+MSGSIZE = _lsf.MSGSIZE
+HOST_STAT_OK = _lsf.HOST_STAT_OK
+HOST_STAT_BUSY = _lsf.HOST_STAT_BUSY
+HOST_STAT_WIND = _lsf.HOST_STAT_WIND
+HOST_STAT_DISABLED = _lsf.HOST_STAT_DISABLED
+HOST_STAT_LOCKED = _lsf.HOST_STAT_LOCKED
+HOST_STAT_FULL = _lsf.HOST_STAT_FULL
+HOST_STAT_UNREACH = _lsf.HOST_STAT_UNREACH
+HOST_STAT_UNAVAIL = _lsf.HOST_STAT_UNAVAIL
+HOST_STAT_UNLICENSED = _lsf.HOST_STAT_UNLICENSED
+HOST_STAT_NO_LIM = _lsf.HOST_STAT_NO_LIM
+HOST_STAT_EXCLUSIVE = _lsf.HOST_STAT_EXCLUSIVE
+HOST_STAT_LOCKED_MASTER = _lsf.HOST_STAT_LOCKED_MASTER
+HOST_STAT_REMOTE_DISABLED = _lsf.HOST_STAT_REMOTE_DISABLED
+HOST_STAT_LEASE_INACTIVE = _lsf.HOST_STAT_LEASE_INACTIVE
+HOST_STAT_DISABLED_RES = _lsf.HOST_STAT_DISABLED_RES
+HOST_STAT_DISABLED_RMS = _lsf.HOST_STAT_DISABLED_RMS
+HOST_STAT_LOCKED_EGO = _lsf.HOST_STAT_LOCKED_EGO
+HOST_CLOSED_BY_ADMIN = _lsf.HOST_CLOSED_BY_ADMIN
+HOST_STAT_CU_EXCLUSIVE = _lsf.HOST_STAT_CU_EXCLUSIVE
+HOST_STAT_EXPIRED = _lsf.HOST_STAT_EXPIRED
+HOST_STAT_ACOK = _lsf.HOST_STAT_ACOK
+HOST_STAT_SCHED_OK = _lsf.HOST_STAT_SCHED_OK
+HOST_STAT_POWER_CLOSED = _lsf.HOST_STAT_POWER_CLOSED
+HOST_STAT_IN_CYCLETIME = _lsf.HOST_STAT_IN_CYCLETIME
+HOST_STAT_CLOSED_HFACTORY = _lsf.HOST_STAT_CLOSED_HFACTORY
+HOST_STAT_RELINQUISHED = _lsf.HOST_STAT_RELINQUISHED
+HOST_POWER_STAT_ON = _lsf.HOST_POWER_STAT_ON
+HOST_POWER_STAT_SUSPENDING = _lsf.HOST_POWER_STAT_SUSPENDING
+HOST_POWER_STAT_SUSPEND = _lsf.HOST_POWER_STAT_SUSPEND
+HOST_POWER_STAT_RESUMING = _lsf.HOST_POWER_STAT_RESUMING
+HOST_POWER_STAT_RESTARTING = _lsf.HOST_POWER_STAT_RESTARTING
+HOST_POWER_STAT_UNDEF = _lsf.HOST_POWER_STAT_UNDEF
+HOST_BUSY_NOT = _lsf.HOST_BUSY_NOT
+HOST_BUSY_R15S = _lsf.HOST_BUSY_R15S
+HOST_BUSY_R1M = _lsf.HOST_BUSY_R1M
+HOST_BUSY_R15M = _lsf.HOST_BUSY_R15M
+HOST_BUSY_UT = _lsf.HOST_BUSY_UT
+HOST_BUSY_PG = _lsf.HOST_BUSY_PG
+HOST_BUSY_IO = _lsf.HOST_BUSY_IO
+HOST_BUSY_LS = _lsf.HOST_BUSY_LS
+HOST_BUSY_IT = _lsf.HOST_BUSY_IT
+HOST_BUSY_TMP = _lsf.HOST_BUSY_TMP
+HOST_BUSY_SWP = _lsf.HOST_BUSY_SWP
+HOST_BUSY_MEM = _lsf.HOST_BUSY_MEM
+QUEUE_STAT_OPEN = _lsf.QUEUE_STAT_OPEN
+QUEUE_STAT_ACTIVE = _lsf.QUEUE_STAT_ACTIVE
+QUEUE_STAT_RUN = _lsf.QUEUE_STAT_RUN
+QUEUE_STAT_NOPERM = _lsf.QUEUE_STAT_NOPERM
+QUEUE_STAT_DISC = _lsf.QUEUE_STAT_DISC
+QUEUE_STAT_RUNWIN_CLOSE = _lsf.QUEUE_STAT_RUNWIN_CLOSE
+QUEUE_STAT_FAIRSHARE_DEFAULT = _lsf.QUEUE_STAT_FAIRSHARE_DEFAULT
+Q_ATTRIB_EXCLUSIVE = _lsf.Q_ATTRIB_EXCLUSIVE
+Q_ATTRIB_DEFAULT = _lsf.Q_ATTRIB_DEFAULT
+Q_ATTRIB_FAIRSHARE = _lsf.Q_ATTRIB_FAIRSHARE
+Q_ATTRIB_PREEMPTIVE = _lsf.Q_ATTRIB_PREEMPTIVE
+Q_ATTRIB_NQS = _lsf.Q_ATTRIB_NQS
+Q_ATTRIB_RECEIVE = _lsf.Q_ATTRIB_RECEIVE
+Q_ATTRIB_PREEMPTABLE = _lsf.Q_ATTRIB_PREEMPTABLE
+Q_ATTRIB_BACKFILL = _lsf.Q_ATTRIB_BACKFILL
+Q_ATTRIB_HOST_PREFER = _lsf.Q_ATTRIB_HOST_PREFER
+Q_ATTRIB_NONPREEMPTIVE = _lsf.Q_ATTRIB_NONPREEMPTIVE
+Q_ATTRIB_NONPREEMPTABLE = _lsf.Q_ATTRIB_NONPREEMPTABLE
+Q_ATTRIB_NO_INTERACTIVE = _lsf.Q_ATTRIB_NO_INTERACTIVE
+Q_ATTRIB_ONLY_INTERACTIVE = _lsf.Q_ATTRIB_ONLY_INTERACTIVE
+Q_ATTRIB_NO_HOST_TYPE = _lsf.Q_ATTRIB_NO_HOST_TYPE
+Q_ATTRIB_IGNORE_DEADLINE = _lsf.Q_ATTRIB_IGNORE_DEADLINE
+Q_ATTRIB_CHKPNT = _lsf.Q_ATTRIB_CHKPNT
+Q_ATTRIB_RERUNNABLE = _lsf.Q_ATTRIB_RERUNNABLE
+Q_ATTRIB_EXCL_RMTJOB = _lsf.Q_ATTRIB_EXCL_RMTJOB
+Q_ATTRIB_MC_FAST_SCHEDULE = _lsf.Q_ATTRIB_MC_FAST_SCHEDULE
+Q_ATTRIB_ENQUE_INTERACTIVE_AHEAD = _lsf.Q_ATTRIB_ENQUE_INTERACTIVE_AHEAD
+Q_ATTRIB_DISPATCH_BY_QUEUE = _lsf.Q_ATTRIB_DISPATCH_BY_QUEUE
+Q_MC_FLAG = _lsf.Q_MC_FLAG
+Q_ATTRIB_LEASE_LOCAL = _lsf.Q_ATTRIB_LEASE_LOCAL
+Q_ATTRIB_LEASE_ONLY = _lsf.Q_ATTRIB_LEASE_ONLY
+Q_ATTRIB_RMT_BATCH_LOCAL = _lsf.Q_ATTRIB_RMT_BATCH_LOCAL
+Q_ATTRIB_RMT_BATCH_ONLY = _lsf.Q_ATTRIB_RMT_BATCH_ONLY
+Q_ATTRIB_RESOURCE_RESERVE = _lsf.Q_ATTRIB_RESOURCE_RESERVE
+Q_ATTRIB_FS_DISPATCH_ORDER_QUEUE = _lsf.Q_ATTRIB_FS_DISPATCH_ORDER_QUEUE
+Q_ATTRIB_BATCH = _lsf.Q_ATTRIB_BATCH
+Q_ATTRIB_ONLINE = _lsf.Q_ATTRIB_ONLINE
+Q_ATTRIB_INTERRUPTIBLE_BACKFILL = _lsf.Q_ATTRIB_INTERRUPTIBLE_BACKFILL
+Q_ATTRIB_APS = _lsf.Q_ATTRIB_APS
+Q_ATTRIB_NO_HIGHER_RESERVE = _lsf.Q_ATTRIB_NO_HIGHER_RESERVE
+Q_ATTRIB_NO_HOST_VALID = _lsf.Q_ATTRIB_NO_HOST_VALID
+Q_ATTRIB2_IGN_GUAR = _lsf.Q_ATTRIB2_IGN_GUAR
+Q_ATTRIB2_JOB_ORDER_BY_MEM = _lsf.Q_ATTRIB2_JOB_ORDER_BY_MEM
+Q_ATTRIB2_AC_IGNORE_MACHINE_TTL = _lsf.Q_ATTRIB2_AC_IGNORE_MACHINE_TTL
+Q_ATTRIB2_AC_HOST_DEFRAG_ENABLED = _lsf.Q_ATTRIB2_AC_HOST_DEFRAG_ENABLED
+Q_ATTRIB2_DATA_TRANSFER = _lsf.Q_ATTRIB2_DATA_TRANSFER
+Q_ATTRIB2_RELAX_JOB_DISPATCH_ORDER = _lsf.Q_ATTRIB2_RELAX_JOB_DISPATCH_ORDER
+Q_ATTRIB2_RELAX_JOB_DISPATCH_ORDER_DISABLED = _lsf.Q_ATTRIB2_RELAX_JOB_DISPATCH_ORDER_DISABLED
+Q_ATTRIB2_ABS_RUNLIMIT = _lsf.Q_ATTRIB2_ABS_RUNLIMIT
+MASTER_NULL = _lsf.MASTER_NULL
+MASTER_RESIGN = _lsf.MASTER_RESIGN
+MASTER_RECONFIG = _lsf.MASTER_RECONFIG
+MASTER_FATAL = _lsf.MASTER_FATAL
+MASTER_MEM = _lsf.MASTER_MEM
+MASTER_CONF = _lsf.MASTER_CONF
+MASTER_EVENT = _lsf.MASTER_EVENT
+MASTER_DISABLE = _lsf.MASTER_DISABLE
+MASTER_PRESTART = _lsf.MASTER_PRESTART
+MASTER_EST_INIT = _lsf.MASTER_EST_INIT
+MASTER_EST_CHANCLOSE = _lsf.MASTER_EST_CHANCLOSE
+MASTER_EST_FIN = _lsf.MASTER_EST_FIN
+MBD_USER_CMD = _lsf.MBD_USER_CMD
+MBD_NON_USER_CMD = _lsf.MBD_NON_USER_CMD
+JOB_STAT_NULL = _lsf.JOB_STAT_NULL
+JOB_STAT_PEND = _lsf.JOB_STAT_PEND
+JOB_STAT_PSUSP = _lsf.JOB_STAT_PSUSP
+JOB_STAT_RUN = _lsf.JOB_STAT_RUN
+JOB_STAT_SSUSP = _lsf.JOB_STAT_SSUSP
+JOB_STAT_USUSP = _lsf.JOB_STAT_USUSP
+JOB_STAT_EXIT = _lsf.JOB_STAT_EXIT
+JOB_STAT_DONE = _lsf.JOB_STAT_DONE
+JOB_STAT_PDONE = _lsf.JOB_STAT_PDONE
+JOB_STAT_PERR = _lsf.JOB_STAT_PERR
+JOB_STAT_WAIT = _lsf.JOB_STAT_WAIT
+JOB_STAT_RUNKWN = _lsf.JOB_STAT_RUNKWN
+JOB_STAT_UNKWN = _lsf.JOB_STAT_UNKWN
+JOB_STAT_PROV = _lsf.JOB_STAT_PROV
+EVENT_JOB_NEW = _lsf.EVENT_JOB_NEW
+EVENT_JOB_START = _lsf.EVENT_JOB_START
+EVENT_JOB_STATUS = _lsf.EVENT_JOB_STATUS
+EVENT_JOB_SWITCH = _lsf.EVENT_JOB_SWITCH
+EVENT_JOB_MOVE = _lsf.EVENT_JOB_MOVE
+EVENT_QUEUE_CTRL = _lsf.EVENT_QUEUE_CTRL
+EVENT_HOST_CTRL = _lsf.EVENT_HOST_CTRL
+EVENT_MBD_DIE = _lsf.EVENT_MBD_DIE
+EVENT_MBD_UNFULFILL = _lsf.EVENT_MBD_UNFULFILL
+EVENT_JOB_FINISH = _lsf.EVENT_JOB_FINISH
+EVENT_LOAD_INDEX = _lsf.EVENT_LOAD_INDEX
+EVENT_CHKPNT = _lsf.EVENT_CHKPNT
+EVENT_MIG = _lsf.EVENT_MIG
+EVENT_PRE_EXEC_START = _lsf.EVENT_PRE_EXEC_START
+EVENT_MBD_START = _lsf.EVENT_MBD_START
+EVENT_JOB_ROUTE = _lsf.EVENT_JOB_ROUTE
+EVENT_JOB_MODIFY = _lsf.EVENT_JOB_MODIFY
+EVENT_JOB_SIGNAL = _lsf.EVENT_JOB_SIGNAL
+EVENT_CAL_NEW = _lsf.EVENT_CAL_NEW
+EVENT_CAL_MODIFY = _lsf.EVENT_CAL_MODIFY
+EVENT_CAL_DELETE = _lsf.EVENT_CAL_DELETE
+EVENT_JOB_FORWARD = _lsf.EVENT_JOB_FORWARD
+EVENT_JOB_ACCEPT = _lsf.EVENT_JOB_ACCEPT
+EVENT_STATUS_ACK = _lsf.EVENT_STATUS_ACK
+EVENT_JOB_EXECUTE = _lsf.EVENT_JOB_EXECUTE
+EVENT_JOB_MSG = _lsf.EVENT_JOB_MSG
+EVENT_JOB_MSG_ACK = _lsf.EVENT_JOB_MSG_ACK
+EVENT_JOB_REQUEUE = _lsf.EVENT_JOB_REQUEUE
+EVENT_JOB_OCCUPY_REQ = _lsf.EVENT_JOB_OCCUPY_REQ
+EVENT_JOB_VACATED = _lsf.EVENT_JOB_VACATED
+EVENT_JOB_SIGACT = _lsf.EVENT_JOB_SIGACT
+EVENT_SBD_JOB_STATUS = _lsf.EVENT_SBD_JOB_STATUS
+EVENT_JOB_START_ACCEPT = _lsf.EVENT_JOB_START_ACCEPT
+EVENT_CAL_UNDELETE = _lsf.EVENT_CAL_UNDELETE
+EVENT_JOB_CLEAN = _lsf.EVENT_JOB_CLEAN
+EVENT_JOB_EXCEPTION = _lsf.EVENT_JOB_EXCEPTION
+EVENT_JGRP_ADD = _lsf.EVENT_JGRP_ADD
+EVENT_JGRP_MOD = _lsf.EVENT_JGRP_MOD
+EVENT_JGRP_CTRL = _lsf.EVENT_JGRP_CTRL
+EVENT_JOB_FORCE = _lsf.EVENT_JOB_FORCE
+EVENT_LOG_SWITCH = _lsf.EVENT_LOG_SWITCH
+EVENT_JOB_MODIFY2 = _lsf.EVENT_JOB_MODIFY2
+EVENT_JGRP_STATUS = _lsf.EVENT_JGRP_STATUS
+EVENT_JOB_ATTR_SET = _lsf.EVENT_JOB_ATTR_SET
+EVENT_JOB_EXT_MSG = _lsf.EVENT_JOB_EXT_MSG
+EVENT_JOB_ATTA_DATA = _lsf.EVENT_JOB_ATTA_DATA
+EVENT_JOB_CHUNK = _lsf.EVENT_JOB_CHUNK
+EVENT_SBD_UNREPORTED_STATUS = _lsf.EVENT_SBD_UNREPORTED_STATUS
+EVENT_ADRSV_FINISH = _lsf.EVENT_ADRSV_FINISH
+EVENT_HGHOST_CTRL = _lsf.EVENT_HGHOST_CTRL
+EVENT_CPUPROFILE_STATUS = _lsf.EVENT_CPUPROFILE_STATUS
+EVENT_DATA_LOGGING = _lsf.EVENT_DATA_LOGGING
+EVENT_JOB_RUN_RUSAGE = _lsf.EVENT_JOB_RUN_RUSAGE
+EVENT_END_OF_STREAM = _lsf.EVENT_END_OF_STREAM
+EVENT_SLA_RECOMPUTE = _lsf.EVENT_SLA_RECOMPUTE
+EVENT_METRIC_LOG = _lsf.EVENT_METRIC_LOG
+EVENT_TASK_FINISH = _lsf.EVENT_TASK_FINISH
+EVENT_JOB_RESIZE_NOTIFY_START = _lsf.EVENT_JOB_RESIZE_NOTIFY_START
+EVENT_JOB_RESIZE_NOTIFY_ACCEPT = _lsf.EVENT_JOB_RESIZE_NOTIFY_ACCEPT
+EVENT_JOB_RESIZE_NOTIFY_DONE = _lsf.EVENT_JOB_RESIZE_NOTIFY_DONE
+EVENT_JOB_RESIZE_RELEASE = _lsf.EVENT_JOB_RESIZE_RELEASE
+EVENT_JOB_RESIZE_CANCEL = _lsf.EVENT_JOB_RESIZE_CANCEL
+EVENT_JOB_RESIZE = _lsf.EVENT_JOB_RESIZE
+EVENT_JOB_ARRAY_ELEMENT = _lsf.EVENT_JOB_ARRAY_ELEMENT
+EVENT_MBD_SIM_STATUS = _lsf.EVENT_MBD_SIM_STATUS
+EVENT_JOB_FINISH2 = _lsf.EVENT_JOB_FINISH2
+EVENT_JOB_STARTLIMIT = _lsf.EVENT_JOB_STARTLIMIT
+EVENT_JOB_STATUS2 = _lsf.EVENT_JOB_STATUS2
+EVENT_JOB_PENDING_REASONS = _lsf.EVENT_JOB_PENDING_REASONS
+EVENT_JOB_SWITCH2 = _lsf.EVENT_JOB_SWITCH2
+EVENT_JOB_ACCEPTACK = _lsf.EVENT_JOB_ACCEPTACK
+EVENT_JOB_PROVISION_START = _lsf.EVENT_JOB_PROVISION_START
+EVENT_JOB_PROVISION_END = _lsf.EVENT_JOB_PROVISION_END
+EVENT_JOB_FANOUT_INFO = _lsf.EVENT_JOB_FANOUT_INFO
+EVENT_HOST_POWER_STATUS = _lsf.EVENT_HOST_POWER_STATUS
+EVENT_JOB_PROV_HOST = _lsf.EVENT_JOB_PROV_HOST
+EVENT_JOB_MIG_TIMEOUT = _lsf.EVENT_JOB_MIG_TIMEOUT
+EVENT_SBD_ASYNC_JOB_STATUS_REQ = _lsf.EVENT_SBD_ASYNC_JOB_STATUS_REQ
+EVENT_SBD_ASYNC_JOB_STATUS_REPLY = _lsf.EVENT_SBD_ASYNC_JOB_STATUS_REPLY
+EVENT_SBD_JOB_START_ACCEPT = _lsf.EVENT_SBD_JOB_START_ACCEPT
+EVENT_JOB_RESIZE_REQUEST = _lsf.EVENT_JOB_RESIZE_REQUEST
+NUM_EVENT_TYPES = _lsf.NUM_EVENT_TYPES
+EVENT_JOB_RELATED = _lsf.EVENT_JOB_RELATED
+EVENT_NON_JOB_RELATED = _lsf.EVENT_NON_JOB_RELATED
+PEND_JOB_REASON = _lsf.PEND_JOB_REASON
+PEND_JOB_NEW = _lsf.PEND_JOB_NEW
+PEND_JOB_START_TIME = _lsf.PEND_JOB_START_TIME
+PEND_JOB_DEPEND = _lsf.PEND_JOB_DEPEND
+PEND_JOB_DEP_INVALID = _lsf.PEND_JOB_DEP_INVALID
+PEND_JOB_MIG = _lsf.PEND_JOB_MIG
+PEND_JOB_PRE_EXEC = _lsf.PEND_JOB_PRE_EXEC
+PEND_JOB_NO_FILE = _lsf.PEND_JOB_NO_FILE
+PEND_JOB_ENV = _lsf.PEND_JOB_ENV
+PEND_JOB_PATHS = _lsf.PEND_JOB_PATHS
+PEND_JOB_OPEN_FILES = _lsf.PEND_JOB_OPEN_FILES
+PEND_JOB_EXEC_INIT = _lsf.PEND_JOB_EXEC_INIT
+PEND_JOB_RESTART_FILE = _lsf.PEND_JOB_RESTART_FILE
+PEND_JOB_DELAY_SCHED = _lsf.PEND_JOB_DELAY_SCHED
+PEND_JOB_SWITCH = _lsf.PEND_JOB_SWITCH
+PEND_JOB_DEP_REJECT = _lsf.PEND_JOB_DEP_REJECT
+PEND_JOB_JS_DISABLED = _lsf.PEND_JOB_JS_DISABLED
+PEND_JOB_NO_PASSWD = _lsf.PEND_JOB_NO_PASSWD
+PEND_JOB_LOGON_FAIL = _lsf.PEND_JOB_LOGON_FAIL
+PEND_JOB_MODIFY = _lsf.PEND_JOB_MODIFY
+PEND_JOB_TIME_INVALID = _lsf.PEND_JOB_TIME_INVALID
+PEND_TIME_EXPIRED = _lsf.PEND_TIME_EXPIRED
+PEND_JOB_REQUEUED = _lsf.PEND_JOB_REQUEUED
+PEND_WAIT_NEXT = _lsf.PEND_WAIT_NEXT
+PEND_JGRP_HOLD = _lsf.PEND_JGRP_HOLD
+PEND_JGRP_INACT = _lsf.PEND_JGRP_INACT
+PEND_JGRP_WAIT = _lsf.PEND_JGRP_WAIT
+PEND_JOB_RCLUS_UNREACH = _lsf.PEND_JOB_RCLUS_UNREACH
+PEND_JOB_QUE_REJECT = _lsf.PEND_JOB_QUE_REJECT
+PEND_JOB_RSCHED_START = _lsf.PEND_JOB_RSCHED_START
+PEND_JOB_RSCHED_ALLOC = _lsf.PEND_JOB_RSCHED_ALLOC
+PEND_JOB_FORWARDED = _lsf.PEND_JOB_FORWARDED
+PEND_JOB_RMT_ZOMBIE = _lsf.PEND_JOB_RMT_ZOMBIE
+PEND_JOB_ENFUGRP = _lsf.PEND_JOB_ENFUGRP
+PEND_SYS_UNABLE = _lsf.PEND_SYS_UNABLE
+PEND_JGRP_RELEASE = _lsf.PEND_JGRP_RELEASE
+PEND_HAS_RUN = _lsf.PEND_HAS_RUN
+PEND_JOB_ARRAY_JLIMIT = _lsf.PEND_JOB_ARRAY_JLIMIT
+PEND_CHKPNT_DIR = _lsf.PEND_CHKPNT_DIR
+PEND_CHUNK_FAIL = _lsf.PEND_CHUNK_FAIL
+PEND_JOB_SLA_MET = _lsf.PEND_JOB_SLA_MET
+PEND_JOB_APP_NOEXIST = _lsf.PEND_JOB_APP_NOEXIST
+PEND_APP_PROCLIMIT = _lsf.PEND_APP_PROCLIMIT
+PEND_EGO_NO_HOSTS = _lsf.PEND_EGO_NO_HOSTS
+PEND_JGRP_JLIMIT = _lsf.PEND_JGRP_JLIMIT
+PEND_PREEXEC_LIMIT = _lsf.PEND_PREEXEC_LIMIT
+PEND_REQUEUE_LIMIT = _lsf.PEND_REQUEUE_LIMIT
+PEND_BAD_RESREQ = _lsf.PEND_BAD_RESREQ
+PEND_RSV_INACTIVE = _lsf.PEND_RSV_INACTIVE
+PEND_WAITING_RESUME = _lsf.PEND_WAITING_RESUME
+PEND_SLOT_COMPOUND = _lsf.PEND_SLOT_COMPOUND
+PEND_SLOT_ALTERNATIVE = _lsf.PEND_SLOT_ALTERNATIVE
+PEND_FANOUT_FAIL = _lsf.PEND_FANOUT_FAIL
+PEND_SLOT_LIST_JOB_LEVEL = _lsf.PEND_SLOT_LIST_JOB_LEVEL
+PEND_JOB_SIZE_LIST_APP_LEVEL = _lsf.PEND_JOB_SIZE_LIST_APP_LEVEL
+PEND_JOB_SIZE_LIST_QUEUE_LEVEL = _lsf.PEND_JOB_SIZE_LIST_QUEUE_LEVEL
+PEND_NOTMATCH_NBLOCK = _lsf.PEND_NOTMATCH_NBLOCK
+PEND_NLIST_NBLOCK_JOB = _lsf.PEND_NLIST_NBLOCK_JOB
+PEND_NLIST_NBLOCK_APP = _lsf.PEND_NLIST_NBLOCK_APP
+PEND_NLIST_NBLOCK_QUEUE = _lsf.PEND_NLIST_NBLOCK_QUEUE
+PEND_NOTMATCH_NBLOCK_HOST = _lsf.PEND_NOTMATCH_NBLOCK_HOST
+PEND_NO_CANDIDATE_HOST = _lsf.PEND_NO_CANDIDATE_HOST
+PEND_MAX_JOB_DISPATCH = _lsf.PEND_MAX_JOB_DISPATCH
+PEND_RC_HOSTS_NOT_DEFINED = _lsf.PEND_RC_HOSTS_NOT_DEFINED
+PEND_RC_HOSTS_DOES_NOT_MATCH = _lsf.PEND_RC_HOSTS_DOES_NOT_MATCH
+PEND_RC_ACCT_DOES_NOT_MATCH = _lsf.PEND_RC_ACCT_DOES_NOT_MATCH
+PEND_QUE_INACT = _lsf.PEND_QUE_INACT
+PEND_QUE_WINDOW = _lsf.PEND_QUE_WINDOW
+PEND_QUE_JOB_LIMIT = _lsf.PEND_QUE_JOB_LIMIT
+PEND_QUE_USR_JLIMIT = _lsf.PEND_QUE_USR_JLIMIT
+PEND_QUE_USR_PJLIMIT = _lsf.PEND_QUE_USR_PJLIMIT
+PEND_QUE_PRE_FAIL = _lsf.PEND_QUE_PRE_FAIL
+PEND_NQS_RETRY = _lsf.PEND_NQS_RETRY
+PEND_NQS_REASONS = _lsf.PEND_NQS_REASONS
+PEND_NQS_FUN_OFF = _lsf.PEND_NQS_FUN_OFF
+PEND_SYS_NOT_READY = _lsf.PEND_SYS_NOT_READY
+PEND_SBD_JOB_REQUEUE = _lsf.PEND_SBD_JOB_REQUEUE
+PEND_JOB_SPREAD_TASK = _lsf.PEND_JOB_SPREAD_TASK
+PEND_QUE_SPREAD_TASK = _lsf.PEND_QUE_SPREAD_TASK
+PEND_QUE_PJOB_LIMIT = _lsf.PEND_QUE_PJOB_LIMIT
+PEND_QUE_WINDOW_WILL_CLOSE = _lsf.PEND_QUE_WINDOW_WILL_CLOSE
+PEND_QUE_PROCLIMIT = _lsf.PEND_QUE_PROCLIMIT
+PEND_SBD_PLUGIN = _lsf.PEND_SBD_PLUGIN
+PEND_WAIT_SIGN_LEASE = _lsf.PEND_WAIT_SIGN_LEASE
+PEND_WAIT_SLOT_SHARE = _lsf.PEND_WAIT_SLOT_SHARE
+PEND_USER_JOB_LIMIT = _lsf.PEND_USER_JOB_LIMIT
+PEND_UGRP_JOB_LIMIT = _lsf.PEND_UGRP_JOB_LIMIT
+PEND_USER_PJOB_LIMIT = _lsf.PEND_USER_PJOB_LIMIT
+PEND_UGRP_PJOB_LIMIT = _lsf.PEND_UGRP_PJOB_LIMIT
+PEND_USER_RESUME = _lsf.PEND_USER_RESUME
+PEND_USER_STOP = _lsf.PEND_USER_STOP
+PEND_NO_MAPPING = _lsf.PEND_NO_MAPPING
+PEND_RMT_PERMISSION = _lsf.PEND_RMT_PERMISSION
+PEND_ADMIN_STOP = _lsf.PEND_ADMIN_STOP
+PEND_MLS_INVALID = _lsf.PEND_MLS_INVALID
+PEND_MLS_CLEARANCE = _lsf.PEND_MLS_CLEARANCE
+PEND_MLS_RHOST = _lsf.PEND_MLS_RHOST
+PEND_MLS_DOMINATE = _lsf.PEND_MLS_DOMINATE
+PEND_MLS_FATAL = _lsf.PEND_MLS_FATAL
+PEND_INTERNAL_STOP = _lsf.PEND_INTERNAL_STOP
+PEND_USER_JOB_SLOT_LIMIT_RESTRICTION = _lsf.PEND_USER_JOB_SLOT_LIMIT_RESTRICTION
+PEND_HOST_RES_REQ = _lsf.PEND_HOST_RES_REQ
+PEND_HOST_NONEXCLUSIVE = _lsf.PEND_HOST_NONEXCLUSIVE
+PEND_HOST_JOB_SSUSP = _lsf.PEND_HOST_JOB_SSUSP
+PEND_HOST_PART_PRIO = _lsf.PEND_HOST_PART_PRIO
+PEND_SBD_GETPID = _lsf.PEND_SBD_GETPID
+PEND_SBD_LOCK = _lsf.PEND_SBD_LOCK
+PEND_SBD_ZOMBIE = _lsf.PEND_SBD_ZOMBIE
+PEND_SBD_ROOT = _lsf.PEND_SBD_ROOT
+PEND_HOST_WIN_WILL_CLOSE = _lsf.PEND_HOST_WIN_WILL_CLOSE
+PEND_HOST_MISS_DEADLINE = _lsf.PEND_HOST_MISS_DEADLINE
+PEND_FIRST_HOST_INELIGIBLE = _lsf.PEND_FIRST_HOST_INELIGIBLE
+PEND_HOST_EXCLUSIVE_RESERVE = _lsf.PEND_HOST_EXCLUSIVE_RESERVE
+PEND_FIRST_HOST_REUSE = _lsf.PEND_FIRST_HOST_REUSE
+PEND_HOST_JOB_VM = _lsf.PEND_HOST_JOB_VM
+PEND_HOSTFILE = _lsf.PEND_HOSTFILE
+PEND_HOST_DISABLED = _lsf.PEND_HOST_DISABLED
+PEND_HOST_LOCKED = _lsf.PEND_HOST_LOCKED
+PEND_HOST_LESS_SLOTS = _lsf.PEND_HOST_LESS_SLOTS
+PEND_HOST_WINDOW = _lsf.PEND_HOST_WINDOW
+PEND_HOST_JOB_LIMIT = _lsf.PEND_HOST_JOB_LIMIT
+PEND_QUE_PROC_JLIMIT = _lsf.PEND_QUE_PROC_JLIMIT
+PEND_QUE_HOST_JLIMIT = _lsf.PEND_QUE_HOST_JLIMIT
+PEND_USER_PROC_JLIMIT = _lsf.PEND_USER_PROC_JLIMIT
+PEND_HOST_USR_JLIMIT = _lsf.PEND_HOST_USR_JLIMIT
+PEND_HOST_QUE_MEMB = _lsf.PEND_HOST_QUE_MEMB
+PEND_HOST_USR_SPEC = _lsf.PEND_HOST_USR_SPEC
+PEND_HOST_PART_USER = _lsf.PEND_HOST_PART_USER
+PEND_HOST_NO_USER = _lsf.PEND_HOST_NO_USER
+PEND_HOST_ACCPT_ONE = _lsf.PEND_HOST_ACCPT_ONE
+PEND_LOAD_UNAVAIL = _lsf.PEND_LOAD_UNAVAIL
+PEND_HOST_NO_LIM = _lsf.PEND_HOST_NO_LIM
+PEND_HOST_UNLICENSED = _lsf.PEND_HOST_UNLICENSED
+PEND_HOST_QUE_RESREQ = _lsf.PEND_HOST_QUE_RESREQ
+PEND_HOST_SCHED_TYPE = _lsf.PEND_HOST_SCHED_TYPE
+PEND_JOB_NO_SPAN = _lsf.PEND_JOB_NO_SPAN
+PEND_QUE_NO_SPAN = _lsf.PEND_QUE_NO_SPAN
+PEND_HOST_EXCLUSIVE = _lsf.PEND_HOST_EXCLUSIVE
+PEND_HOST_JS_DISABLED = _lsf.PEND_HOST_JS_DISABLED
+PEND_UGRP_PROC_JLIMIT = _lsf.PEND_UGRP_PROC_JLIMIT
+PEND_BAD_HOST = _lsf.PEND_BAD_HOST
+PEND_QUEUE_HOST = _lsf.PEND_QUEUE_HOST
+PEND_HOST_LOCKED_MASTER = _lsf.PEND_HOST_LOCKED_MASTER
+PEND_HOST_LESS_RSVSLOTS = _lsf.PEND_HOST_LESS_RSVSLOTS
+PEND_HOST_LESS_DURATION = _lsf.PEND_HOST_LESS_DURATION
+PEND_HOST_NO_RSVID = _lsf.PEND_HOST_NO_RSVID
+PEND_HOST_LEASE_INACTIVE = _lsf.PEND_HOST_LEASE_INACTIVE
+PEND_HOST_ADRSV_ACTIVE = _lsf.PEND_HOST_ADRSV_ACTIVE
+PEND_QUE_RSVID_NOMATCH = _lsf.PEND_QUE_RSVID_NOMATCH
+PEND_HOST_GENERAL = _lsf.PEND_HOST_GENERAL
+PEND_HOST_RSV = _lsf.PEND_HOST_RSV
+PEND_HOST_NOT_CU = _lsf.PEND_HOST_NOT_CU
+PEND_HOST_CU_EXCL = _lsf.PEND_HOST_CU_EXCL
+PEND_HOST_CU_OCCUPIED = _lsf.PEND_HOST_CU_OCCUPIED
+PEND_HOST_USABLE_CU = _lsf.PEND_HOST_USABLE_CU
+PEND_JOB_FIRST_CU = _lsf.PEND_JOB_FIRST_CU
+PEND_HOST_CU_EXCL_RSV = _lsf.PEND_HOST_CU_EXCL_RSV
+PEND_JOB_CU_MAXCUS = _lsf.PEND_JOB_CU_MAXCUS
+PEND_JOB_CU_BALANCE = _lsf.PEND_JOB_CU_BALANCE
+PEND_CU_TOPLIB_HOST = _lsf.PEND_CU_TOPLIB_HOST
+PEND_HOST_PREEXEC_FAIL = _lsf.PEND_HOST_PREEXEC_FAIL
+PEND_HOST_VNODE = _lsf.PEND_HOST_VNODE
+PEND_JOB_HOST_LIMIT = _lsf.PEND_JOB_HOST_LIMIT
+PEND_DURATION_OTHERS = _lsf.PEND_DURATION_OTHERS
+PEND_HOST_IN_CYCLE_TIME = _lsf.PEND_HOST_IN_CYCLE_TIME
+PEND_HOST_REMOTE_DATA_REQ = _lsf.PEND_HOST_REMOTE_DATA_REQ
+PEND_HOST_DISCONNECTED = _lsf.PEND_HOST_DISCONNECTED
+PEND_HOST_TEMPLATE_REP = _lsf.PEND_HOST_TEMPLATE_REP
+PEND_SBD_UNREACH = _lsf.PEND_SBD_UNREACH
+PEND_SBD_JOB_QUOTA = _lsf.PEND_SBD_JOB_QUOTA
+PEND_JOB_START_FAIL = _lsf.PEND_JOB_START_FAIL
+PEND_JOB_START_UNKNWN = _lsf.PEND_JOB_START_UNKNWN
+PEND_SBD_NO_MEM = _lsf.PEND_SBD_NO_MEM
+PEND_SBD_NO_PROCESS = _lsf.PEND_SBD_NO_PROCESS
+PEND_SBD_SOCKETPAIR = _lsf.PEND_SBD_SOCKETPAIR
+PEND_SBD_JOB_ACCEPT = _lsf.PEND_SBD_JOB_ACCEPT
+PEND_LEASE_JOB_REMOTE_DISPATCH = _lsf.PEND_LEASE_JOB_REMOTE_DISPATCH
+PEND_JOB_RESTART_FAIL = _lsf.PEND_JOB_RESTART_FAIL
+PEND_CHUNK_MAX_WAIT_TIME = _lsf.PEND_CHUNK_MAX_WAIT_TIME
+PEND_SBD_WRITE_EVENT_FAIL = _lsf.PEND_SBD_WRITE_EVENT_FAIL
+PEND_HOST_LOAD = _lsf.PEND_HOST_LOAD
+PEND_HOST_QUE_RUSAGE = _lsf.PEND_HOST_QUE_RUSAGE
+PEND_HOST_JOB_RUSAGE = _lsf.PEND_HOST_JOB_RUSAGE
+PEND_RMT_JOB_FORGOTTEN = _lsf.PEND_RMT_JOB_FORGOTTEN
+PEND_RMT_IMPT_JOBBKLG = _lsf.PEND_RMT_IMPT_JOBBKLG
+PEND_RMT_MAX_RSCHED_TIME = _lsf.PEND_RMT_MAX_RSCHED_TIME
+PEND_RMT_MAX_PREEXEC_RETRY = _lsf.PEND_RMT_MAX_PREEXEC_RETRY
+PEND_RMT_QUEUE_CLOSED = _lsf.PEND_RMT_QUEUE_CLOSED
+PEND_RMT_QUEUE_INACTIVE = _lsf.PEND_RMT_QUEUE_INACTIVE
+PEND_RMT_QUEUE_CONGESTED = _lsf.PEND_RMT_QUEUE_CONGESTED
+PEND_RMT_QUEUE_DISCONNECT = _lsf.PEND_RMT_QUEUE_DISCONNECT
+PEND_RMT_QUEUE_NOPERMISSION = _lsf.PEND_RMT_QUEUE_NOPERMISSION
+PEND_RMT_BAD_TIME = _lsf.PEND_RMT_BAD_TIME
+PEND_RMT_PERMISSIONS = _lsf.PEND_RMT_PERMISSIONS
+PEND_RMT_PROC_NUM = _lsf.PEND_RMT_PROC_NUM
+PEND_RMT_QUEUE_USE = _lsf.PEND_RMT_QUEUE_USE
+PEND_RMT_NO_INTERACTIVE = _lsf.PEND_RMT_NO_INTERACTIVE
+PEND_RMT_ONLY_INTERACTIVE = _lsf.PEND_RMT_ONLY_INTERACTIVE
+PEND_RMT_PROC_LESS = _lsf.PEND_RMT_PROC_LESS
+PEND_RMT_OVER_LIMIT = _lsf.PEND_RMT_OVER_LIMIT
+PEND_RMT_BAD_RESREQ = _lsf.PEND_RMT_BAD_RESREQ
+PEND_RMT_CREATE_JOB = _lsf.PEND_RMT_CREATE_JOB
+PEND_RMT_RERUN = _lsf.PEND_RMT_RERUN
+PEND_RMT_EXIT_REQUEUE = _lsf.PEND_RMT_EXIT_REQUEUE
+PEND_RMT_REQUEUE = _lsf.PEND_RMT_REQUEUE
+PEND_RMT_JOB_FORWARDING = _lsf.PEND_RMT_JOB_FORWARDING
+PEND_RMT_QUEUE_INVALID = _lsf.PEND_RMT_QUEUE_INVALID
+PEND_RMT_QUEUE_NO_EXCLUSIVE = _lsf.PEND_RMT_QUEUE_NO_EXCLUSIVE
+PEND_RMT_UGROUP_MEMBER = _lsf.PEND_RMT_UGROUP_MEMBER
+PEND_RMT_INTERACTIVE_RERUN = _lsf.PEND_RMT_INTERACTIVE_RERUN
+PEND_RMT_JOB_START_FAIL = _lsf.PEND_RMT_JOB_START_FAIL
+PEND_RMT_FORWARD_FAIL_UGROUP_MEMBER = _lsf.PEND_RMT_FORWARD_FAIL_UGROUP_MEMBER
+PEND_RMT_HOST_NO_RSVID = _lsf.PEND_RMT_HOST_NO_RSVID
+PEND_RMT_APP_NULL = _lsf.PEND_RMT_APP_NULL
+PEND_RMT_BAD_RUNLIMIT = _lsf.PEND_RMT_BAD_RUNLIMIT
+PEND_RMT_OVER_QUEUE_LIMIT = _lsf.PEND_RMT_OVER_QUEUE_LIMIT
+PEND_RMT_WHEN_NO_SLOTS = _lsf.PEND_RMT_WHEN_NO_SLOTS
+PEND_RMT_ADJUST_ASKHOST = _lsf.PEND_RMT_ADJUST_ASKHOST
+PEND_RMT_NO_VALID_ASKHOST = _lsf.PEND_RMT_NO_VALID_ASKHOST
+PEND_RMT_BRUN_FAILED = _lsf.PEND_RMT_BRUN_FAILED
+PEND_RMT_QUEUE_HOST = _lsf.PEND_RMT_QUEUE_HOST
+PEND_RMT_UNFORWARD = _lsf.PEND_RMT_UNFORWARD
+PEND_RMT_JOB_BOT = _lsf.PEND_RMT_JOB_BOT
+PEND_RMT_ASKED_RESOURCE = _lsf.PEND_RMT_ASKED_RESOURCE
+PEND_RMT_BAD_ASKED_CLUSTER = _lsf.PEND_RMT_BAD_ASKED_CLUSTER
+PEND_RMT_QUEUE_ASKED_CLUSTER = _lsf.PEND_RMT_QUEUE_ASKED_CLUSTER
+PEND_RMT_PROC_APP_QUE = _lsf.PEND_RMT_PROC_APP_QUE
+PEND_RMT_QUEUE_DATA_REQ = _lsf.PEND_RMT_QUEUE_DATA_REQ
+PEND_GENERAL_LIMIT_USER = _lsf.PEND_GENERAL_LIMIT_USER
+PEND_GENERAL_LIMIT_QUEUE = _lsf.PEND_GENERAL_LIMIT_QUEUE
+PEND_GENERAL_LIMIT_PROJECT = _lsf.PEND_GENERAL_LIMIT_PROJECT
+PEND_GENERAL_LIMIT_CLUSTER = _lsf.PEND_GENERAL_LIMIT_CLUSTER
+PEND_GENERAL_LIMIT_HOST = _lsf.PEND_GENERAL_LIMIT_HOST
+PEND_GENERAL_LIMIT_JOBS_USER = _lsf.PEND_GENERAL_LIMIT_JOBS_USER
+PEND_GENERAL_LIMIT_JOBS_QUEUE = _lsf.PEND_GENERAL_LIMIT_JOBS_QUEUE
+PEND_GENERAL_LIMIT_JOBS_PROJECT = _lsf.PEND_GENERAL_LIMIT_JOBS_PROJECT
+PEND_GENERAL_LIMIT_JOBS_CLUSTER = _lsf.PEND_GENERAL_LIMIT_JOBS_CLUSTER
+PEND_GENERAL_LIMIT_JOBS_HOST = _lsf.PEND_GENERAL_LIMIT_JOBS_HOST
+PEND_GENERAL_LIMIT_JOBS_LIC_PROJECT = _lsf.PEND_GENERAL_LIMIT_JOBS_LIC_PROJECT
+PEND_GENERAL_LIMIT_FWDSLOTS_QUEUE = _lsf.PEND_GENERAL_LIMIT_FWDSLOTS_QUEUE
+PEND_GENERAL_LIMIT_FWDSLOTS_USER = _lsf.PEND_GENERAL_LIMIT_FWDSLOTS_USER
+PEND_GENERAL_LIMIT_FWDSLOTS_PROJECT = _lsf.PEND_GENERAL_LIMIT_FWDSLOTS_PROJECT
+PEND_GENERAL_LIMIT_FWDSLOTS_CLUSTER = _lsf.PEND_GENERAL_LIMIT_FWDSLOTS_CLUSTER
+PEND_RMS_PLUGIN_INTERNAL = _lsf.PEND_RMS_PLUGIN_INTERNAL
+PEND_RMS_PLUGIN_RLA_COMM = _lsf.PEND_RMS_PLUGIN_RLA_COMM
+PEND_RMS_NOT_AVAILABLE = _lsf.PEND_RMS_NOT_AVAILABLE
+PEND_RMS_FAIL_TOPOLOGY = _lsf.PEND_RMS_FAIL_TOPOLOGY
+PEND_RMS_FAIL_ALLOC = _lsf.PEND_RMS_FAIL_ALLOC
+PEND_RMS_SPECIAL_NO_PREEMPT_BACKFILL = _lsf.PEND_RMS_SPECIAL_NO_PREEMPT_BACKFILL
+PEND_RMS_SPECIAL_NO_RESERVE = _lsf.PEND_RMS_SPECIAL_NO_RESERVE
+PEND_RMS_RLA_INTERNAL = _lsf.PEND_RMS_RLA_INTERNAL
+PEND_RMS_NO_SLOTS_SPECIAL = _lsf.PEND_RMS_NO_SLOTS_SPECIAL
+PEND_RMS_RLA_NO_SUCH_USER = _lsf.PEND_RMS_RLA_NO_SUCH_USER
+PEND_RMS_RLA_NO_SUCH_HOST = _lsf.PEND_RMS_RLA_NO_SUCH_HOST
+PEND_RMS_CHUNKJOB = _lsf.PEND_RMS_CHUNKJOB
+PEND_RLA_PROTOMISMATCH = _lsf.PEND_RLA_PROTOMISMATCH
+PEND_RMS_BAD_TOPOLOGY = _lsf.PEND_RMS_BAD_TOPOLOGY
+PEND_RMS_RESREQ_MCONT = _lsf.PEND_RMS_RESREQ_MCONT
+PEND_RMS_RESREQ_PTILE = _lsf.PEND_RMS_RESREQ_PTILE
+PEND_RMS_RESREQ_NODES = _lsf.PEND_RMS_RESREQ_NODES
+PEND_RMS_RESREQ_BASE = _lsf.PEND_RMS_RESREQ_BASE
+PEND_RMS_RESREQ_RAILS = _lsf.PEND_RMS_RESREQ_RAILS
+PEND_RMS_RESREQ_RAILMASK = _lsf.PEND_RMS_RESREQ_RAILMASK
+PEND_MAUI_UNREACH = _lsf.PEND_MAUI_UNREACH
+PEND_MAUI_FORWARD = _lsf.PEND_MAUI_FORWARD
+PEND_MAUI_REASON = _lsf.PEND_MAUI_REASON
+PEND_CPUSET_ATTACH = _lsf.PEND_CPUSET_ATTACH
+PEND_CPUSET_NOT_CPUSETHOST = _lsf.PEND_CPUSET_NOT_CPUSETHOST
+PEND_CPUSET_TOPD_INIT = _lsf.PEND_CPUSET_TOPD_INIT
+PEND_CPUSET_TOPD_TIME_OUT = _lsf.PEND_CPUSET_TOPD_TIME_OUT
+PEND_CPUSET_TOPD_FAIL_ALLOC = _lsf.PEND_CPUSET_TOPD_FAIL_ALLOC
+PEND_CPUSET_TOPD_BAD_REQUEST = _lsf.PEND_CPUSET_TOPD_BAD_REQUEST
+PEND_CPUSET_TOPD_INTERNAL = _lsf.PEND_CPUSET_TOPD_INTERNAL
+PEND_CPUSET_TOPD_SYSAPI_ERR = _lsf.PEND_CPUSET_TOPD_SYSAPI_ERR
+PEND_CPUSET_TOPD_NOSUCH_NAME = _lsf.PEND_CPUSET_TOPD_NOSUCH_NAME
+PEND_CPUSET_TOPD_JOB_EXIST = _lsf.PEND_CPUSET_TOPD_JOB_EXIST
+PEND_CPUSET_TOPD_NO_MEMORY = _lsf.PEND_CPUSET_TOPD_NO_MEMORY
+PEND_CPUSET_TOPD_INVALID_USER = _lsf.PEND_CPUSET_TOPD_INVALID_USER
+PEND_CPUSET_TOPD_PERM_DENY = _lsf.PEND_CPUSET_TOPD_PERM_DENY
+PEND_CPUSET_TOPD_UNREACH = _lsf.PEND_CPUSET_TOPD_UNREACH
+PEND_CPUSET_TOPD_COMM_ERR = _lsf.PEND_CPUSET_TOPD_COMM_ERR
+PEND_CPUSET_PLUGIN_INTERNAL = _lsf.PEND_CPUSET_PLUGIN_INTERNAL
+PEND_CPUSET_CHUNKJOB = _lsf.PEND_CPUSET_CHUNKJOB
+PEND_CPUSET_CPULIST = _lsf.PEND_CPUSET_CPULIST
+PEND_CPUSET_MAXRADIUS = _lsf.PEND_CPUSET_MAXRADIUS
+PEND_NODE_ALLOC_FAIL = _lsf.PEND_NODE_ALLOC_FAIL
+PEND_RMSRID_UNAVAIL = _lsf.PEND_RMSRID_UNAVAIL
+PEND_NO_FREE_CPUS = _lsf.PEND_NO_FREE_CPUS
+PEND_TOPOLOGY_UNKNOWN = _lsf.PEND_TOPOLOGY_UNKNOWN
+PEND_BAD_TOPOLOGY = _lsf.PEND_BAD_TOPOLOGY
+PEND_RLA_COMM = _lsf.PEND_RLA_COMM
+PEND_RLA_NO_SUCH_USER = _lsf.PEND_RLA_NO_SUCH_USER
+PEND_RLA_INTERNAL = _lsf.PEND_RLA_INTERNAL
+PEND_RLA_NO_SUCH_HOST = _lsf.PEND_RLA_NO_SUCH_HOST
+PEND_RESREQ_TOOFEWSLOTS = _lsf.PEND_RESREQ_TOOFEWSLOTS
+PEND_PSET_PLUGIN_INTERNAL = _lsf.PEND_PSET_PLUGIN_INTERNAL
+PEND_PSET_RESREQ_PTILE = _lsf.PEND_PSET_RESREQ_PTILE
+PEND_PSET_RESREQ_CELLS = _lsf.PEND_PSET_RESREQ_CELLS
+PEND_PSET_CHUNKJOB = _lsf.PEND_PSET_CHUNKJOB
+PEND_PSET_NOTSUPPORT = _lsf.PEND_PSET_NOTSUPPORT
+PEND_PSET_BIND_FAIL = _lsf.PEND_PSET_BIND_FAIL
+PEND_PSET_RESREQ_CELLLIST = _lsf.PEND_PSET_RESREQ_CELLLIST
+PEND_SLURM_PLUGIN_INTERNAL = _lsf.PEND_SLURM_PLUGIN_INTERNAL
+PEND_SLURM_RESREQ_NODES = _lsf.PEND_SLURM_RESREQ_NODES
+PEND_SLURM_RESREQ_NODE_ATTR = _lsf.PEND_SLURM_RESREQ_NODE_ATTR
+PEND_SLURM_RESREQ_EXCLUDE = _lsf.PEND_SLURM_RESREQ_EXCLUDE
+PEND_SLURM_RESREQ_NODELIST = _lsf.PEND_SLURM_RESREQ_NODELIST
+PEND_SLURM_RESREQ_CONTIGUOUS = _lsf.PEND_SLURM_RESREQ_CONTIGUOUS
+PEND_SLURM_ALLOC_UNAVAIL = _lsf.PEND_SLURM_ALLOC_UNAVAIL
+PEND_SLURM_RESREQ_BAD_CONSTRAINT = _lsf.PEND_SLURM_RESREQ_BAD_CONSTRAINT
+PEND_CRAYX1_SSP = _lsf.PEND_CRAYX1_SSP
+PEND_CRAYX1_MSP = _lsf.PEND_CRAYX1_MSP
+PEND_CRAYX1_PASS_LIMIT = _lsf.PEND_CRAYX1_PASS_LIMIT
+PEND_CRAYLINUX_ASSIGN_FAIL = _lsf.PEND_CRAYLINUX_ASSIGN_FAIL
+PEND_CRAYLINUX_NODE_REUSE_INTERVAL = _lsf.PEND_CRAYLINUX_NODE_REUSE_INTERVAL
+PEND_BLUEGENE_PLUGIN_INTERNAL = _lsf.PEND_BLUEGENE_PLUGIN_INTERNAL
+PEND_BLUEGENE_ALLOC_UNAVAIL = _lsf.PEND_BLUEGENE_ALLOC_UNAVAIL
+PEND_BLUEGENE_NOFREEMIDPLANES = _lsf.PEND_BLUEGENE_NOFREEMIDPLANES
+PEND_BLUEGENE_NOFREEQUARTERS = _lsf.PEND_BLUEGENE_NOFREEQUARTERS
+PEND_BLUEGENE_NOFREENODECARDS = _lsf.PEND_BLUEGENE_NOFREENODECARDS
+PEND_RESIZE_FIRSTHOSTUNAVAIL = _lsf.PEND_RESIZE_FIRSTHOSTUNAVAIL
+PEND_RESIZE_MASTERSUSP = _lsf.PEND_RESIZE_MASTERSUSP
+PEND_RESIZE_MASTER_SAME = _lsf.PEND_RESIZE_MASTER_SAME
+PEND_RESIZE_SPAN_PTILE = _lsf.PEND_RESIZE_SPAN_PTILE
+PEND_RESIZE_SPAN_HOSTS = _lsf.PEND_RESIZE_SPAN_HOSTS
+PEND_RESIZE_LEASE_HOST = _lsf.PEND_RESIZE_LEASE_HOST
+PEND_RESIZE_POWER_SAVED_HOST = _lsf.PEND_RESIZE_POWER_SAVED_HOST
+PEND_PS_PLUGIN_INTERNAL = _lsf.PEND_PS_PLUGIN_INTERNAL
+PEND_PS_MBD_SYNC = _lsf.PEND_PS_MBD_SYNC
+PEND_COMPOUND_RESREQ_OLD_LEASE_HOST = _lsf.PEND_COMPOUND_RESREQ_OLD_LEASE_HOST
+PEND_COMPOUND_RESREQ_TOPLIB_HOST = _lsf.PEND_COMPOUND_RESREQ_TOPLIB_HOST
+PEND_ALTERNATIVE_RESREQ_OLD_LEASE_HOST = _lsf.PEND_ALTERNATIVE_RESREQ_OLD_LEASE_HOST
+PEND_FWD_COMPOUND_RESREQ = _lsf.PEND_FWD_COMPOUND_RESREQ
+PEND_FWD_ALTERNATIVE_RESREQ = _lsf.PEND_FWD_ALTERNATIVE_RESREQ
+PEND_ALTERNATIVE_RESREQ_TOPLIB_HOST = _lsf.PEND_ALTERNATIVE_RESREQ_TOPLIB_HOST
+PEND_FWD_GLOBAL_SAME_NOT_SUPPORTED = _lsf.PEND_FWD_GLOBAL_SAME_NOT_SUPPORTED
+PEND_BLOCK_RESREQ_OLD_LEASE_HOST = _lsf.PEND_BLOCK_RESREQ_OLD_LEASE_HOST
+PEND_FWD_BLOCK_RESREQ_NOT_SUPPORTED = _lsf.PEND_FWD_BLOCK_RESREQ_NOT_SUPPORTED
+PEND_COMPOUND_RESREQ_USER_HOST_FILE = _lsf.PEND_COMPOUND_RESREQ_USER_HOST_FILE
+PEND_FWD_ALTERNATIVE_CU_NOT_SUPPORTED = _lsf.PEND_FWD_ALTERNATIVE_CU_NOT_SUPPORTED
+PEND_FWD_LONGER_RESDREQ = _lsf.PEND_FWD_LONGER_RESDREQ
+PEND_CU_EXCL_BALANCE = _lsf.PEND_CU_EXCL_BALANCE
+PEND_MULTIPHASE_RESREQ_OLD_LEASE_HOST = _lsf.PEND_MULTIPHASE_RESREQ_OLD_LEASE_HOST
+PEND_AFFINITY_LACK_PU = _lsf.PEND_AFFINITY_LACK_PU
+PEND_AFFINITY_LACK_NUMA_MEMORY = _lsf.PEND_AFFINITY_LACK_NUMA_MEMORY
+PEND_NONE_AFFINITY_HOST = _lsf.PEND_NONE_AFFINITY_HOST
+PEND_AFFINITY_LEASE_IN = _lsf.PEND_AFFINITY_LEASE_IN
+PEND_NOT_REMOTE_AFFINITY_HOST = _lsf.PEND_NOT_REMOTE_AFFINITY_HOST
+PEND_AFFINITY_BIND_DISABLED_HOST = _lsf.PEND_AFFINITY_BIND_DISABLED_HOST
+PEND_QUEUE_SLOT_POOL_LIMIT = _lsf.PEND_QUEUE_SLOT_POOL_LIMIT
+PEND_GUARANTEE_RSRC = _lsf.PEND_GUARANTEE_RSRC
+PEND_GUARANTEE_SLOTS = _lsf.PEND_GUARANTEE_SLOTS
+PEND_GUARANTEE_HOSTS = _lsf.PEND_GUARANTEE_HOSTS
+PEND_GUARANTEE_SLOTS_PER_HOST = _lsf.PEND_GUARANTEE_SLOTS_PER_HOST
+PEND_GUARANTEE_NONSLA = _lsf.PEND_GUARANTEE_NONSLA
+PEND_GUARANTEE_SLOTS_LIMIT = _lsf.PEND_GUARANTEE_SLOTS_LIMIT
+PEND_GUARANTEE_SLOTS_PKG = _lsf.PEND_GUARANTEE_SLOTS_PKG
+PEND_GUARANTEE_MEM_PKG = _lsf.PEND_GUARANTEE_MEM_PKG
+PEND_GUARANTEE_PKG = _lsf.PEND_GUARANTEE_PKG
+PEND_GENERAL_LIMIT_LIC_PROJECT = _lsf.PEND_GENERAL_LIMIT_LIC_PROJECT
+PEND_GENERAL_LIMIT_LIC_PROJECT_END = _lsf.PEND_GENERAL_LIMIT_LIC_PROJECT_END
+PEND_PREEMPT_DELAY = _lsf.PEND_PREEMPT_DELAY
+PEND_GLB_MIXED_MODE = _lsf.PEND_GLB_MIXED_MODE
+PEND_EXTSCHED_REASON = _lsf.PEND_EXTSCHED_REASON
+PEND_PREEMPT_RESUME_DELAY = _lsf.PEND_PREEMPT_RESUME_DELAY
+PEND_JOB_NO_FILE_SBDRESTART = _lsf.PEND_JOB_NO_FILE_SBDRESTART
+PEND_AC_HOST_MISSINFO = _lsf.PEND_AC_HOST_MISSINFO
+PEND_AC_HOST_NO_PM_TEMPLATE = _lsf.PEND_AC_HOST_NO_PM_TEMPLATE
+PEND_AC_HOST_NO_MACHTYPE = _lsf.PEND_AC_HOST_NO_MACHTYPE
+PEND_AC_HOST_NOT_ACJOB = _lsf.PEND_AC_HOST_NOT_ACJOB
+PEND_AC_BAD_PROV_REQ = _lsf.PEND_AC_BAD_PROV_REQ
+PEND_AC_PROV_REQ_FAIL = _lsf.PEND_AC_PROV_REQ_FAIL
+PEND_AC_LESS_MAXMEM = _lsf.PEND_AC_LESS_MAXMEM
+PEND_AC_VM_POWERINGOFF = _lsf.PEND_AC_VM_POWERINGOFF
+PEND_AC_UNUSE_SLOTS = _lsf.PEND_AC_UNUSE_SLOTS
+PEND_HOST_NO_AC_PLUGIN = _lsf.PEND_HOST_NO_AC_PLUGIN
+PEND_AC_ACJOB_PREEMPTED = _lsf.PEND_AC_ACJOB_PREEMPTED
+PEND_AC_ACJOB_RESTORE_FAIL = _lsf.PEND_AC_ACJOB_RESTORE_FAIL
+PEND_AC_FAIL_CREATE_REQ = _lsf.PEND_AC_FAIL_CREATE_REQ
+PEND_AC_RESTOREVM_NOT_SAME_RESGROUP = _lsf.PEND_AC_RESTOREVM_NOT_SAME_RESGROUP
+PEND_AC_RESTOREVM_NOT_ACHOST = _lsf.PEND_AC_RESTOREVM_NOT_ACHOST
+PEND_AC_HOST_NO_VM_TEMPLATE = _lsf.PEND_AC_HOST_NO_VM_TEMPLATE
+PEND_AC_PM_INPROVISIONING = _lsf.PEND_AC_PM_INPROVISIONING
+PEND_AC_HOST_PM_TEMPLATE_NOMATCH = _lsf.PEND_AC_HOST_PM_TEMPLATE_NOMATCH
+PEND_AC_PM_RESERVE_TEMPLATE = _lsf.PEND_AC_PM_RESERVE_TEMPLATE
+PEND_AC_NOT_READY = _lsf.PEND_AC_NOT_READY
+PEND_AC_HOST_NOT_EMPTY = _lsf.PEND_AC_HOST_NOT_EMPTY
+PEND_AC_LSF_NOT_READY = _lsf.PEND_AC_LSF_NOT_READY
+PEND_AC_TTL_NOTEXPIRED = _lsf.PEND_AC_TTL_NOTEXPIRED
+PEND_AC_JOB_VM_NOSUSPENDED = _lsf.PEND_AC_JOB_VM_NOSUSPENDED
+PEND_AC_UNABLE_REPROVISIONING = _lsf.PEND_AC_UNABLE_REPROVISIONING
+PEND_AC_VMJOB_TOO_BIG_MEMSIZE = _lsf.PEND_AC_VMJOB_TOO_BIG_MEMSIZE
+PEND_AC_HOST_INELIGIBLE_FOR_REPROVISION = _lsf.PEND_AC_HOST_INELIGIBLE_FOR_REPROVISION
+PEND_AC_TTL_NOTEXPIRED_ACHOST = _lsf.PEND_AC_TTL_NOTEXPIRED_ACHOST
+PEND_AC_RMT_TEMPLATE_NOT_FOUND = _lsf.PEND_AC_RMT_TEMPLATE_NOT_FOUND
+PEND_AC_NOT_HYPERVISOR = _lsf.PEND_AC_NOT_HYPERVISOR
+PEND_AC_TOO_BIG_MEMSIZE_VM_ON_HV = _lsf.PEND_AC_TOO_BIG_MEMSIZE_VM_ON_HV
+PEND_AC_HOST_RESREQ_COMPOUND = _lsf.PEND_AC_HOST_RESREQ_COMPOUND
+PEND_AC_VMJOB_RESREQ_COMPOUND = _lsf.PEND_AC_VMJOB_RESREQ_COMPOUND
+PEND_AC_ACJOB_RESTART = _lsf.PEND_AC_ACJOB_RESTART
+PEND_AC_ACJOB_RESTART_FAIL = _lsf.PEND_AC_ACJOB_RESTART_FAIL
+PEND_AC_USER_HOST_FILE = _lsf.PEND_AC_USER_HOST_FILE
+PEND_DS_NO_SPACE = _lsf.PEND_DS_NO_SPACE
+PEND_DS_NO_ACCESS = _lsf.PEND_DS_NO_ACCESS
+PEND_DS_STORAGE_UNAVAIL = _lsf.PEND_DS_STORAGE_UNAVAIL
+PEND_DS_STORAGE_CLOSE = _lsf.PEND_DS_STORAGE_CLOSE
+PEND_DS_UNREG_DATASET = _lsf.PEND_DS_UNREG_DATASET
+PEND_DS_NO_CLOSEST_STORAGE = _lsf.PEND_DS_NO_CLOSEST_STORAGE
+PEND_DS_SYNTAX_ERROR = _lsf.PEND_DS_SYNTAX_ERROR
+PEND_GB_MASTER_NOTRUNJOB = _lsf.PEND_GB_MASTER_NOTRUNJOB
+PEND_GB_CLUSTER_DISCONNECTED = _lsf.PEND_GB_CLUSTER_DISCONNECTED
+PEND_GB_CLUSTER_QUEUE_INVALID = _lsf.PEND_GB_CLUSTER_QUEUE_INVALID
+PEND_GB_REMOTE_RESOURCE = _lsf.PEND_GB_REMOTE_RESOURCE
+PEND_GB_REMOTEJOB_NOT_FORWARD = _lsf.PEND_GB_REMOTEJOB_NOT_FORWARD
+PEND_GB_MAX_FORWARD = _lsf.PEND_GB_MAX_FORWARD
+PEND_GB_CLUSTER_EXCLUDED = _lsf.PEND_GB_CLUSTER_EXCLUDED
+PEND_GB_CLUSTER_USR_SPEC = _lsf.PEND_GB_CLUSTER_USR_SPEC
+PEND_GB_CLUSTER_UNLICENSED = _lsf.PEND_GB_CLUSTER_UNLICENSED
+PEND_GB_NO_SHARED_RESOURCE = _lsf.PEND_GB_NO_SHARED_RESOURCE
+PEND_GB_RESOURCE_LIMIT = _lsf.PEND_GB_RESOURCE_LIMIT
+PEND_GB_COMPOUND_RESREQ = _lsf.PEND_GB_COMPOUND_RESREQ
+PEND_GB_ALTERNATIVE_RESREQ = _lsf.PEND_GB_ALTERNATIVE_RESREQ
+PEND_GB_DATA_REQ = _lsf.PEND_GB_DATA_REQ
+PEND_HOST_JOB_RUSAGE_THRESHOLD = _lsf.PEND_HOST_JOB_RUSAGE_THRESHOLD
+PEND_RES_DEFAULT_SIZE = _lsf.PEND_RES_DEFAULT_SIZE
+PEND_RES_EXTEND_SIZE = _lsf.PEND_RES_EXTEND_SIZE
+PEND_RESERVED_REASON_END = _lsf.PEND_RESERVED_REASON_END
+PEND_NETWORK_WINDOW_LIMIT = _lsf.PEND_NETWORK_WINDOW_LIMIT
+PEND_NETWORK_JOB_DEDICATED = _lsf.PEND_NETWORK_JOB_DEDICATED
+PEND_NETWORK_WINDOW_DEDICATED = _lsf.PEND_NETWORK_WINDOW_DEDICATED
+PEND_NETWORK_WINDOW_FAILED = _lsf.PEND_NETWORK_WINDOW_FAILED
+PEND_FWD_NETWORK_REQ = _lsf.PEND_FWD_NETWORK_REQ
+PEND_NETWORK_EXCEED_MAX_PROTOCOL_INSTANCE = _lsf.PEND_NETWORK_EXCEED_MAX_PROTOCOL_INSTANCE
+PEND_NETWORK_CHKPNT = _lsf.PEND_NETWORK_CHKPNT
+PEND_NETWORK_DISABLED = _lsf.PEND_NETWORK_DISABLED
+PEND_NETWORK_LEASE_IN_HOST = _lsf.PEND_NETWORK_LEASE_IN_HOST
+PEND_HOST_QUEUE_PRE_FAIL = _lsf.PEND_HOST_QUEUE_PRE_FAIL
+PEND_HOST_APP_PRE_FAIL = _lsf.PEND_HOST_APP_PRE_FAIL
+PEND_START_MPS_DAEMON_FAIL = _lsf.PEND_START_MPS_DAEMON_FAIL
+PEND_GPU_MODE_CHANGE_FAILED = _lsf.PEND_GPU_MODE_CHANGE_FAILED
+PEND_MANAGE_FREQUENCY_DISABLED = _lsf.PEND_MANAGE_FREQUENCY_DISABLED
+PEND_FREQUENCY_EXCLUSIVE = _lsf.PEND_FREQUENCY_EXCLUSIVE
+PEND_FREQUENCY_BY_CORE = _lsf.PEND_FREQUENCY_BY_CORE
+PEND_AUTORESIZE_EAS_JOB = _lsf.PEND_AUTORESIZE_EAS_JOB
+PEND_GENERATE_OR_AUTO_FREQ_DISABLE = _lsf.PEND_GENERATE_OR_AUTO_FREQ_DISABLE
+PEND_GENERATE_OR_AUTO_FREQ_EXCLUSIVE = _lsf.PEND_GENERATE_OR_AUTO_FREQ_EXCLUSIVE
+PEND_DATA_WAITING_FOR_STAGING = _lsf.PEND_DATA_WAITING_FOR_STAGING
+PEND_EXTSCHED_HOST_FILE = _lsf.PEND_EXTSCHED_HOST_FILE
+PEND_CUSTOMER_MIN = _lsf.PEND_CUSTOMER_MIN
+PEND_CUSTOMER_MAX = _lsf.PEND_CUSTOMER_MAX
+PEND_MAX_REASONS = _lsf.PEND_MAX_REASONS
+SUSP_USER_REASON = _lsf.SUSP_USER_REASON
+SUSP_USER_RESUME = _lsf.SUSP_USER_RESUME
+SUSP_USER_STOP = _lsf.SUSP_USER_STOP
+SUSP_QUEUE_REASON = _lsf.SUSP_QUEUE_REASON
+SUSP_QUEUE_WINDOW = _lsf.SUSP_QUEUE_WINDOW
+SUSP_RESCHED_PREEMPT = _lsf.SUSP_RESCHED_PREEMPT
+SUSP_HOST_LOCK = _lsf.SUSP_HOST_LOCK
+SUSP_LOAD_REASON = _lsf.SUSP_LOAD_REASON
+SUSP_MBD_PREEMPT = _lsf.SUSP_MBD_PREEMPT
+SUSP_SBD_PREEMPT = _lsf.SUSP_SBD_PREEMPT
+SUSP_QUE_STOP_COND = _lsf.SUSP_QUE_STOP_COND
+SUSP_QUE_RESUME_COND = _lsf.SUSP_QUE_RESUME_COND
+SUSP_PG_IT = _lsf.SUSP_PG_IT
+SUSP_REASON_RESET = _lsf.SUSP_REASON_RESET
+SUSP_LOAD_UNAVAIL = _lsf.SUSP_LOAD_UNAVAIL
+SUSP_ADMIN_STOP = _lsf.SUSP_ADMIN_STOP
+SUSP_RES_RESERVE = _lsf.SUSP_RES_RESERVE
+SUSP_MBD_LOCK = _lsf.SUSP_MBD_LOCK
+SUSP_RES_LIMIT = _lsf.SUSP_RES_LIMIT
+SUSP_SBD_STARTUP = _lsf.SUSP_SBD_STARTUP
+SUSP_HOST_LOCK_MASTER = _lsf.SUSP_HOST_LOCK_MASTER
+SUSP_HOST_RSVACTIVE = _lsf.SUSP_HOST_RSVACTIVE
+SUSP_DETAILED_SUBREASON = _lsf.SUSP_DETAILED_SUBREASON
+SUSP_GLB_LICENSE_PREEMPT = _lsf.SUSP_GLB_LICENSE_PREEMPT
+SUSP_CRAYX1_POSTED = _lsf.SUSP_CRAYX1_POSTED
+SUSP_ADVRSV_EXPIRED = _lsf.SUSP_ADVRSV_EXPIRED
+SUSP_STOP_RELEASE_JOB_SLOT = _lsf.SUSP_STOP_RELEASE_JOB_SLOT
+RELEASING_SLOT = _lsf.RELEASING_SLOT
+RELEASED_SLOT = _lsf.RELEASED_SLOT
+SUB_REASON_RUNLIMIT = _lsf.SUB_REASON_RUNLIMIT
+SUB_REASON_DEADLINE = _lsf.SUB_REASON_DEADLINE
+SUB_REASON_PROCESSLIMIT = _lsf.SUB_REASON_PROCESSLIMIT
+SUB_REASON_CPULIMIT = _lsf.SUB_REASON_CPULIMIT
+SUB_REASON_MEMLIMIT = _lsf.SUB_REASON_MEMLIMIT
+SUB_REASON_THREADLIMIT = _lsf.SUB_REASON_THREADLIMIT
+SUB_REASON_SWAPLIMIT = _lsf.SUB_REASON_SWAPLIMIT
+SUB_REASON_CRAYX1_ACCOUNTID = _lsf.SUB_REASON_CRAYX1_ACCOUNTID
+SUB_REASON_CRAYX1_ATTRIBUTE = _lsf.SUB_REASON_CRAYX1_ATTRIBUTE
+SUB_REASON_CRAYX1_BLOCKED = _lsf.SUB_REASON_CRAYX1_BLOCKED
+SUB_REASON_CRAYX1_RESTART = _lsf.SUB_REASON_CRAYX1_RESTART
+SUB_REASON_CRAYX1_DEPTH = _lsf.SUB_REASON_CRAYX1_DEPTH
+SUB_REASON_CRAYX1_GID = _lsf.SUB_REASON_CRAYX1_GID
+SUB_REASON_CRAYX1_GASID = _lsf.SUB_REASON_CRAYX1_GASID
+SUB_REASON_CRAYX1_HARDLABEL = _lsf.SUB_REASON_CRAYX1_HARDLABEL
+SUB_REASON_CRAYX1_LIMIT = _lsf.SUB_REASON_CRAYX1_LIMIT
+SUB_REASON_CRAYX1_MEMORY = _lsf.SUB_REASON_CRAYX1_MEMORY
+SUB_REASON_CRAYX1_SOFTLABEL = _lsf.SUB_REASON_CRAYX1_SOFTLABEL
+SUB_REASON_CRAYX1_SIZE = _lsf.SUB_REASON_CRAYX1_SIZE
+SUB_REASON_CRAYX1_TIME = _lsf.SUB_REASON_CRAYX1_TIME
+SUB_REASON_CRAYX1_UID = _lsf.SUB_REASON_CRAYX1_UID
+SUB_REASON_CRAYX1_WIDTH = _lsf.SUB_REASON_CRAYX1_WIDTH
+EXIT_NORMAL = _lsf.EXIT_NORMAL
+EXIT_RESTART = _lsf.EXIT_RESTART
+EXIT_ZOMBIE = _lsf.EXIT_ZOMBIE
+FINISH_PEND = _lsf.FINISH_PEND
+EXIT_KILL_ZOMBIE = _lsf.EXIT_KILL_ZOMBIE
+EXIT_ZOMBIE_JOB = _lsf.EXIT_ZOMBIE_JOB
+EXIT_RERUN = _lsf.EXIT_RERUN
+EXIT_NO_MAPPING = _lsf.EXIT_NO_MAPPING
+EXIT_REMOTE_PERMISSION = _lsf.EXIT_REMOTE_PERMISSION
+EXIT_INIT_ENVIRON = _lsf.EXIT_INIT_ENVIRON
+EXIT_PRE_EXEC = _lsf.EXIT_PRE_EXEC
+EXIT_REQUEUE = _lsf.EXIT_REQUEUE
+EXIT_REMOVE = _lsf.EXIT_REMOVE
+EXIT_VALUE_REQUEUE = _lsf.EXIT_VALUE_REQUEUE
+EXIT_CANCEL = _lsf.EXIT_CANCEL
+EXIT_MED_KILLED = _lsf.EXIT_MED_KILLED
+EXIT_REMOTE_LEASE_JOB = _lsf.EXIT_REMOTE_LEASE_JOB
+EXIT_CWD_NOTEXIST = _lsf.EXIT_CWD_NOTEXIST
+EXIT_REMOVE_NO_ZOMBIE = _lsf.EXIT_REMOVE_NO_ZOMBIE
+EXIT_GLB_LICENSE_PREEMPT = _lsf.EXIT_GLB_LICENSE_PREEMPT
+LSB_MODE_BATCH = _lsf.LSB_MODE_BATCH
+LSB_MODE_JS = _lsf.LSB_MODE_JS
+LSBE_NO_ERROR = _lsf.LSBE_NO_ERROR
+LSBE_NO_JOB = _lsf.LSBE_NO_JOB
+LSBE_NOT_STARTED = _lsf.LSBE_NOT_STARTED
+LSBE_JOB_STARTED = _lsf.LSBE_JOB_STARTED
+LSBE_JOB_FINISH = _lsf.LSBE_JOB_FINISH
+LSBE_STOP_JOB = _lsf.LSBE_STOP_JOB
+LSBE_DEPEND_SYNTAX = _lsf.LSBE_DEPEND_SYNTAX
+LSBE_EXCLUSIVE = _lsf.LSBE_EXCLUSIVE
+LSBE_ROOT = _lsf.LSBE_ROOT
+LSBE_MIGRATION = _lsf.LSBE_MIGRATION
+LSBE_J_UNCHKPNTABLE = _lsf.LSBE_J_UNCHKPNTABLE
+LSBE_NO_OUTPUT = _lsf.LSBE_NO_OUTPUT
+LSBE_NO_JOBID = _lsf.LSBE_NO_JOBID
+LSBE_ONLY_INTERACTIVE = _lsf.LSBE_ONLY_INTERACTIVE
+LSBE_NO_INTERACTIVE = _lsf.LSBE_NO_INTERACTIVE
+LSBE_NO_USER = _lsf.LSBE_NO_USER
+LSBE_BAD_USER = _lsf.LSBE_BAD_USER
+LSBE_PERMISSION = _lsf.LSBE_PERMISSION
+LSBE_BAD_QUEUE = _lsf.LSBE_BAD_QUEUE
+LSBE_QUEUE_NAME = _lsf.LSBE_QUEUE_NAME
+LSBE_QUEUE_CLOSED = _lsf.LSBE_QUEUE_CLOSED
+LSBE_QUEUE_WINDOW = _lsf.LSBE_QUEUE_WINDOW
+LSBE_QUEUE_USE = _lsf.LSBE_QUEUE_USE
+LSBE_BAD_HOST = _lsf.LSBE_BAD_HOST
+LSBE_PROC_NUM = _lsf.LSBE_PROC_NUM
+LSBE_NO_HPART = _lsf.LSBE_NO_HPART
+LSBE_BAD_HPART = _lsf.LSBE_BAD_HPART
+LSBE_NO_GROUP = _lsf.LSBE_NO_GROUP
+LSBE_BAD_GROUP = _lsf.LSBE_BAD_GROUP
+LSBE_QUEUE_HOST = _lsf.LSBE_QUEUE_HOST
+LSBE_UJOB_LIMIT = _lsf.LSBE_UJOB_LIMIT
+LSBE_NO_HOST = _lsf.LSBE_NO_HOST
+LSBE_BAD_CHKLOG = _lsf.LSBE_BAD_CHKLOG
+LSBE_PJOB_LIMIT = _lsf.LSBE_PJOB_LIMIT
+LSBE_NOLSF_HOST = _lsf.LSBE_NOLSF_HOST
+LSBE_BAD_ARG = _lsf.LSBE_BAD_ARG
+LSBE_BAD_TIME = _lsf.LSBE_BAD_TIME
+LSBE_START_TIME = _lsf.LSBE_START_TIME
+LSBE_BAD_LIMIT = _lsf.LSBE_BAD_LIMIT
+LSBE_OVER_LIMIT = _lsf.LSBE_OVER_LIMIT
+LSBE_BAD_CMD = _lsf.LSBE_BAD_CMD
+LSBE_BAD_SIGNAL = _lsf.LSBE_BAD_SIGNAL
+LSBE_BAD_JOB = _lsf.LSBE_BAD_JOB
+LSBE_QJOB_LIMIT = _lsf.LSBE_QJOB_LIMIT
+LSBE_BAD_TERM = _lsf.LSBE_BAD_TERM
+LSBE_UNKNOWN_EVENT = _lsf.LSBE_UNKNOWN_EVENT
+LSBE_EVENT_FORMAT = _lsf.LSBE_EVENT_FORMAT
+LSBE_EOF = _lsf.LSBE_EOF
+LSBE_MBATCHD = _lsf.LSBE_MBATCHD
+LSBE_SBATCHD = _lsf.LSBE_SBATCHD
+LSBE_LSBLIB = _lsf.LSBE_LSBLIB
+LSBE_LSLIB = _lsf.LSBE_LSLIB
+LSBE_SYS_CALL = _lsf.LSBE_SYS_CALL
+LSBE_NO_MEM = _lsf.LSBE_NO_MEM
+LSBE_SERVICE = _lsf.LSBE_SERVICE
+LSBE_NO_ENV = _lsf.LSBE_NO_ENV
+LSBE_CHKPNT_CALL = _lsf.LSBE_CHKPNT_CALL
+LSBE_NO_FORK = _lsf.LSBE_NO_FORK
+LSBE_PROTOCOL = _lsf.LSBE_PROTOCOL
+LSBE_XDR = _lsf.LSBE_XDR
+LSBE_PORT = _lsf.LSBE_PORT
+LSBE_TIME_OUT = _lsf.LSBE_TIME_OUT
+LSBE_CONN_TIMEOUT = _lsf.LSBE_CONN_TIMEOUT
+LSBE_CONN_REFUSED = _lsf.LSBE_CONN_REFUSED
+LSBE_CONN_EXIST = _lsf.LSBE_CONN_EXIST
+LSBE_CONN_NONEXIST = _lsf.LSBE_CONN_NONEXIST
+LSBE_SBD_UNREACH = _lsf.LSBE_SBD_UNREACH
+LSBE_OP_RETRY = _lsf.LSBE_OP_RETRY
+LSBE_USER_JLIMIT = _lsf.LSBE_USER_JLIMIT
+LSBE_NQS_BAD_PAR = _lsf.LSBE_NQS_BAD_PAR
+LSBE_NO_LICENSE = _lsf.LSBE_NO_LICENSE
+LSBE_BAD_CALENDAR = _lsf.LSBE_BAD_CALENDAR
+LSBE_NOMATCH_CALENDAR = _lsf.LSBE_NOMATCH_CALENDAR
+LSBE_NO_CALENDAR = _lsf.LSBE_NO_CALENDAR
+LSBE_BAD_TIMEEVENT = _lsf.LSBE_BAD_TIMEEVENT
+LSBE_CAL_EXIST = _lsf.LSBE_CAL_EXIST
+LSBE_CAL_DISABLED = _lsf.LSBE_CAL_DISABLED
+LSBE_JOB_MODIFY = _lsf.LSBE_JOB_MODIFY
+LSBE_JOB_MODIFY_ONCE = _lsf.LSBE_JOB_MODIFY_ONCE
+LSBE_J_UNREPETITIVE = _lsf.LSBE_J_UNREPETITIVE
+LSBE_BAD_CLUSTER = _lsf.LSBE_BAD_CLUSTER
+LSBE_PEND_CAL_JOB = _lsf.LSBE_PEND_CAL_JOB
+LSBE_RUN_CAL_JOB = _lsf.LSBE_RUN_CAL_JOB
+LSBE_JOB_MODIFY_USED = _lsf.LSBE_JOB_MODIFY_USED
+LSBE_AFS_TOKENS = _lsf.LSBE_AFS_TOKENS
+LSBE_BAD_EVENT = _lsf.LSBE_BAD_EVENT
+LSBE_NOMATCH_EVENT = _lsf.LSBE_NOMATCH_EVENT
+LSBE_NO_EVENT = _lsf.LSBE_NO_EVENT
+LSBE_HJOB_LIMIT = _lsf.LSBE_HJOB_LIMIT
+LSBE_MSG_DELIVERED = _lsf.LSBE_MSG_DELIVERED
+LSBE_NO_JOBMSG = _lsf.LSBE_NO_JOBMSG
+LSBE_MSG_RETRY = _lsf.LSBE_MSG_RETRY
+LSBE_BAD_RESREQ = _lsf.LSBE_BAD_RESREQ
+LSBE_NO_ENOUGH_HOST = _lsf.LSBE_NO_ENOUGH_HOST
+LSBE_CONF_FATAL = _lsf.LSBE_CONF_FATAL
+LSBE_CONF_WARNING = _lsf.LSBE_CONF_WARNING
+LSBE_CAL_MODIFY = _lsf.LSBE_CAL_MODIFY
+LSBE_JOB_CAL_MODIFY = _lsf.LSBE_JOB_CAL_MODIFY
+LSBE_HP_FAIRSHARE_DEF = _lsf.LSBE_HP_FAIRSHARE_DEF
+LSBE_NO_RESOURCE = _lsf.LSBE_NO_RESOURCE
+LSBE_BAD_RESOURCE = _lsf.LSBE_BAD_RESOURCE
+LSBE_INTERACTIVE_CAL = _lsf.LSBE_INTERACTIVE_CAL
+LSBE_INTERACTIVE_RERUN = _lsf.LSBE_INTERACTIVE_RERUN
+LSBE_PTY_INFILE = _lsf.LSBE_PTY_INFILE
+LSBE_JS_DISABLED = _lsf.LSBE_JS_DISABLED
+LSBE_BAD_SUBMISSION_HOST = _lsf.LSBE_BAD_SUBMISSION_HOST
+LSBE_LOCK_JOB = _lsf.LSBE_LOCK_JOB
+LSBE_UGROUP_MEMBER = _lsf.LSBE_UGROUP_MEMBER
+LSBE_UNSUPPORTED_MC = _lsf.LSBE_UNSUPPORTED_MC
+LSBE_PERMISSION_MC = _lsf.LSBE_PERMISSION_MC
+LSBE_SYSCAL_EXIST = _lsf.LSBE_SYSCAL_EXIST
+LSBE_OVER_RUSAGE = _lsf.LSBE_OVER_RUSAGE
+LSBE_BAD_HOST_SPEC = _lsf.LSBE_BAD_HOST_SPEC
+LSBE_SYNTAX_CALENDAR = _lsf.LSBE_SYNTAX_CALENDAR
+LSBE_CAL_USED = _lsf.LSBE_CAL_USED
+LSBE_CAL_CYC = _lsf.LSBE_CAL_CYC
+LSBE_BAD_UGROUP = _lsf.LSBE_BAD_UGROUP
+LSBE_ESUB_ABORT = _lsf.LSBE_ESUB_ABORT
+LSBE_EXCEPT_SYNTAX = _lsf.LSBE_EXCEPT_SYNTAX
+LSBE_EXCEPT_COND = _lsf.LSBE_EXCEPT_COND
+LSBE_EXCEPT_ACTION = _lsf.LSBE_EXCEPT_ACTION
+LSBE_JOB_DEP = _lsf.LSBE_JOB_DEP
+LSBE_JGRP_EXIST = _lsf.LSBE_JGRP_EXIST
+LSBE_JGRP_NULL = _lsf.LSBE_JGRP_NULL
+LSBE_JGRP_HASJOB = _lsf.LSBE_JGRP_HASJOB
+LSBE_JGRP_CTRL_UNKWN = _lsf.LSBE_JGRP_CTRL_UNKWN
+LSBE_JGRP_BAD = _lsf.LSBE_JGRP_BAD
+LSBE_JOB_ARRAY = _lsf.LSBE_JOB_ARRAY
+LSBE_JOB_SUSP = _lsf.LSBE_JOB_SUSP
+LSBE_JOB_FORW = _lsf.LSBE_JOB_FORW
+LSBE_JGRP_HOLD = _lsf.LSBE_JGRP_HOLD
+LSBE_BAD_IDX = _lsf.LSBE_BAD_IDX
+LSBE_BIG_IDX = _lsf.LSBE_BIG_IDX
+LSBE_ARRAY_NULL = _lsf.LSBE_ARRAY_NULL
+LSBE_CAL_VOID = _lsf.LSBE_CAL_VOID
+LSBE_JOB_EXIST = _lsf.LSBE_JOB_EXIST
+LSBE_JOB_ELEMENT = _lsf.LSBE_JOB_ELEMENT
+LSBE_BAD_JOBID = _lsf.LSBE_BAD_JOBID
+LSBE_MOD_JOB_NAME = _lsf.LSBE_MOD_JOB_NAME
+LSBE_BAD_FRAME = _lsf.LSBE_BAD_FRAME
+LSBE_FRAME_BIG_IDX = _lsf.LSBE_FRAME_BIG_IDX
+LSBE_FRAME_BAD_IDX = _lsf.LSBE_FRAME_BAD_IDX
+LSBE_PREMATURE = _lsf.LSBE_PREMATURE
+LSBE_BAD_PROJECT_GROUP = _lsf.LSBE_BAD_PROJECT_GROUP
+LSBE_NO_HOST_GROUP = _lsf.LSBE_NO_HOST_GROUP
+LSBE_NO_USER_GROUP = _lsf.LSBE_NO_USER_GROUP
+LSBE_INDEX_FORMAT = _lsf.LSBE_INDEX_FORMAT
+LSBE_SP_SRC_NOT_SEEN = _lsf.LSBE_SP_SRC_NOT_SEEN
+LSBE_SP_FAILED_HOSTS_LIM = _lsf.LSBE_SP_FAILED_HOSTS_LIM
+LSBE_SP_COPY_FAILED = _lsf.LSBE_SP_COPY_FAILED
+LSBE_SP_FORK_FAILED = _lsf.LSBE_SP_FORK_FAILED
+LSBE_SP_CHILD_DIES = _lsf.LSBE_SP_CHILD_DIES
+LSBE_SP_CHILD_FAILED = _lsf.LSBE_SP_CHILD_FAILED
+LSBE_SP_FIND_HOST_FAILED = _lsf.LSBE_SP_FIND_HOST_FAILED
+LSBE_SP_SPOOLDIR_FAILED = _lsf.LSBE_SP_SPOOLDIR_FAILED
+LSBE_SP_DELETE_FAILED = _lsf.LSBE_SP_DELETE_FAILED
+LSBE_BAD_USER_PRIORITY = _lsf.LSBE_BAD_USER_PRIORITY
+LSBE_NO_JOB_PRIORITY = _lsf.LSBE_NO_JOB_PRIORITY
+LSBE_JOB_REQUEUED = _lsf.LSBE_JOB_REQUEUED
+LSBE_JOB_REQUEUE_REMOTE = _lsf.LSBE_JOB_REQUEUE_REMOTE
+LSBE_NQS_NO_ARRJOB = _lsf.LSBE_NQS_NO_ARRJOB
+LSBE_BAD_EXT_MSGID = _lsf.LSBE_BAD_EXT_MSGID
+LSBE_NO_IFREG = _lsf.LSBE_NO_IFREG
+LSBE_BAD_ATTA_DIR = _lsf.LSBE_BAD_ATTA_DIR
+LSBE_COPY_DATA = _lsf.LSBE_COPY_DATA
+LSBE_JOB_ATTA_LIMIT = _lsf.LSBE_JOB_ATTA_LIMIT
+LSBE_CHUNK_JOB = _lsf.LSBE_CHUNK_JOB
+LSBE_DLOGD_ISCONN = _lsf.LSBE_DLOGD_ISCONN
+LSBE_MULTI_FIRST_HOST = _lsf.LSBE_MULTI_FIRST_HOST
+LSBE_HG_FIRST_HOST = _lsf.LSBE_HG_FIRST_HOST
+LSBE_HP_FIRST_HOST = _lsf.LSBE_HP_FIRST_HOST
+LSBE_OTHERS_FIRST_HOST = _lsf.LSBE_OTHERS_FIRST_HOST
+LSBE_MC_HOST = _lsf.LSBE_MC_HOST
+LSBE_MC_REPETITIVE = _lsf.LSBE_MC_REPETITIVE
+LSBE_MC_CHKPNT = _lsf.LSBE_MC_CHKPNT
+LSBE_MC_EXCEPTION = _lsf.LSBE_MC_EXCEPTION
+LSBE_MC_TIMEEVENT = _lsf.LSBE_MC_TIMEEVENT
+LSBE_PROC_LESS = _lsf.LSBE_PROC_LESS
+LSBE_MOD_MIX_OPTS = _lsf.LSBE_MOD_MIX_OPTS
+LSBE_MOD_REMOTE = _lsf.LSBE_MOD_REMOTE
+LSBE_MOD_CPULIMIT = _lsf.LSBE_MOD_CPULIMIT
+LSBE_MOD_MEMLIMIT = _lsf.LSBE_MOD_MEMLIMIT
+LSBE_MOD_ERRFILE = _lsf.LSBE_MOD_ERRFILE
+LSBE_LOCKED_MASTER = _lsf.LSBE_LOCKED_MASTER
+LSBE_WARNING_INVALID_TIME_PERIOD = _lsf.LSBE_WARNING_INVALID_TIME_PERIOD
+LSBE_WARNING_MISSING = _lsf.LSBE_WARNING_MISSING
+LSBE_DEP_ARRAY_SIZE = _lsf.LSBE_DEP_ARRAY_SIZE
+LSBE_FEWER_PROCS = _lsf.LSBE_FEWER_PROCS
+LSBE_BAD_RSVID = _lsf.LSBE_BAD_RSVID
+LSBE_NO_RSVID = _lsf.LSBE_NO_RSVID
+LSBE_NO_EXPORT_HOST = _lsf.LSBE_NO_EXPORT_HOST
+LSBE_REMOTE_HOST_CONTROL = _lsf.LSBE_REMOTE_HOST_CONTROL
+LSBE_REMOTE_CLOSED = _lsf.LSBE_REMOTE_CLOSED
+LSBE_USER_SUSPENDED = _lsf.LSBE_USER_SUSPENDED
+LSBE_ADMIN_SUSPENDED = _lsf.LSBE_ADMIN_SUSPENDED
+LSBE_NOT_LOCAL_HOST = _lsf.LSBE_NOT_LOCAL_HOST
+LSBE_LEASE_INACTIVE = _lsf.LSBE_LEASE_INACTIVE
+LSBE_QUEUE_ADRSV = _lsf.LSBE_QUEUE_ADRSV
+LSBE_HOST_NOT_EXPORTED = _lsf.LSBE_HOST_NOT_EXPORTED
+LSBE_HOST_ADRSV = _lsf.LSBE_HOST_ADRSV
+LSBE_MC_CONN_NONEXIST = _lsf.LSBE_MC_CONN_NONEXIST
+LSBE_RL_BREAK = _lsf.LSBE_RL_BREAK
+LSBE_LSF2TP_PREEMPT = _lsf.LSBE_LSF2TP_PREEMPT
+LSBE_LSF2TP_RESERVE = _lsf.LSBE_LSF2TP_RESERVE
+LSBE_LSF2TP_BACKFILL = _lsf.LSBE_LSF2TP_BACKFILL
+LSBE_RSV_POLICY_NAME_BAD = _lsf.LSBE_RSV_POLICY_NAME_BAD
+LSBE_RSV_POLICY_PERMISSION_DENIED = _lsf.LSBE_RSV_POLICY_PERMISSION_DENIED
+LSBE_RSV_POLICY_USER = _lsf.LSBE_RSV_POLICY_USER
+LSBE_RSV_POLICY_HOST = _lsf.LSBE_RSV_POLICY_HOST
+LSBE_RSV_POLICY_TIMEWINDOW = _lsf.LSBE_RSV_POLICY_TIMEWINDOW
+LSBE_RSV_POLICY_DISABLED = _lsf.LSBE_RSV_POLICY_DISABLED
+LSBE_LIM_NO_GENERAL_LIMIT = _lsf.LSBE_LIM_NO_GENERAL_LIMIT
+LSBE_LIM_NO_RSRC_USAGE = _lsf.LSBE_LIM_NO_RSRC_USAGE
+LSBE_LIM_CONVERT_ERROR = _lsf.LSBE_LIM_CONVERT_ERROR
+LSBE_RSV_NO_HOST = _lsf.LSBE_RSV_NO_HOST
+LSBE_MOD_JGRP_ARRAY = _lsf.LSBE_MOD_JGRP_ARRAY
+LSBE_MOD_MIX = _lsf.LSBE_MOD_MIX
+LSBE_SLA_NULL = _lsf.LSBE_SLA_NULL
+LSBE_MOD_JGRP_SLA = _lsf.LSBE_MOD_JGRP_SLA
+LSBE_SLA_MEMBER = _lsf.LSBE_SLA_MEMBER
+LSBE_NO_EXCEPTIONAL_HOST = _lsf.LSBE_NO_EXCEPTIONAL_HOST
+LSBE_WARNING_INVALID_ACTION = _lsf.LSBE_WARNING_INVALID_ACTION
+LSBE_EXTSCHED_SYNTAX = _lsf.LSBE_EXTSCHED_SYNTAX
+LSBE_SLA_RMT_ONLY_QUEUE = _lsf.LSBE_SLA_RMT_ONLY_QUEUE
+LSBE_MOD_SLA_ARRAY = _lsf.LSBE_MOD_SLA_ARRAY
+LSBE_MOD_SLA_JGRP = _lsf.LSBE_MOD_SLA_JGRP
+LSBE_MAX_PEND = _lsf.LSBE_MAX_PEND
+LSBE_CONCURRENT = _lsf.LSBE_CONCURRENT
+LSBE_FEATURE_NULL = _lsf.LSBE_FEATURE_NULL
+LSBE_DYNGRP_MEMBER = _lsf.LSBE_DYNGRP_MEMBER
+LSBE_BAD_DYN_HOST = _lsf.LSBE_BAD_DYN_HOST
+LSBE_NO_GRP_MEMBER = _lsf.LSBE_NO_GRP_MEMBER
+LSBE_JOB_INFO_FILE = _lsf.LSBE_JOB_INFO_FILE
+LSBE_MOD_OR_RUSAGE = _lsf.LSBE_MOD_OR_RUSAGE
+LSBE_BAD_GROUP_NAME = _lsf.LSBE_BAD_GROUP_NAME
+LSBE_BAD_HOST_NAME = _lsf.LSBE_BAD_HOST_NAME
+LSBE_DT_BSUB = _lsf.LSBE_DT_BSUB
+LSBE_PARENT_SYM_JOB = _lsf.LSBE_PARENT_SYM_JOB
+LSBE_PARTITION_NO_CPU = _lsf.LSBE_PARTITION_NO_CPU
+LSBE_PARTITION_BATCH = _lsf.LSBE_PARTITION_BATCH
+LSBE_PARTITION_ONLINE = _lsf.LSBE_PARTITION_ONLINE
+LSBE_NOLICENSE_BATCH = _lsf.LSBE_NOLICENSE_BATCH
+LSBE_NOLICENSE_ONLINE = _lsf.LSBE_NOLICENSE_ONLINE
+LSBE_SIGNAL_SRVJOB = _lsf.LSBE_SIGNAL_SRVJOB
+LSBE_BEGIN_TIME_INVALID = _lsf.LSBE_BEGIN_TIME_INVALID
+LSBE_END_TIME_INVALID = _lsf.LSBE_END_TIME_INVALID
+LSBE_BAD_REG_EXPR = _lsf.LSBE_BAD_REG_EXPR
+LSBE_GRP_REG_EXPR = _lsf.LSBE_GRP_REG_EXPR
+LSBE_GRP_HAVE_NO_MEMB = _lsf.LSBE_GRP_HAVE_NO_MEMB
+LSBE_APP_NULL = _lsf.LSBE_APP_NULL
+LSBE_PROC_JOB_APP = _lsf.LSBE_PROC_JOB_APP
+LSBE_PROC_APP_QUE = _lsf.LSBE_PROC_APP_QUE
+LSBE_BAD_APPNAME = _lsf.LSBE_BAD_APPNAME
+LSBE_APP_OVER_LIMIT = _lsf.LSBE_APP_OVER_LIMIT
+LSBE_REMOVE_DEF_APP = _lsf.LSBE_REMOVE_DEF_APP
+LSBE_EGO_DISABLED = _lsf.LSBE_EGO_DISABLED
+LSBE_REMOTE_HOST = _lsf.LSBE_REMOTE_HOST
+LSBE_SLA_EXCLUSIVE = _lsf.LSBE_SLA_EXCLUSIVE
+LSBE_SLA_NONEXCLUSIVE = _lsf.LSBE_SLA_NONEXCLUSIVE
+LSBE_PERFMON_STARTED = _lsf.LSBE_PERFMON_STARTED
+LSBE_PERFMON_STOPED = _lsf.LSBE_PERFMON_STOPED
+LSBE_PERFMON_PERIOD_SET = _lsf.LSBE_PERFMON_PERIOD_SET
+LSBE_DEFAULT_SPOOL_DIR_DISABLED = _lsf.LSBE_DEFAULT_SPOOL_DIR_DISABLED
+LSBE_APS_QUEUE_JOB = _lsf.LSBE_APS_QUEUE_JOB
+LSBE_BAD_APS_JOB = _lsf.LSBE_BAD_APS_JOB
+LSBE_BAD_APS_VAL = _lsf.LSBE_BAD_APS_VAL
+LSBE_APS_STRING_UNDEF = _lsf.LSBE_APS_STRING_UNDEF
+LSBE_SLA_JOB_APS_QUEUE = _lsf.LSBE_SLA_JOB_APS_QUEUE
+LSBE_MOD_MIX_APS = _lsf.LSBE_MOD_MIX_APS
+LSBE_APS_RANGE = _lsf.LSBE_APS_RANGE
+LSBE_APS_ZERO = _lsf.LSBE_APS_ZERO
+LSBE_DJOB_RES_PORT_UNKNOWN = _lsf.LSBE_DJOB_RES_PORT_UNKNOWN
+LSBE_DJOB_RES_TIMEOUT = _lsf.LSBE_DJOB_RES_TIMEOUT
+LSBE_DJOB_RES_IOERR = _lsf.LSBE_DJOB_RES_IOERR
+LSBE_DJOB_RES_INTERNAL_FAILURE = _lsf.LSBE_DJOB_RES_INTERNAL_FAILURE
+LSBE_DJOB_CAN_NOT_RUN = _lsf.LSBE_DJOB_CAN_NOT_RUN
+LSBE_DJOB_VALIDATION_BAD_JOBID = _lsf.LSBE_DJOB_VALIDATION_BAD_JOBID
+LSBE_DJOB_VALIDATION_BAD_HOST = _lsf.LSBE_DJOB_VALIDATION_BAD_HOST
+LSBE_DJOB_VALIDATION_BAD_USER = _lsf.LSBE_DJOB_VALIDATION_BAD_USER
+LSBE_DJOB_EXECUTE_TASK = _lsf.LSBE_DJOB_EXECUTE_TASK
+LSBE_DJOB_WAIT_TASK = _lsf.LSBE_DJOB_WAIT_TASK
+LSBE_APS_HPC = _lsf.LSBE_APS_HPC
+LSBE_DIGEST_CHECK_BSUB = _lsf.LSBE_DIGEST_CHECK_BSUB
+LSBE_DJOB_DISABLED = _lsf.LSBE_DJOB_DISABLED
+LSBE_BAD_RUNTIME = _lsf.LSBE_BAD_RUNTIME
+LSBE_BAD_RUNLIMIT = _lsf.LSBE_BAD_RUNLIMIT
+LSBE_OVER_QUEUE_LIMIT = _lsf.LSBE_OVER_QUEUE_LIMIT
+LSBE_SET_BY_RATIO = _lsf.LSBE_SET_BY_RATIO
+LSBE_BAD_CWD = _lsf.LSBE_BAD_CWD
+LSBE_JGRP_LIMIT_GRTR_THAN_PARENT = _lsf.LSBE_JGRP_LIMIT_GRTR_THAN_PARENT
+LSBE_JGRP_LIMIT_LESS_THAN_CHILDREN = _lsf.LSBE_JGRP_LIMIT_LESS_THAN_CHILDREN
+LSBE_NO_ARRAY_END_INDEX = _lsf.LSBE_NO_ARRAY_END_INDEX
+LSBE_MOD_RUNTIME = _lsf.LSBE_MOD_RUNTIME
+LSBE_BAD_SUCCESS_EXIT_VALUES = _lsf.LSBE_BAD_SUCCESS_EXIT_VALUES
+LSBE_DUP_SUCCESS_EXIT_VALUES = _lsf.LSBE_DUP_SUCCESS_EXIT_VALUES
+LSBE_NO_SUCCESS_EXIT_VALUES = _lsf.LSBE_NO_SUCCESS_EXIT_VALUES
+LSBE_JOB_REQUEUE_BADARG = _lsf.LSBE_JOB_REQUEUE_BADARG
+LSBE_JOB_REQUEUE_DUPLICATED = _lsf.LSBE_JOB_REQUEUE_DUPLICATED
+LSBE_JOB_REQUEUE_INVALID_DIGIT = _lsf.LSBE_JOB_REQUEUE_INVALID_DIGIT
+LSBE_JOB_REQUEUE_INVALID_TILDE = _lsf.LSBE_JOB_REQUEUE_INVALID_TILDE
+LSBE_JOB_REQUEUE_NOVALID = _lsf.LSBE_JOB_REQUEUE_NOVALID
+LSBE_NO_JGRP = _lsf.LSBE_NO_JGRP
+LSBE_NOT_CONSUMABLE = _lsf.LSBE_NOT_CONSUMABLE
+LSBE_RSV_BAD_EXEC = _lsf.LSBE_RSV_BAD_EXEC
+LSBE_RSV_EVENTTYPE = _lsf.LSBE_RSV_EVENTTYPE
+LSBE_RSV_SHIFT = _lsf.LSBE_RSV_SHIFT
+LSBE_RSV_USHIFT = _lsf.LSBE_RSV_USHIFT
+LSBE_RSV_NUMEVENTS = _lsf.LSBE_RSV_NUMEVENTS
+LSBE_ADRSV_ID_VALID = _lsf.LSBE_ADRSV_ID_VALID
+LSBE_ADRSV_DISABLE_NONRECUR = _lsf.LSBE_ADRSV_DISABLE_NONRECUR
+LSBE_ADRSV_MOD_ACTINSTANCE = _lsf.LSBE_ADRSV_MOD_ACTINSTANCE
+LSBE_ADRSV_HOST_NOTAVAIL = _lsf.LSBE_ADRSV_HOST_NOTAVAIL
+LSBE_ADRSV_TIME_MOD_FAIL = _lsf.LSBE_ADRSV_TIME_MOD_FAIL
+LSBE_ADRSV_R_AND_N = _lsf.LSBE_ADRSV_R_AND_N
+LSBE_ADRSV_EMPTY = _lsf.LSBE_ADRSV_EMPTY
+LSBE_ADRSV_SWITCHTYPE = _lsf.LSBE_ADRSV_SWITCHTYPE
+LSBE_ADRSV_SYS_N = _lsf.LSBE_ADRSV_SYS_N
+LSBE_ADRSV_DISABLE = _lsf.LSBE_ADRSV_DISABLE
+LSBE_ADRSV_ID_UNIQUE = _lsf.LSBE_ADRSV_ID_UNIQUE
+LSBE_BAD_RSVNAME = _lsf.LSBE_BAD_RSVNAME
+LSBE_ADVRSV_ACTIVESTART = _lsf.LSBE_ADVRSV_ACTIVESTART
+LSBE_ADRSV_ID_USED = _lsf.LSBE_ADRSV_ID_USED
+LSBE_ADRSV_PREVDISABLED = _lsf.LSBE_ADRSV_PREVDISABLED
+LSBE_ADRSV_DISABLECURR = _lsf.LSBE_ADRSV_DISABLECURR
+LSBE_ADRSV_NOT_RSV_HOST = _lsf.LSBE_ADRSV_NOT_RSV_HOST
+LSBE_RESREQ_OK = _lsf.LSBE_RESREQ_OK
+LSBE_RESREQ_ERR = _lsf.LSBE_RESREQ_ERR
+LSBE_ADRSV_HOST_USED = _lsf.LSBE_ADRSV_HOST_USED
+LSBE_BAD_CHKPNTDIR = _lsf.LSBE_BAD_CHKPNTDIR
+LSBE_ADRSV_MOD_REMOTE = _lsf.LSBE_ADRSV_MOD_REMOTE
+LSBE_JOB_REQUEUE_BADEXCLUDE = _lsf.LSBE_JOB_REQUEUE_BADEXCLUDE
+LSBE_ADRSV_DISABLE_DATE = _lsf.LSBE_ADRSV_DISABLE_DATE
+LSBE_ADRSV_DETACH_MIX = _lsf.LSBE_ADRSV_DETACH_MIX
+LSBE_ADRSV_DETACH_ACTIVE = _lsf.LSBE_ADRSV_DETACH_ACTIVE
+LSBE_MISSING_START_END_TIME = _lsf.LSBE_MISSING_START_END_TIME
+LSBE_JOB_RUSAGE_EXCEED_LIMIT = _lsf.LSBE_JOB_RUSAGE_EXCEED_LIMIT
+LSBE_APP_RUSAGE_EXCEED_LIMIT = _lsf.LSBE_APP_RUSAGE_EXCEED_LIMIT
+LSBE_CANDIDATE_HOST_EMPTY = _lsf.LSBE_CANDIDATE_HOST_EMPTY
+LSBE_HS_BAD_AFTER_BRACKT = _lsf.LSBE_HS_BAD_AFTER_BRACKT
+LSBE_HS_NO_END_INDEX = _lsf.LSBE_HS_NO_END_INDEX
+LSBE_HS_BAD_COMMA = _lsf.LSBE_HS_BAD_COMMA
+LSBE_HS_BAD_FORMAT = _lsf.LSBE_HS_BAD_FORMAT
+LSBE_HS_BAD_ORDER = _lsf.LSBE_HS_BAD_ORDER
+LSBE_HS_BAD_MANY_DIGITS = _lsf.LSBE_HS_BAD_MANY_DIGITS
+LSBE_HS_BAD_NUM_DIGITS = _lsf.LSBE_HS_BAD_NUM_DIGITS
+LSBE_HS_BAD_END_INDEX = _lsf.LSBE_HS_BAD_END_INDEX
+LSBE_HS_BAD_INDEX = _lsf.LSBE_HS_BAD_INDEX
+LSBE_COMMENTS = _lsf.LSBE_COMMENTS
+LSBE_FIRST_HOSTS_NOT_IN_QUEUE = _lsf.LSBE_FIRST_HOSTS_NOT_IN_QUEUE
+LSBE_JOB_NOTSTART = _lsf.LSBE_JOB_NOTSTART
+LSBE_RUNTIME_INVAL = _lsf.LSBE_RUNTIME_INVAL
+LSBE_SSH_NOT_INTERACTIVE = _lsf.LSBE_SSH_NOT_INTERACTIVE
+LSBE_LESS_RUNTIME = _lsf.LSBE_LESS_RUNTIME
+LSBE_RESIZE_NOTIFY_CMD_LEN = _lsf.LSBE_RESIZE_NOTIFY_CMD_LEN
+LSBE_JOB_RESIZABLE = _lsf.LSBE_JOB_RESIZABLE
+LSBE_RESIZE_RELEASE_HOSTSPEC = _lsf.LSBE_RESIZE_RELEASE_HOSTSPEC
+LSBE_NO_RESIZE_NOTIFY = _lsf.LSBE_NO_RESIZE_NOTIFY
+LSBE_RESIZE_RELEASE_FRISTHOST = _lsf.LSBE_RESIZE_RELEASE_FRISTHOST
+LSBE_RESIZE_EVENT_INPROGRESS = _lsf.LSBE_RESIZE_EVENT_INPROGRESS
+LSBE_RESIZE_BAD_SLOTS = _lsf.LSBE_RESIZE_BAD_SLOTS
+LSBE_RESIZE_NO_ACTIVE_REQUEST = _lsf.LSBE_RESIZE_NO_ACTIVE_REQUEST
+LSBE_HOST_NOT_IN_ALLOC = _lsf.LSBE_HOST_NOT_IN_ALLOC
+LSBE_RESIZE_RELEASE_NOOP = _lsf.LSBE_RESIZE_RELEASE_NOOP
+LSBE_RESIZE_URGENT_JOB = _lsf.LSBE_RESIZE_URGENT_JOB
+LSBE_RESIZE_EGO_SLA_COEXIST = _lsf.LSBE_RESIZE_EGO_SLA_COEXIST
+LSBE_HOST_NOT_SUPPORT_RESIZE = _lsf.LSBE_HOST_NOT_SUPPORT_RESIZE
+LSBE_APP_RESIZABLE = _lsf.LSBE_APP_RESIZABLE
+LSBE_RESIZE_LOST_AND_FOUND = _lsf.LSBE_RESIZE_LOST_AND_FOUND
+LSBE_RESIZE_FIRSTHOST_LOST_AND_FOUND = _lsf.LSBE_RESIZE_FIRSTHOST_LOST_AND_FOUND
+LSBE_RESIZE_BAD_HOST = _lsf.LSBE_RESIZE_BAD_HOST
+LSBE_AUTORESIZE_APP = _lsf.LSBE_AUTORESIZE_APP
+LSBE_RESIZE_PENDING_REQUEST = _lsf.LSBE_RESIZE_PENDING_REQUEST
+LSBE_ASKED_HOSTS_NUMBER = _lsf.LSBE_ASKED_HOSTS_NUMBER
+LSBE_AR_HOST_EMPTY = _lsf.LSBE_AR_HOST_EMPTY
+LSBE_AR_FIRST_HOST_EMPTY = _lsf.LSBE_AR_FIRST_HOST_EMPTY
+LSBE_JB = _lsf.LSBE_JB
+LSBE_JB_DBLIB = _lsf.LSBE_JB_DBLIB
+LSBE_JB_DB_UNREACH = _lsf.LSBE_JB_DB_UNREACH
+LSBE_JB_MBD_UNREACH = _lsf.LSBE_JB_MBD_UNREACH
+LSBE_JB_BES = _lsf.LSBE_JB_BES
+LSBE_JB_BES_UNSUPPORTED_OP = _lsf.LSBE_JB_BES_UNSUPPORTED_OP
+LSBE_LS_PROJECT_NAME = _lsf.LSBE_LS_PROJECT_NAME
+LSBE_END_TIME_INVALID_COMPARE_START = _lsf.LSBE_END_TIME_INVALID_COMPARE_START
+LSBE_HP_REDUNDANT_HOST = _lsf.LSBE_HP_REDUNDANT_HOST
+LSBE_COMPOUND_APP_SLOTS = _lsf.LSBE_COMPOUND_APP_SLOTS
+LSBE_COMPOUND_QUEUE_SLOTS = _lsf.LSBE_COMPOUND_QUEUE_SLOTS
+LSBE_ADV_RSRCREQ_RESIZE = _lsf.LSBE_ADV_RSRCREQ_RESIZE
+LSBE_COMPOUND_RESIZE = _lsf.LSBE_COMPOUND_RESIZE
+LSBE_CU_OVERLAPPING_HOST = _lsf.LSBE_CU_OVERLAPPING_HOST
+LSBE_CU_BAD_HOST = _lsf.LSBE_CU_BAD_HOST
+LSBE_CU_HOST_NOT_ALLOWED = _lsf.LSBE_CU_HOST_NOT_ALLOWED
+LSBE_CU_NOT_LOWEST_LEVEL = _lsf.LSBE_CU_NOT_LOWEST_LEVEL
+LSBE_CU_MOD_RESREQ = _lsf.LSBE_CU_MOD_RESREQ
+LSBE_CU_AUTORESIZE = _lsf.LSBE_CU_AUTORESIZE
+LSBE_NO_COMPUTE_UNIT_TYPES = _lsf.LSBE_NO_COMPUTE_UNIT_TYPES
+LSBE_NO_COMPUTE_UNIT = _lsf.LSBE_NO_COMPUTE_UNIT
+LSBE_BAD_COMPUTE_UNIT = _lsf.LSBE_BAD_COMPUTE_UNIT
+LSBE_CU_EXCLUSIVE = _lsf.LSBE_CU_EXCLUSIVE
+LSBE_CU_EXCLUSIVE_LEVEL = _lsf.LSBE_CU_EXCLUSIVE_LEVEL
+LSBE_CU_SWITCH = _lsf.LSBE_CU_SWITCH
+LSBE_COMPOUND_JOB_SLOTS = _lsf.LSBE_COMPOUND_JOB_SLOTS
+LSBE_COMPOUND_QUEUE_RUSAGE_OR = _lsf.LSBE_COMPOUND_QUEUE_RUSAGE_OR
+LSBE_CU_BALANCE_USABLECUSLOTS = _lsf.LSBE_CU_BALANC
