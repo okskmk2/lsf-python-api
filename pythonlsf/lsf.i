@@ -411,7 +411,6 @@ PyObject * get_usergroup_info_by_name(char** name, int num) {
     return result;
 }
 
-// SKHynix sunny
 int requeue_job(LS_LONG_INT job_id) {
     struct jobrequeue jobrequeuereq;
 
