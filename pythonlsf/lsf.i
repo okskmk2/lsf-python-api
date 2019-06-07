@@ -20,15 +20,38 @@ int fclose(FILE *f);
 #include "lsbatch.h"
 %}
 
+//new_X, delete_X, X_assign X_value
 %pointer_functions(int, intp)
 %pointer_functions(float, floatp)
 %pointer_functions(long, longp)
 %pointer_functions(LS_LONG_INT, LS_LONG_INT_POINTER)
+
+//new_X, delete_X, X_set_item, X_get_item...
 %array_functions(int, intArray)
 %array_functions(float, floatArray)
 %array_functions(char *, stringArray)
 %array_functions(struct dependJobs, dependJobsArray)
 %array_functions(long, longArray)
+%array_functions(LS_LONG_INT, LS_LONG_INTArray) // Eunsung Lee add 20190408
+//%array_functions(struct _limitInfoEnt, limitInfoEntArray2); // Eunsung Lee add 20181205
+
+// x_frompointer
+%array_class(struct queueInfoEnt, queueInfoEntArray); //seg error(10.1) -> ok(9.1)
+%array_class(struct groupInfoEnt, groupInfoEntArray); //Eunsung Lee add, seg error(10.1) -> ok(9.1)
+%array_class(struct userInfoEnt, userInfoEntArray); //Eunsung Lee add, seg error(10.1) -> ok(9.1)
+%array_class(struct hostInfo, hostInfoArray); // Eunsung Lee add 20190418
+%array_class(struct hostInfoEnt, hostInfoEntArray); //ok
+%array_class(struct hostLoad, hostLoadArray);
+%array_class(struct shareAcctInfoEnt, shareAcctInfoEntArray); // Eunsung Lee add 20180419
+%array_class(struct userShares, userSharesArray); // Eunsung Lee add 20181011
+%array_class(struct resItem, resItemArray); // Eunsung Lee add 20181205
+%array_class(struct _limitInfoEnt, limitInfoEntArray); // Eunsung Lee add 20181205
+%array_class(struct _reasonRefEntry, reasonRefEntryArray); // Eunsung Lee add 20190531
+%array_class(struct reasonRefStrTab, reasonRefStrTabArray); // Eunsung Lee add 20190531
+%array_class(struct _lsb_reasonMsgConf, lsb_reasonMsgConfArray); // Eunsung Lee add 20190531
+%array_class(struct _lsb_rsrcConf, lsb_rsrcConfArray); // Eunsung Lee add 20190531
+%array_class(struct reasonRefString, reasonRefStringArray); // Eunsung Lee add 20190531
+
 
 //helper function for transforming char** to python list
 %inline %{
@@ -54,9 +77,7 @@ PyObject * string_array_to_pylist(PyObject* ptrobj, int size){
 }
 %}
 
-%array_class(struct queueInfoEnt, queueInfoEntArray);
-%array_class(struct hostInfoEnt, hostInfoEntArray);
-%array_class(struct hostLoad, hostLoadArray);
+
 
 // handle int arrays
 %typemap(in) int [ANY] (int temp[$1_dim0]) {
@@ -99,9 +120,9 @@ PyObject * string_array_to_pylist(PyObject* ptrobj, int size){
    $1 = 0;
 }
 
-/* 
- The following routines are not wrapped because SWIG has issues generating 
- proper code for them 
+/*
+ The following routines are not wrapped because SWIG has issues generating
+ proper code for them
  */
 
 // Following are ignored from lsf.h
@@ -142,45 +163,45 @@ PyObject * string_array_to_pylist(PyObject* ptrobj, int size){
 
 %inline %{
 PyObject * get_host_names() {
-    struct hostInfo *hostinfo; 
-    char   *resreq; 
-    int    numhosts = 0; 
-    int    options = 0; 
-    
+    struct hostInfo *hostinfo;
+    char   *resreq;
+    int    numhosts = 0;
+    int    options = 0;
+
     resreq="";
 
-    hostinfo = ls_gethostinfo(resreq, &numhosts, NULL, 0, options);      
-    
+    hostinfo = ls_gethostinfo(resreq, &numhosts, NULL, 0, options);
+
     PyObject *result = PyList_New(numhosts);
     int i;
-    for (i = 0; i < numhosts; i++) { 
+    for (i = 0; i < numhosts; i++) {
         PyObject *o = PyString_FromString(hostinfo[i].hostName);
         PyList_SetItem(result,i,o);
     }
-    
+
     return result;
 }
 
 PyObject * get_host_info() {
-    struct hostInfo *hostinfo; 
-    char   *resreq; 
-    int    numhosts = 0; 
-    int    options = 0; 
-    
+    struct hostInfo *hostinfo;
+    char   *resreq;
+    int    numhosts = 0;
+    int    options = 0;
+
     resreq = "";
 
-    hostinfo = ls_gethostinfo(resreq, &numhosts, NULL, 0, options);     
-         
+    hostinfo = ls_gethostinfo(resreq, &numhosts, NULL, 0, options);
+
     PyObject *result = PyList_New(numhosts);
     int i;
     for (i = 0; i < numhosts; i++) {
-        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostinfo[i]), 
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostinfo[i]),
                                          SWIGTYPE_p_hostInfo, 0 |  0 );
         PyList_SetItem(result,i,o);
     }
-    
+
     return result;
-}    
+}
 
 /* taken form stdio.h */
 #define SEEK_SET    0   /* Seek from beginning of file.  */
@@ -241,14 +262,14 @@ fail:
 }
 
 PyObject * get_load_of_hosts() {
-    struct hostLoad *hostload; 
-    char   *resreq; 
-    int    numhosts = 0; 
-    
+    struct hostLoad *hostload;
+    char   *resreq;
+    int    numhosts = 0;
+
     resreq = "";
 
     hostload = ls_loadofhosts(resreq, &numhosts, 0, NULL, NULL, 0);
-         
+
     PyObject *result = PyList_New(numhosts);
     int i;
     for (i = 0; i < numhosts; i++) {
@@ -256,39 +277,37 @@ PyObject * get_load_of_hosts() {
                                          SWIGTYPE_p_hostLoad, 0 |  0 );
         PyList_SetItem(result,i,o);
     }
-    
+
     return result;
 }
 
 PyObject * get_host_load(char *resreq, int index) {
-    struct hostLoad *hosts; 
+    struct hostLoad *hosts;
 
-    int    numhosts = 0; 
+    int    numhosts = 0;
 
-    int    options = 0; 
+    int    options = 0;
 
-    char   *fromhost = NULL; 
+    char   *fromhost = NULL;
 
-    hosts = ls_load(resreq, &numhosts, options, fromhost); 
+    hosts = ls_load(resreq, &numhosts, options, fromhost);
 
-    if (hosts == NULL || numhosts > 1) { 
-        ls_perror("ls_load"); 
-        exit(-1); 
+    if (hosts == NULL || numhosts > 1) {
+        ls_perror("ls_load");
+        exit(-1);
     }
 
     PyObject *result = PyFloat_FromDouble(hosts[0].li[index]);
     return result;
 }
 
-
-// lsb python api
-
+// error(10.1) -> ok(9.1)
 PyObject * get_queue_info_by_name(char** name, int num) {
     struct queueInfoEnt* queueinfo;
     int    numqueues = num;
     int    options = 0;
 
-    queueinfo = lsb_queueinfo(name, &numqueues, NULL, NULL, options);
+    queueinfo = lsb_queueinfo(name, &numqueues, NULL, 0, options);
 
     PyObject *result = PyList_New(numqueues);
     int i;
@@ -301,24 +320,7 @@ PyObject * get_queue_info_by_name(char** name, int num) {
     return result;
 }
 
-PyObject * get_host_info_by_name(char** name, int num) {
-    struct hostInfoEnt* hostinfo;
-    int    numhosts = num;
-    int    options = 0;
-
-    hostinfo = lsb_hostinfo(name, &numhosts, NULL, NULL, options);
-
-    PyObject *result = PyList_New(numhosts);
-    int i;
-    for (i = 0; i < numhosts; i++) {
-        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostinfo[i]),
-                                         SWIGTYPE_p_hostInfoEnt, 0 |  0 );
-        PyList_SetItem(result,i,o);
-    }
-
-    return result;
-}
-
+// ok
 PyObject * get_hostgroup_info_by_name(char** name, int num) {
     struct groupInfoEnt* hostgroupinfo;
     int    numgroups = num;
@@ -330,41 +332,6 @@ PyObject * get_hostgroup_info_by_name(char** name, int num) {
     int i;
     for (i = 0; i < numgroups; i++) {
         PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostgroupinfo[i]),
-                                         SWIGTYPE_p_groupInfoEnt, 0 |  0 );
-        PyList_SetItem(result,i,o);
-    }
-
-    return result;
-}
-
-PyObject * get_user_info_by_name(char** name, int num) {
-    struct userInfoEnt* userinfo;
-    int    numUsers = num;
-
-    userinfo = lsb_userinfo(name, &numUsers);
-
-    PyObject *result = PyList_New(numUsers);
-    int i;
-    for (i = 0; i < numUsers; i++) {
-        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&userinfo[i]),
-                                         SWIGTYPE_p_userInfoEnt, 0 |  0 );
-        PyList_SetItem(result,i,o);
-    }
-
-    return result;
-}
-
-PyObject * get_usergroup_info_by_name(char** name, int num) {
-    struct groupInfoEnt* usergroupinfo;
-    int    numgroups = num;
-    int    options = 0;
-
-    usergroupinfo = lsb_usergrpinfo(name, &numgroups, options);
-
-    PyObject *result = PyList_New(numgroups);
-    int i;
-    for (i = 0; i < numgroups; i++) {
-        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&usergroupinfo[i]),
                                          SWIGTYPE_p_groupInfoEnt, 0 |  0 );
         PyList_SetItem(result,i,o);
     }
@@ -384,5 +351,80 @@ PyObject * get_conf_value(char *name, char *path) {
         Py_RETURN_NONE;
     }
 }
+
+// custom --
+
+// added -> error(10.1) -> ok(9.1) by Eunsung Lee
+PyObject * get_user_info_by_name(char** name, int num) {
+    struct userInfoEnt* userinfo;
+    int    numUsers = num;
+
+    userinfo = lsb_userinfo(name, &numUsers);
+
+    PyObject *result = PyList_New(numUsers);
+    int i;
+    for (i = 0; i < numUsers; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&userinfo[i]),
+                                         SWIGTYPE_p_userInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
+// added by Eunsung Lee
+PyObject * get_host_info_by_name(char** name, int num) {
+    struct hostInfoEnt* hostinfo;
+    int    numHosts = num;
+
+    hostinfo = lsb_hostinfo(name, &numHosts);
+
+    PyObject *result = PyList_New(numHosts);
+    int i;
+    for (i = 0; i < numHosts; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&hostinfo[i]),
+                                         SWIGTYPE_p_hostInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
+
+
+// add -> ok
+PyObject * get_usergroup_info_by_name(char** name, int num) {
+    struct groupInfoEnt* usergroupinfo;
+    int    numgroups = num;
+    int    options = 0;
+
+    usergroupinfo = lsb_usergrpinfo(name, &numgroups, options);
+
+    PyObject *result = PyList_New(numgroups);
+    int i;
+    for (i = 0; i < numgroups; i++) {
+        PyObject *o = SWIG_NewPointerObj(SWIG_as_voidptr(&usergroupinfo[i]),
+                                         SWIGTYPE_p_groupInfoEnt, 0 |  0 );
+        PyList_SetItem(result,i,o);
+    }
+
+    return result;
+}
+
+// SKHynix sunny
+int requeue_job(LS_LONG_INT job_id) {
+    struct jobrequeue jobrequeuereq;
+
+    jobrequeuereq.jobId = job_id;
+    jobrequeuereq.status = JOB_STAT_PEND;
+    jobrequeuereq.options = REQUEUE_DONE | REQUEUE_EXIT;
+    return lsb_requeuejob(&jobrequeuereq);
+}
+
+//int get_limitInfo(limitInfoReq *req,  limitInfoEnt *limitItemRef, struct lsInfo* lsInfo) {
+//    int *size;
+//    // limitItemRef // <- pointer pointer by int*
+//    result = lsb_limitInfo(&req, limitInfoEnt **limitItemRef, &size, &lsInfo)
+//}
 
 %}
